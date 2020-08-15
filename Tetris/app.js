@@ -1,10 +1,14 @@
-document.addEventListener('DOMContentLoaded' () => {
-  //Code goes here. fires when HTML has been loaded and passed
-  //20 tall, 10 in height
-//document refers to HTML document
+document.addEventListener('DOMContentLoaded', () => {
+  const grid = document.querySelector('.grid')
+  let squares = Array.from(document.querySelectorAll('.grid div'))
+  const ScoreDisplay = document.querySelector('#score')
+  const StartBtn = document.querySelector('#start-button')
+  const width = 10
 
-
-
-console.log("worklog");
 })
-// 14:00
+
+function showAlert() {
+  alert('You ALERT')
+}
+showAlert();
+// 32:42
