@@ -1,9 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
   const grid = document.querySelector('.grid')
   let squares = Array.from(document.querySelectorAll('.grid div'))
-  const ScoreDisplay = document.querySelector('#score')
-  const StartBtn = document.querySelector('#start-button')
+  const scoreDisplay = document.querySelector('#score')
+  const startBtn = document.querySelector('#start-button')
   const width = 10
+  let timerId
+  let score = 0
+  const colors = [
+    'orange',
+    'red',
+    'purple',
+    'green',
+    'blue'
+  ]
 
   const lTetromino = [
     [1, width + 1, width * 2 + 1, 2],
@@ -37,17 +46,52 @@ document.addEventListener('DOMContentLoaded', () => {
   ]
   const theTetrominoes = [lTetromino, zTetromino, tTetromino, oTetromino, iTetromino]
   let currentPosition = 4
-  //  random select timeout
+  let currentRotation = 0
+  //  random select tetro and its first rotation
   let random = Math.floor(Math.random() * theTetrominoes.length)
-  let current = theTetrominoes[random][0]
+  let current = theTetrominoes[random][currentRotation]
+  //  draw the tetromino
   function draw () {
     current.forEach(index => {
       squares[currentPosition + index].classList.add('tetromino')
     })
   }
+  //  undraw
+  function undraw () {
+    current.forEach(index => {
+      squares[currentPosition + index].classList.remove('tetromino')
+    })
+  }
 
-  draw();
-  console.log(random)
+  //  make move down every second
+  startBtn.addEventListener('click', () => {
+    if (timerId) {
+      clearInterval(timerId)
+      timerId = null
+    } else {
+      draw()
+      timerId = setInterval(moveDown, 1000)
+      nextRandom = Math.floor(Math.random() * theTetrominoes.length)
+      displayShape()
+    }
+  })
+
+  function moveDown () {
+    undraw()
+    currentPosition += width
+    draw()
+  }
+  //  freeze
+  function freeze () {
+    if(current.some(index => squares[currentPosition + index + width].classList.contains('taken'))) {
+      current.forEach(index => squares[currentPosition + index].classList.add('taken'))
+      //  start a new tet falling..
+      random = Math.floor(Math.random() * theTetrominoes.length)
+      current = theTetrominoes[random][currentRotation]
+      currentPosition = 4
+      draw ()
+    }
+  }
 
 })
 //  44
