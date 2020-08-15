@@ -3,12 +3,17 @@
   height: 400px;
   display: flex;
   flex-wrap: wrap;
-  background-color: yellowgreen;
+  background-color: lightgreen;
+
 }
 /* 20 squares tall, 10 in height */
 
 .grid div {
   height: 20px;
   width: 20px;
-  background-color: cadetblue;
+
+}
+
+.tetromino {
+  background-color: blue;
 }
