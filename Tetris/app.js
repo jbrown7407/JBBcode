@@ -103,9 +103,9 @@ document.addEventListener('DOMContentLoaded', () => {
   //  move tet left until at edge
   function moveLeft () {
     undraw()
-    const isAtLeftEdge = current.some(index => (currentPosition) % width === 0)
+    const isAtLeftEdge = current.some(index => (currentPosition + index) % width === 0)
     if (!isAtLeftEdge) currentPosition -= 1
-  //  BUG LOCATION 1
+
     if (current.some(index => squares[currentPosition + index].classList.contains('taken'))) {
       currentPosition += 1
     }
@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function isAtLeft () {
     return current.some(index => (currentPosition + index) % width === 0)
   }
-  //  BUG LOCATION 2
+
   function checkRotatedPosition (P) {
     P = P || currentPosition // get current position.  Then, check if the piece is near the left side.
     if ((P + 1) % width < 4) { // add 1 because the position index can be 1 less than where the piece is (with how they are indexed).
