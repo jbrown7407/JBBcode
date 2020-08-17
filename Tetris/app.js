@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const scoreDisplay = document.querySelector('#score')
   const highScoreDisplay = document.querySelector('#highScore')
   const startBtn = document.querySelector('#start-button')
+  const restartBtn = document.querySelector('#restart-button')
   const width = 10
   let nextRandom = 0
   let timerId
@@ -82,7 +83,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /*  function restart () {
-  score = 100
+  score = 0
+  ERASE TETROMINOES
+  Start()
 } */
 
   function control (e) {
@@ -96,8 +99,9 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (e.keyCode === 40 || e.keyCode === 83) {
       moveDown()
     /*  } else if (e.keyCode === 82) { // Restart with R
-      restart()*/
-    }
+      restart()
+    }*/
+  } // remove when function installed
   }
 
   document.addEventListener('keyup', control)
@@ -180,7 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
     draw()
   }
 
-  //  show up-next tetromino in mini-grid display
+  //  show on deck tetromino in mini-grid display
   const displaySquares = document.querySelectorAll('.mini-grid div')
   const displayWidth = 4
   const displayIndex = 0
@@ -208,17 +212,46 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   //  add functionality to the button
   startBtn.addEventListener('click', () => {
-    startsound.play()
-    if (timerId) {
+    if (timerId) { //PAUSE
       clearInterval(timerId)
       timerId = null
     } else {
+      startsound.play() //PLAY
       draw()
       timerId = setInterval(moveDown, 1000)
       nextRandom = Math.floor(Math.random() * theTetrominoes.length)
-      displayShape()
     }
   })
+
+function clearBoard(){ //NEW DESTORY ALL FUNCTION
+  undraw()}
+
+  restartBtn.addEventListener('click', () => {
+    startsound.play()
+    displayShape()
+    score = 0
+    scoreDisplay.innerHTML = score
+    clearBoard() //ADD FUNCTIONALITY
+    freeze(current)
+    if (row.some(index => squares[index].classList.contains('taken' || 'tetromino'))) {
+      startsound.play()
+      undraw()
+      displaySquares.forEach(square => {
+        square.classList.remove('tetromino')
+        square.style.backgroundColor = ''}) // play if pieces on bottom
+    /*  squares[displayIndex + index].classList.remove('tetromino')
+      index.forEach(index => {     // NEEDED?
+        squares[index].classList.remove('taken')   // NEEDED?
+        squares[index].classList.remove('tetromino')  // NEEDED?
+        squares[index].style.backgroundColor = ''  // NEEDED?
+      })
+      const squaresRemoved = squares.splice(i, index) // (position, number to delete, add)
+      squares = squaresRemoved.concat(squares) // NEEDED?
+      squares.forEach(cell => grid.appendChild(cell)) // NEEDED?
+*/
+    }
+  }
+  )
   //  add score
   function addScore () {
     for (let i = 0; i < 199; i += width) { // MAX SCORE
@@ -226,7 +259,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (row.every(index => squares[index].classList.contains('taken'))) {
         score += 10
-        completerowsound.play()
+        completerowsound.play() // sound effect for row completion
         scoreDisplay.innerHTML = score
         row.forEach(index => {
           squares[index].classList.remove('taken')
@@ -244,10 +277,12 @@ document.addEventListener('DOMContentLoaded', () => {
   function gameOver () {
     if (current.some(index => squares[currentPosition + index].classList.contains('taken'))) {
       endsound.play()
-      scoreDisplay.innerHTML = 'You scored ' + score + '. Game Over!'
-      highScore = score // ADD HIGH SCORE CODE
-      highScoreDisplay.innerHTML = highScore
       clearInterval(timerId)
+      scoreDisplay.innerHTML = 'You scored ' + score + '. Game Over!'
+      if (score >= highScore) {
+        highScore = score
+        highScoreDisplay.innerHTML = highScore
+      }
     }
   }
 })
