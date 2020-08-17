@@ -2,11 +2,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const grid = document.querySelector('.grid')
   let squares = Array.from(document.querySelectorAll('.grid div'))
   const scoreDisplay = document.querySelector('#score')
+  const highScoreDisplay = document.querySelector('#highScore')
   const startBtn = document.querySelector('#start-button')
   const width = 10
   let nextRandom = 0
   let timerId
   let score = 0
+  let highScore = 0
   const colors = [
     'orange',
     'red',
@@ -14,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
     'green',
     'blue'
   ]
-
   const lTetromino = [
     [1, width + 1, width * 2 + 1, 2],
     [width, width + 1, width + 2, width * 2 + 2],
@@ -66,17 +67,27 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
 
+  /*function restart () {
+  score = 100
+}*/
+
   function control (e) {
-    if (e.keyCode === 37) {
+    if (e.keyCode === 37 || e.keyCode === 65) {
       moveLeft()
-    } else if (e.keyCode === 38) {
+    } else if (e.keyCode === 38 || e.keyCode === 87) { //Arrows or WASD
       rotate()
-    } else if (e.keyCode === 39) {
+    } else if (e.keyCode === 39 || e.keyCode === 68) {
       moveRight()
-    } else if (e.keyCode === 40) {
+    } else if (e.keyCode === 40 || e.keyCode === 83) {
       moveDown()
+    } else if (e.keyCode === 82) { // Restart with R
+      restart()
     }
   }
+
+
+
+
   document.addEventListener('keyup', control)
   //  (event, function)
   function moveDown () {
@@ -217,8 +228,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // game over
   function gameOver () {
     if (current.some(index => squares[currentPosition + index].classList.contains('taken'))) {
-      scoreDisplay.innerHTML = 'end'
+      scoreDisplay.innerHTML = 'You scored ' + score + '. Game Over!'
+      highScore = score // ADD HIGH SCORE CODE
+      highScoreDisplay.innerHTML = highScore
       clearInterval(timerId)
+      alert(' You scored ' + score + '!')
+
     }
   }
 })

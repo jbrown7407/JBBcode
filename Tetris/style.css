@@ -1,14 +1,25 @@
-.container {
-  display: flex;
+
+.backdrop {
+  background-color: darkgray;
 }
 
+.title {
+background-color: deepskyblue;
+width: 450px;
+}
+
+.container {
+  display: flex;
+  border-top: 20px;
+}
 
 .grid {
   width: 200px;
   height: 400px;
   display: flex;
   flex-wrap: wrap;
-  background-color: yellow;
+  background-color: black;
+  outline: 1px dotted white;
 }
 
 .grid div {
@@ -18,6 +29,17 @@
 
 .tetromino {
   background-color: blue;
+  outline: 1px dotted white;
+
+}
+
+.instructions  {
+  margin-left: 250px;
+  margin-top: -350px;
+  width: 200px;
+  height: 296px;
+  background-color: cornflowerblue;
+  outline: 1px dotted white;
 }
 
 
@@ -27,7 +49,8 @@
   height: 80px;
   display: flex;
   flex-wrap: wrap;
-  background-color: yellow;
+  background-color: black;
+  outline: 1px dotted white;
 }
 
 .mini-grid div {
