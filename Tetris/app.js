@@ -9,6 +9,20 @@ document.addEventListener('DOMContentLoaded', () => {
   let timerId
   let score = 0
   let highScore = 0
+  let rotatesound = document.getElementById("audio");
+  let completerowsound = document.getElementById("audio1");
+  let endsound = document.getElementById("audio2");
+  let startsound = document.getElementById("audio3");
+  let landsound = document.getElementById("audio4");
+
+  function preload () {
+    rotatesound = loadSound ('JBBcode/Tetris/sounds/rotatesound.wav')
+    completerowsound = loadSound ('JBBcode/Tetris/sounds/completerowsound.wav')
+    endsound = loadSound ('JBBcode/Tetris/sounds/endsound.mp3')
+    startsound = loadSound ('JBBcode/Tetris/sounds/startsound.mp3')
+    landsound = loadSound ('JBBcode/Tetris/sounds/landsound.wav')
+  }
+
   const colors = [
     'orange',
     'red',
@@ -67,14 +81,15 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
 
-  /*function restart () {
+  /*  function restart () {
   score = 100
-}*/
+} */
 
   function control (e) {
     if (e.keyCode === 37 || e.keyCode === 65) {
       moveLeft()
     } else if (e.keyCode === 38 || e.keyCode === 87) { //Arrows or WASD
+      rotatesound.play()
       rotate()
     } else if (e.keyCode === 39 || e.keyCode === 68) {
       moveRight()
@@ -84,9 +99,6 @@ document.addEventListener('DOMContentLoaded', () => {
       restart()
     }
   }
-
-
-
 
   document.addEventListener('keyup', control)
   //  (event, function)
@@ -101,6 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (current.some(index => squares[currentPosition + index + width].classList.contains('taken'))) {
       current.forEach(index => squares[currentPosition + index].classList.add('taken'))
       //  start a new tetromino falling
+      landsound.play()
       random = nextRandom
       nextRandom = Math.floor(Math.random() * theTetrominoes.length)
       current = theTetrominoes[random][currentRotation]
@@ -195,6 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   //  add functionality to the button
   startBtn.addEventListener('click', () => {
+    startsound.play()
     if (timerId) {
       clearInterval(timerId)
       timerId = null
@@ -212,6 +226,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (row.every(index => squares[index].classList.contains('taken'))) {
         score += 10
+        completerowsound.play()
         scoreDisplay.innerHTML = score
         row.forEach(index => {
           squares[index].classList.remove('taken')
@@ -228,12 +243,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // game over
   function gameOver () {
     if (current.some(index => squares[currentPosition + index].classList.contains('taken'))) {
+      endsound.play()
       scoreDisplay.innerHTML = 'You scored ' + score + '. Game Over!'
       highScore = score // ADD HIGH SCORE CODE
       highScoreDisplay.innerHTML = highScore
       clearInterval(timerId)
       alert(' You scored ' + score + '!')
-
     }
   }
 })
