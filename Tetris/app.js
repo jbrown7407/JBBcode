@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const scoreDisplay = document.querySelector('#score')
   const highScoreDisplay = document.querySelector('#highScore')
   const startBtn = document.querySelector('#start-button')
-  const restartBtn = document.querySelector('#restart-button')
+  const resetBtn = document.querySelector('#resetBtn');
   const width = 10
   let nextRandom = 0
   let timerId
@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /*  } else if (e.keyCode === 82) { // Restart with R
       restart()
     }*/
-  } // remove when function installed
+    } // remove when function installed
   }
 
   document.addEventListener('keyup', control)
@@ -223,10 +223,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   })
 
-function clearBoard(){ //NEW DESTORY ALL FUNCTION
-  undraw()}
+  resetBtn.addEventListener('click', () => {
+         location.reload()
+         return false
+         
+     })
 
-  restartBtn.addEventListener('click', () => {
+  /*restartBtn.addEventListener('click', () => {
     startsound.play()
     displayShape()
     score = 0
@@ -238,7 +241,7 @@ function clearBoard(){ //NEW DESTORY ALL FUNCTION
       undraw()
       displaySquares.forEach(square => {
         square.classList.remove('tetromino')
-        square.style.backgroundColor = ''}) // play if pieces on bottom
+        square.style.backgroundColor = '' }) // play if pieces on bottom
     /*  squares[displayIndex + index].classList.remove('tetromino')
       index.forEach(index => {     // NEEDED?
         squares[index].classList.remove('taken')   // NEEDED?
@@ -249,9 +252,9 @@ function clearBoard(){ //NEW DESTORY ALL FUNCTION
       squares = squaresRemoved.concat(squares) // NEEDED?
       squares.forEach(cell => grid.appendChild(cell)) // NEEDED?
 */
-    }
-  }
-  )
+  //  }
+  //}
+//)
   //  add score
   function addScore () {
     for (let i = 0; i < 199; i += width) { // MAX SCORE
