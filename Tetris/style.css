@@ -1,11 +1,20 @@
 
 .backdrop {
-  background-color: darkgray;
+background-color: lightblue;
 }
 
 .title {
-background-color: deepskyblue;
+background-color: cornflowerblue;
 width: 450px;
+color: white;
+outline: 1px dotted black;
+}
+
+.score {
+background-color: cornflowerblue;
+color: white;
+width: 200px;
+outline: 1px dotted black;
 }
 
 .container {
@@ -18,8 +27,8 @@ width: 450px;
   height: 400px;
   display: flex;
   flex-wrap: wrap;
-  background-color: black;
-  outline: 1px dotted white;
+  background-image: url('background4.jpg');
+  outline: 1px dotted black;
 }
 
 .grid div {
@@ -38,8 +47,9 @@ width: 450px;
   margin-top: -350px;
   width: 200px;
   height: 296px;
+
+  outline: 1px dotted black;
   background-color: cornflowerblue;
-  outline: 1px dotted white;
 }
 
 
@@ -49,8 +59,8 @@ width: 450px;
   height: 80px;
   display: flex;
   flex-wrap: wrap;
-  background-color: black;
-  outline: 1px dotted white;
+  background-image: url('background4.jpg');
+  outline: 1px dotted black;
 }
 
 .mini-grid div {

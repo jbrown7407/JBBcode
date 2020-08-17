@@ -9,11 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
   let timerId
   let score = 0
   let highScore = 0
-  let rotatesound = document.getElementById("audio");
-  let completerowsound = document.getElementById("audio1");
-  let endsound = document.getElementById("audio2");
-  let startsound = document.getElementById("audio3");
-  let landsound = document.getElementById("audio4");
+  let rotatesound = document.getElementById('audio')
+  let completerowsound = document.getElementById('audio1')
+  let endsound = document.getElementById('audio2')
+  let startsound = document.getElementById('audio3')
+  let landsound = document.getElementById('audio4')
 
   function preload () {
     rotatesound = loadSound ('JBBcode/Tetris/sounds/rotatesound.wav')
@@ -88,15 +88,15 @@ document.addEventListener('DOMContentLoaded', () => {
   function control (e) {
     if (e.keyCode === 37 || e.keyCode === 65) {
       moveLeft()
-    } else if (e.keyCode === 38 || e.keyCode === 87) { //Arrows or WASD
+    } else if (e.keyCode === 38 || e.keyCode === 87) { // Arrows or WASD
       rotatesound.play()
       rotate()
     } else if (e.keyCode === 39 || e.keyCode === 68) {
       moveRight()
     } else if (e.keyCode === 40 || e.keyCode === 83) {
       moveDown()
-    } else if (e.keyCode === 82) { // Restart with R
-      restart()
+    /*  } else if (e.keyCode === 82) { // Restart with R
+      restart()*/
     }
   }
 
@@ -248,7 +248,6 @@ document.addEventListener('DOMContentLoaded', () => {
       highScore = score // ADD HIGH SCORE CODE
       highScoreDisplay.innerHTML = highScore
       clearInterval(timerId)
-      alert(' You scored ' + score + '!')
     }
   }
 })
