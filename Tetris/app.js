@@ -226,7 +226,6 @@ document.addEventListener('DOMContentLoaded', () => {
   resetBtn.addEventListener('click', () => {
          location.reload()
          return false
-         
      })
 
   /*restartBtn.addEventListener('click', () => {
