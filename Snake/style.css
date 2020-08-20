@@ -17,7 +17,6 @@
 
 .score {
   background-color: white;
-  height: 50 px;
 }
 
 .snake {
@@ -26,9 +25,4 @@
 
 .apple {
   background-color: red;
-}
-
-.background {
-  background-color : grey;
-
 }
