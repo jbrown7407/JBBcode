@@ -226,6 +226,8 @@ document.addEventListener('DOMContentLoaded', () => {
   resetBtn.addEventListener('click', () => {
          location.reload()
          return false
+         squares.forEach(index => squares[index].classList.remove('taken'))
+         squares[appleIndex].classList.remove('apple')
      })
 
   /*restartBtn.addEventListener('click', () => {

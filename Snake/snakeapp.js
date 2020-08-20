@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentSnake = [2, 1, 0]
   let direction = 1
   let score = 0
-  let speed = 2
+  let speed = .9
   let intervalTime = 0
   let interval = 0
 
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     randomApple()
     direction = 1
     scoreDisplay.innerText = score
-    intervalTime = 300
+    intervalTime = 1000
     currentSnake = [2, 1, 0]
     currentIndex = 0
     currentSnake.forEach(index => squares[index].classList.add('snake'))
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
       randomApple()
       score++
       scoreDisplay.textContent = score
-      clearInterval(interval)
+      clearInterval(interval) // SPEED BUG?
       intervalTime = intervalTime * speed
       interval = setInterval(moveOutcomes, intervalTime)
     }
