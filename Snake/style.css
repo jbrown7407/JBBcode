@@ -1,14 +1,25 @@
+.banner {
+font-family: 'Oswald',
+font-size: 80px;
+letter-spacing: 4px;
+text-shadow:
+    -1px -1px 0 firebrick,
+    -30px 20px 40px dimgrey;
+}
+
 .grid {
   width: 200px;
   height: 200px;
   display: flex;
   flex-wrap: wrap;
   border-style: solid;
+    background-color: bisque
 }
 
 .grid div{
   height: 20px;
   width: 20px;
+
 }
 
 .start {
@@ -25,4 +36,12 @@
 
 .apple {
   background-color: red;
+}
+
+.toDo {
+  background-color: lightyellow;
+}
+
+.instructions {
+  background-color: whitesmoke;
 }
