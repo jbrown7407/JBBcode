@@ -1,4 +1,92 @@
+.start-button{
+  margin-left: 300px;
+  margin-top : 250px;
+  width: 1300px;
+  height: 1200px;
+font-size: 250px;
+}
 
-.button {
-  background-color: black;
+.backdrop{
+  margin-left: 300px;
+  margin-top : 250px;
+  width: 1300px;
+  height: 1200px;
+background-color: aquamarine
+
+
+}
+.background{
+  margin-left: 300px;
+  margin-top : 250px;
+  width: 1300px;
+  height: 1200px;
+
+  padding: 5px;
+  text-align: auto;
+  font-size: 250px;
+  position: absolute;
+}
+
+.thebutton {
+  width: 1000px;
+  height: 1000px;
+  border: 20px solid green;
+  padding: 5px;
+  text-align: auto;
+  font-size: 250px;
+    position: absolute;
+    top: 400px;
+    left: 500px;
+
+}
+
+.button2 {
+  width: 400px;
+  height: 400px;
+  background-color: aquamarine
+    position: absolute;
+    top: 900px;
+    left: 800px;
+      border: 20px solid green;
+      font-size: 100px;
+
+}
+
+.btn {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 50px;
+}
+
+}
+.buttonpress {
+  margin-left: 500px;
+  margin-top : 500px;
+  width: 1000px;
+  height: 1000px;
+  border: 20px solid greenyellow;
+  padding: 5px;
+  text-align: auto;
+  font-size: 250px;
+
+}
+
+.score {
+
+  position: absolute;
+  left: 1000
+
+  margin-left: 500px;
+  margin-top : 500px;
+  width: 1000px;
+  height: 1000px;
+  border: 20px solid greenyellow;
+
+  text-align: auto;
+  font-size: 200px;
 }

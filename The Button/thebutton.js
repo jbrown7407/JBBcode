@@ -1,34 +1,34 @@
 document.addEventListener('DOMContentLoaded', () => {
-/*
-  const grid = document.querySelector('.grid')
-  let squares = Array.from(document.querySelectorAll('.grid div'))
+
+  const buttonPress = document.querySelector('.buttonpress')
   const scoreDisplay = document.querySelector('#score')
   const highScoreDisplay = document.querySelector('#highScore')
-  const startBtn = document.querySelector('#start-button')
-  const resetBtn = document.querySelector('#resetBtn');
-  let score = 0
-  let highScore = 0
-  let rotatesound = document.getElementById('audio')
-  let completerowsound = document.getElementById('audio1')
-  let endsound = document.getElementById('audio2')
-  let startsound = document.getElementById('audio3')
-  let landsound = document.getElementById('audio4')
-*/
-/*
-  function PlaySound() {
-      alert("hello");
-    var snd = new audio();
-    snd.src = "SciFi-02.mp3.mp3";
-    document.getElementById(snd);
-    snd.Play();
-*/
+  const resetBtn = document.querySelector('#resetbutton');
+  const canvas = document.querySelector('#canvas')
 
-/*
-function onClick() {
-  score = score + 1
-    //completerowsound.play()
-    if (score > 10) {
-    console.log("Change phrase") }
+  const btn = document.querySelector('#btn');
+  btn.onclick = () => alert("Hello World");
 
-}
-*/
+const thebutton = document.querySelector('#thebutton')
+const startBtn = document.querySelector('#start-button')
+let startsound = document.getElementById('audio3')// CHOOSE SOUND
+
+let startsound = document.getElementById('snd')// CHOOSE SOUND
+
+let score = 0
+let highScore = 0
+
+function addScore () {
+ score = score + 1
+ scoreDisplay.innerHTML = score
+
+
+
+
+var myScore = document.getElementsbyClassName("score")
+myScore = 1
+
+
+
+if (score = 0)
+//div.innerHTML = '<span>Hello World!</span>';
