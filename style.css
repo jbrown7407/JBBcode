@@ -44,7 +44,7 @@ p1 {
 
  a[href] {
    background : lightcyan;
-   font-size: 24;
+   font-size: 36;
    padding : 5px;
    line-height: 50px;
    border-radius: 5px;
@@ -59,7 +59,7 @@ td {
     padding: 25px;
     width: 180px;
     height: 40px;
-      font-size : 30 px;
+      font-size : 50 px;
   background-color: #0088dd;
   border: 5 px solid #000000;}
 
