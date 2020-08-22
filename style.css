@@ -1,3 +1,47 @@
-input#submit{
-    color: #444444;
+.class {
+    background-color: blanchedalmond;
 }
+
+#content {
+  color: red;
+}
+
+h1 {
+    color: red;
+  }
+
+p1 {
+    color: grey;
+  }
+
+ul{
+
+ }
+
+ bttm {
+    border-bottom: 4px solid crimson
+    border-left: 10px dotted crimson
+ }
+
+ li{
+    list-style-type: squares;
+    text-shadow: 1px .5px lightgrey;
+ }
+
+ a[href] {
+   background : white;
+   font-size: 24;
+   padding : 5px;
+   border: 2px solid blue;
+ }
+
+td {
+  background-color: #0088dd;
+  padding 15px;
+  border: 2 px solid #000000;}
+  table.one {
+    border-spacing: 5px 15px;}
+  table.two {
+    border-collapse: collapse;}
+
+  }
