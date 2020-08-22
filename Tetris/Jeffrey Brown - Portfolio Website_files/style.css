@@ -1,16 +1,14 @@
 .skills {
-    background-color: lightcyan;
-  margin-left: -300 px;
-  height: 150 px;
-    border-radius: 25px;
+    background-color: blanchedalmond;
+}
+body {
+
 }
 
 #content {
   color: red;
 }
-body {
-  background-color: lightblue;
-}
+
 h1 {
     color: red;
     background-color: lightblue;
@@ -41,8 +39,7 @@ ul{
    background : white;
    font-size: 24;
    padding : 5px;
-   border-radius: 5px;
-
+   border: 2px solid blue;
  }
 
 td {
@@ -58,7 +55,6 @@ td {
   table.one {
     border-spacing: 5px 15px;}
   table.two {
-    border-collapse: collapse;
-    background-color: #3388dd}
+    border-collapse: collapse;}
 
   }
