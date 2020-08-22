@@ -1,0 +1,27 @@
+h1{
+    color: rgb(218, 72, 72);
+    background-color: slategrey
+    font-size : 20px;
+    text-decoration: none;
+    font-family: times new roman;
+    text-align: center
+  }
+  
+p1{
+    color: grey;
+    background-color: blanchedalmond
+    text-align: right
+    line-height: 30px
+  }
+
+  ul{
+     /* border-width: 4px;
+      border-style: solid;
+      border-color: crimson */
+      border: 4px solid crimson
+  }
+
+  li{
+    list-style-type: squares;
+    text-shadow: 2px 2px lightgrey;
+ }
