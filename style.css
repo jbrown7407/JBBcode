@@ -1,13 +1,17 @@
 .skills {
     background-color: lightcyan;
   margin-left: -300 px;
-  height: 150 px;
+  height: 100 px;
     border-radius: 25px;
 }
 
 #content {
   color: red;
 }
+h3 {
+font-style: oblique;
+}
+
 body {
   background-color: lightblue;
 }
@@ -21,11 +25,7 @@ p1 {
     color: grey;
   }
 
-.one
 
-ul{
-
- }
 
  bttm {
     border-bottom: 4px solid crimson
@@ -42,7 +42,7 @@ ul{
    font-size: 24;
    padding : 5px;
    border-radius: 5px;
-
+     border-radius: 25px;
  }
 
 td {
@@ -51,9 +51,7 @@ td {
     padding: 20px;
     width: 200px;
     height: 150px;
-
   background-color: #0088dd;
-
   border: 5 px solid #000000;}
   table.one {
     border-spacing: 5px 15px;}
