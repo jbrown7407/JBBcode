@@ -7,21 +7,50 @@
         <h1>HTML FORM</h1>
 <form>
     <label for="username">Username: </label>
-    <input type="text" id="username' name="username">
+    <input type="text" id="username" name="username" placeholder="username" required>
     <br> <br>
     <label for="email">Email: </label> 
-    <input type="email" id = email name=email>
+    <input type="email" id = email name=email placeholder="your email" required>
     <br> <br>
     <label for="password">Secure Password</label>
-    <input type="password" id = password name="password">
+    <input type="password" id = password name="password" placeholder="choose a password" required>
 </form>
 
 <br>
 <br>
-<form action=""> In Starcraft I prefer: <br>
+<form action=""> <b> In Starcraft I prefer: </b> <br>
     <input type="radio" name="sc" value="male"> Human <br>
     <input type="radio" name="sc" value="male"> Protoss <br>
     <input type="radio" name="sc" value="male"> Terran <br>
+
+
+<p> <b> Select Your Age </b> </p>
+<input type='radio' name='age' value='0-25' id="option1"
+<label for="option-1"> 0-25 </label>
+<input type='radio' name='age' value='26-50' id="option1"
+<label for="option-2"> 0-25 </label>
+<input type='radio' name='age' value='51+' id="option1"
+<label for="option-2"> 51+ </label>
+
+<br><br>
+
+<label for="Security question"> <b> Select Security Question </b> </label> <br>
+<select name="questions" id="questions">
+  <option value="q1">"What is your name?"</option>
+  <option value="q1">"What is your quest?"</option>
+  <option value="q1">"What is the weight of an unladen African Swallow?"</option>
+</select>
+<br><br>
+
+<label for="answer"> <b> Security Question Answer: </b> </label> <br>
+<input type="text" id="answer">
+
+<br><br>
+
+<label for="bio"> Your Bio </label> <br>
+<textarea name="bio" id="bio" cols="30" rows="10" placeholder="about you..."> </textarea>
+<br>
+<input type="submit" value="Submit Form">
 </form>
 
 
