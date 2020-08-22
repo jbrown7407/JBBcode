@@ -25,3 +25,10 @@ p1{
     list-style-type: squares;
     text-shadow: 2px 2px lightgrey;
  }
+
+ div{
+    color: lightcoral;
+    border : solid grey;
+    font-weight : bold;
+    margin : 15 px;
+ }

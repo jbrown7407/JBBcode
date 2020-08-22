@@ -1,5 +1,9 @@
-class {
+.class {
     background-color: blanchedalmond;
+}
+
+#content {
+  color: red;
 }
 
 h1 {
@@ -25,4 +29,10 @@ ul{
  li{
     list-style-type: squares;
     text-shadow: 2px 2px lightgrey;
+ }
+
+ a[href] {
+   background : red;
+   border: 2px solid blue;
+
  }
