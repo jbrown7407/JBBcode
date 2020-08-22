@@ -1,16 +1,18 @@
+
+.page {
+  background-color: antiquewhite
+  text-shadow: 1px 2px lightgrey;
+}
 body {
   background-color: lightblue;
-
-.games {
-
 }
 li{
    list-style-type: squares;
-   text-shadow: 1px .5px lightgrey;
+   text-shadow: 1px 2px lightgrey;
  }
 .skills {
   background : white;
-  font-size: 24;
+  font-size: 40;
   padding : 5px;
   border-radius: 5px;
     border-radius: 25px;
@@ -19,12 +21,12 @@ li{
 #content {
   color: red;
 }
+
 h3 {
 font-style: oblique;
+   background : lightcyan;
 }
 
-
-}
 h1 {
     color: red;
     background-color: lightblue;
@@ -41,21 +43,26 @@ p1 {
  }
 
  a[href] {
-   background : white;
+   background : lightcyan;
    font-size: 24;
    padding : 5px;
+   line-height: 50px;
    border-radius: 5px;
      border-radius: 25px;
  }
 
 td {
-  border-radius: 25px;
+  border-radius: 120px;
+  text-align : center;
     background: #73AD21;
-    padding: 20px;
-    width: 200px;
-    height: 150px;
+    margin: 150px;
+    padding: 25px;
+    width: 180px;
+    height: 40px;
+      font-size : 30 px;
   background-color: #0088dd;
   border: 5 px solid #000000;}
+
   table.one {
     border-spacing: 5px 15px;}
   table.two {
