@@ -1,11 +1,13 @@
 #myDIV {
   width: 300px;
-  height: 200px;
-  background: red;
+  height: 5px;
+  background: black;
   animation: mymove 5s infinite;
+  opacity: 100%;
 }
 
 @keyframes mymove {
-  from {background-color: red;}
-  to {background-color: blue;}
+  from {background-color: black;}
+  to {background-color: white;}
+
 }
