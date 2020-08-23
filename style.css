@@ -64,14 +64,27 @@ p1 {
     border-left: 10px dotted crimson
  }
 
- a[href] {
+ td a[href] {
 background-color: : black;
    font-size: 45;
    padding : 5px;
    line-height: 50px;
    border-radius: 25px;
-   color: lightblue;
- }
+   color: lightblue;}
+
+
+
+a[href]: hover {
+  background-color: yellow;
+  color: green;
+}
+
+
+/* mouse over link */
+
+
+/* selected link */
+
 
 td {
 
