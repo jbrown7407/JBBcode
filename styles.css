@@ -1,3 +1,8 @@
+.dreams{
+background-color: lightcyan;
+}
+
+
 body, ul, li, h1, h2, a{
   margin: 0;
   padding: 0;
@@ -20,15 +25,15 @@ header h1{
   color: white;
   border: 8px solid white;
   display: inline-block;
-  padding: 8px 12px;
-  border-radius: 48px;
+
 }
 .banner{
   position: relative;
-
+  
 }
 .banner img{
   max-width: 100%;
+  
 }
 .banner .welcome{
   background:#000000;
@@ -39,7 +44,7 @@ header h1{
   left: 0;
   top: 50%;
   opacity: 45%;
-
+  
   
 }
 .banner .welcome span{
@@ -81,8 +86,8 @@ main{
   box-sizing: border-box;
 }
 article h2{
-  color: #F63232;
-  font-size: 56px;
+  color: #00000;
+  font-size: 48px;
 }
 article p{
   line-height: 2em;
