@@ -8,7 +8,7 @@ p{
 }
 header{
   background-color: #000000;
-  padding: 20px 0;
+  padding: 10px 0;
   text-align: center;
   position: fixed;
   width: 100%;
@@ -25,6 +25,7 @@ header h1{
 }
 .banner{
   position: relative;
+
 }
 .banner img{
   max-width: 100%;
@@ -32,11 +33,12 @@ header h1{
 .banner .welcome{
   background:#000000;
   color: white;
-  padding: 30px;
+  padding: 10px;
   font-size: 60px;
   position: absolute;
   left: 0;
-  top: 20%;
+  top: 50%;
+  opacity: 45%;
 
   
 }
