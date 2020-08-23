@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     alienInvadersTakenDown.forEach( invader => squares[currentInvaderIndex + invader].classList.add('invader'))
 
 
-    //draw the shooter
+    //draw the shooter!
     squares[currentShooterIndex].classlist.add('shooter')
 
 
