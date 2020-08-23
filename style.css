@@ -8,7 +8,7 @@ body {
 }
 li{
    list-style-type: squares;
-   text-shadow: 1px 2px lightgrey;
+   font-style: bold;
  }
 .skills {
   background : white;
@@ -28,8 +28,10 @@ font-style: oblique;
 }
 h1 {
     color: red;
-background-color: lightcyan;
-    padding 10px;
+margin: 50 px;
+    padding 50 px;
+    width: 100 px;
+    background-color: white
   }
 
 p1 {
@@ -46,7 +48,7 @@ p1 {
    font-size: 36;
    padding : 5px;
    line-height: 50px;
-   border-radius: 5px;
+
      border-radius: 25px;
  }
 
