@@ -1,17 +1,38 @@
 
+.title {
+  background : black;
+  color: white;
+  font-size: 48px;
+
+  font-size: 40;
+  padding : 5px;
+  border-radius: 5px;
+    border-radius: 25px;
+  }
+
 .page {
-  background-color: antiquewhite
+  background-color: white
   text-shadow: 1px 2px lightgrey;
 }
 body {
-  background-color: lightblue;
+  background-color: whitesmoke;
 }
+
+.resume {
+    background : white;
+    font-size: 40;
+    padding : 5px;
+    border-radius: 5px;
+      border-radius: 25px;
+  }
+
 li{
    list-style-type: squares;
    font-style: bold;
  }
 .skills {
-  background : white;
+  background : black;
+  color: whitesmoke;
   font-size: 40;
   padding : 5px;
   border-radius: 5px;
@@ -24,7 +45,7 @@ li{
 
 h3 {
 font-style: oblique;
-   background : lightcyan;
+   background : whitesmoke;
 }
 h1 {
     color: red;
@@ -35,7 +56,7 @@ margin: 50 px;
   }
 
 p1 {
-    color: grey;
+    color: whitesmoke;
   }
 
  bttm {
@@ -44,29 +65,33 @@ p1 {
  }
 
  a[href] {
-
-   font-size: 36;
+background-color: : black;
+   font-size: 45;
    padding : 5px;
    line-height: 50px;
-
-     border-radius: 25px;
+   border-radius: 25px;
+   color: lightblue;
  }
 
 td {
+
+  border-width: 5px;
   border-radius: 120px;
   text-align : center;
-    background: #73AD21;
-    margin: 150px;
-    padding: 25px;
-    width: 180px;
-    height: 40px;
-      font-size : 50 px;
-  background-color: #0088dd;
-  border: 5 px solid #000000;}
+  background: black;
+  margin: 10px;
+  padding: 25px;
+  width: 10px;
+  height: 40px;
+  font-size : 50 px;
+}
 
   table.one {
+    background-color: : black;
+    color: black;
     border-spacing: 5px 15px;}
   table.two {
+    background-color: : black;
+    color: black;
     border-collapse: collapse;
-    background-color: #3388dd}
-  }
+    }
