@@ -26,10 +26,9 @@ h3 {
 font-style: oblique;
    background : lightcyan;
 }
-
 h1 {
     color: red;
-    background-color: lightblue;
+background-color: lightcyan;
     padding 10px;
   }
 
@@ -43,7 +42,7 @@ p1 {
  }
 
  a[href] {
-   background : lightcyan;
+
    font-size: 36;
    padding : 5px;
    line-height: 50px;
