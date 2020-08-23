@@ -23,7 +23,9 @@ document.addEventListener('DOMContentLoaded', () => {
     startsound = loadSound ('JBBcode/Tetris/sounds/startsound.mp3')
     landsound = loadSound ('JBBcode/Tetris/sounds/landsound.wav')
   }
-
+  window.onkeydown = function(e) { 
+    return !(e.keyCode == 32);
+};
   const colors = [
     'orange',
     'red',
