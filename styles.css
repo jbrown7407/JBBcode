@@ -1,8 +1,3 @@
-.dreams{
-background-color: lightcyan;
-}
-
-
 body, ul, li, h1, h2, a{
   margin: 0;
   padding: 0;
@@ -28,13 +23,12 @@ header h1{
   padding: 6px 12px;
   border-radius: 36px;
 }
+
 .banner{
   position: relative;
- 
 }
 .banner img{
-  max-width: 100%;
-  
+  max-width: 100%;  
 }
 .banner .welcome{
   letter-spacing: 3px;;
@@ -50,6 +44,7 @@ header h1{
 .banner .welcome span{
   font-size: 1.4em;
 }
+
 nav{
   background: #F4F4F4;
   padding: 20px;
@@ -102,7 +97,7 @@ article p::first-line{
 }
 .images{
   text-align: center;
-  margin: 80px 0;
+  margin: 50px 0;
   white-space: nowrap;
 }
 .images li{
