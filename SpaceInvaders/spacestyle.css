@@ -4,16 +4,23 @@
   border: solid 1px;
   width: 300px;
   height: 300px;
+  background-color: grey
   
 }
+
+.body {
+  background-color: black;
+  opacity: 10%;
+}
 .UI3 {
+  color:black;
   margin-left: 400px;
   margin-top: -1025px;
   width: 300px;
   height: 230px;
   outline: 1px black;
   border: black
-  background-color: white;
+  background-color: black;
 }
 .grid div {
   width: 20px;
@@ -21,17 +28,26 @@
 }
 
 .shooter {
-  background-color: blue;
-  border-radius: 25 px;
+  background-color:  blue;
+  border-radius: 15 px;
+  border-left: 3px solid red;
+      border-right: 3px solid red;
+      border-bottom: 3px solid red;
+      border-top: 8px solid transparent;
 }
 
 .invader { 
-  background-color: purple;
-  border-radius: 10px;
+    background-color: purple;
+    border-radius: 10px;
 }
 
 .boom {
   background-color: red;
+  
+  border-right: 1px solid yellow;
+      border-bottom: 1px solid yellow;
+      border-top: 1px solid yellow;
+      border-left: 1 px solid yellow;
 }
 
 .laser {
