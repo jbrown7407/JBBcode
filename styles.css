@@ -15,6 +15,7 @@ header{
   top: 0;
   left: 0;
   z-index: 1;
+
 }
 header h1{
   color: white;
@@ -75,6 +76,7 @@ nav li a:hover{
 }
 nav li a.join{
   color: #F63232;
+
 }
 main{
   max-width: 100%;
@@ -119,9 +121,18 @@ section.join{
   text-align: center;
   padding: 60px 20px;
   color: #4B4B4B;
+  
 }
 section.join h2{
   font-size: 36px;
+  
+
+}
+.join li:hover{
+  background: #F4F4F4;
+  text-align: center;
+  padding: 60px 20px;
+  color: white;
 }
 form input{
   margin: 20px 0;
