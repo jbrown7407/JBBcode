@@ -37,8 +37,9 @@ header h1{
   
 }
 .banner .welcome{
+  letter-spacing: 3px;;
   background: blue;
- 
+ opacity: 45%;
   color: white;
   padding: 30px;
   font-size: 60px;
@@ -73,6 +74,9 @@ nav li a{
 }
 nav li a:hover{
   text-decoration: underline;
+  border: 5px solid white;
+  padding: 6px 12px;
+  border-radius: 36px;
 }
 nav li a.join{
   color: #F63232;
@@ -105,11 +109,12 @@ article p::first-line{
   display: inline-block;
   list-style-type: none;
   width: 40%;
-  margin: 20px 5%;
+  margin: 0px 5%;
   position: relative;
 }
 .images li:hover{
-  top: -4px;
+  top: -5px;
+  border: 5px solid black;
 }
 .images li img{
   max-width: 100%;
