@@ -29,16 +29,17 @@ header h1{
   position: relative;
 }
 .banner img{
-  max-width: 100%;  
+  max-width: 100%; 
+  position: relative 
 }
 .banner .welcome{
   letter-spacing: 3px;;
   background: blue;
- opacity: 45%;
+  opacity: 45%;
   color: white;
-  padding: 30px;
+  padding: 10px;
   font-size: 60px;
-  position: absolute;
+  position: relative;
   left: 0;
   top: 30%;
 } 
@@ -109,9 +110,9 @@ article p::first-line{
   margin: 0px 5%;
   position: relative;
 }
-.images li:hover{
+/*.images li:hover{
   top: -5px;
-  border: 5px solid black;
+  border: 5px solid black;*/
 }
 .images li img{
   max-width: 100%;

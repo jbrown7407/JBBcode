@@ -1,6 +1,8 @@
-
+#start-button{
+  color: black
+}
 .backdrop {
-
+white;
 }
 
 .title {
@@ -19,7 +21,7 @@ background-color: black;
 color: white;
 width: 200px;
 outline: 1px dotted black;
-margin-left: 500px;
+margin: auto
 }
 
 .container {
@@ -28,19 +30,24 @@ margin-left: 500px;
 }
 
 .grid {
-  margin-left:500px;
+  margin-left:10px;
   width: 200px;
   height: 400px;
   display: flex;
   flex-wrap: wrap;
   background-image: url('background4.jpg');
   outline: 1px dotted black;
+  position: relative;
+  z-index: 10;
 }
 
 .grid div {
   height: 20px;
   width: 20px;
+  position: relative
 }
+
+
 
 .tetromino {
   background-color: blue;
@@ -49,35 +56,36 @@ margin-left: 500px;
 }
 
 .instructions  {
-  margin-left: 050px;
-  margin-top: -360px;
+  margin-left: 330px;
+  margin-top: -400px;
   padding : 40 px;
   width: 200px;
   height: 296px;
   color : white;
   outline: 1px dotted black;
   background-color: black;
-
-  text-size: 48 px;
+  position: absolute;
+  text-size: 10px;
+  z-index: 9;
 }
 
 .UI2{
-  margin-left: 300px;
+  margin-left: 500px;
   opacity: 5%;
   margin-top: -300px;
-  width: 500px;
-  height: 300px;
-  
-
+  width: 800px;
+  height: 200px;
+  position: absolute;
+  font-size: 36px;
 
   
 }
 
 .UI3 {
-  margin-left: 800px;
-  margin-top: -300px;
-  width: 300px;
-  height: 300px;
+  margin-left: 700px;
+  margin-top: -350px;
+  width: 60px;
+  height: 30px;
   outline: 1px dotted black;
   background-color: black;
   color: white;
@@ -85,7 +93,7 @@ margin-left: 500px;
 
 
 .mini-grid {
-  margin-left: 50px;
+  margin-left: 00px;
   width: 80px;
   height: 80px;
   display: flex;
@@ -93,17 +101,22 @@ margin-left: 500px;
   background-image: black;
   outline: 1px dotted black;
   background-color: black
+  min-height: 20rem;
+  z-index: 10;
 }
 
 .mini-grid div {
   height: 20px;
   width: 20px;
+  min-height: 20rem;
+  min-height: 20rem;
 }
 
 @media screen and (max-width: 1400px){
-
+  min-height: 20rem;
   .banner .welcome{
     font-size: 40px;
+
   }
 
 }
@@ -112,6 +125,7 @@ margin-left: 500px;
 
   .banner .welcome{
     font-size: 28px;
+    min-height: 20rem;
   }
   nav li{
     font-size: 18px;
@@ -212,7 +226,7 @@ margin-left: 500px;
       color: white;
       padding: 30px;
       font-size: 60px;
-      position: absolute;
+      position: relative;
       left: 0;
       top: 30%;
       opacity: 45%;
@@ -379,7 +393,8 @@ margin-left: 500px;
         margin: 12px 0;
       }
       article h2{
-        font-size: 36px;
+        font-size: 14px;
+        
       }
       header, nav{
         position: relative;
