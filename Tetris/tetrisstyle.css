@@ -182,8 +182,8 @@ margin-left: 500px;
       font-size: 18px;
     }
     header{
-      background-color: #000000;
-      padding: 10px 0;
+      background-color: blue;
+      padding: 20px 0;
       text-align: center;
       position: fixed;
       width: 100%;
@@ -195,32 +195,28 @@ margin-left: 500px;
       color: white;
       border: 8px solid white;
       display: inline-block;
-    
+      padding: 6px 12px;
+      border-radius: 36px;
     }
     .banner{
       position: relative;
-      
+     
     }
     .banner img{
       max-width: 100%;
       
     }
     .banner .welcome{
-      background:#000000;
+      background: blue;
+     
       color: white;
-      padding: 10px;
+      padding: 30px;
       font-size: 60px;
       position: absolute;
       left: 0;
-      top: 50%;
+      top: 30%;
       opacity: 45%;
-    
-      .button {
-        color : black
-        height : 50px;
-      }
-      
-    }
+    } 
     .banner .welcome span{
       font-size: 1.4em;
     }
