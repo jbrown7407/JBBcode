@@ -35,13 +35,13 @@ header h1{
 .banner .welcome{
   letter-spacing: 3px;;
   background: blue;
-  opacity: 45%;
+  opacity: 66%;
   color: white;
   padding: 10px;
   font-size: 60px;
-  position: relative;
+  text-align: center;
   left: 0;
-  top: 30%;
+  top: 20%;
 }
 .banner .welcome span{
   font-size: 1.4em;
