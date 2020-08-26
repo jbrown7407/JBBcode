@@ -11,3 +11,50 @@
   to {background-color: white;}
 
 }
+
+input[type="submit"] {
+    border: 0;
+    padding: 10px;
+    font-size: 18px;
+    background-color: blue;
+    color: white;
+    border-radius: 25px;
+      opacity: 100%;
+
+    }
+h3{
+  padding: 20px;
+  position: sticky;
+
+  z-index: 1;
+
+}
+form {
+        border: 0;
+        padding: 10px;
+        font-size: 18px;
+        background-color: darkslateblue;
+        color: white;
+        border-radius: 25px;
+          opacity: 80%;
+          padding: 20px;
+
+        }
+h1 {
+
+      border: 0;
+      padding: 10px;
+      font-size: 18px;
+      background-color: darkslateblue;
+      color: white;
+      border-radius: 25px;
+      }
+}
+box {
+  border-radius: 25 px;
+  border: 20 px black;
+  background: black;
+}
+form {
+  text-align: right;
+}

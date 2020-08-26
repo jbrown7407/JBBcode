@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-
       <a href="file:///C:/Users/12039/Documents/GitHub/JBBcode/index.html">Return to Homepage</a>
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
           <link rel="stylesheet" href="formstyle.css">
-    <title>HTML FORM EXAMPLE</title>
-  <i class="fas fa-feather-alt"></i>
+
   </head>
-  
 <body>
+    <h3><title>HTML FORM EXAMPLE</title></h3>
   <div id="myDIV"></div>
         <h1>HTML FORM</h1>
 <form>
-    <label for="username">Username: 
-</label>      <i class="fas fa-user-astronaut"></i>
-    <input type="text" id="username" name="username" placeholder="username" required>
+    <label for="username"><i class="fas fa-user-astronaut" style="font-size: 48px";></i>  Select a Username: 
+</label>     
+    <input type="text" id="username" name="username" placeholder="username" required>  
     <br> <br>
+    <form action="/action_page.php" method="get">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+      <br>
+      <br>
     <label for="email">Email: </label> 
     <input type="email" id = email name=email placeholder="your email" required>
     <br> <br>
@@ -37,12 +41,12 @@
 <input type='radio' name='age' value='0-25' id="option1"
 <label for="option-1"> 0-25 </label>
 <input type='radio' name='age' value='26-50' id="option1"
-<label for="option-2"> 0-25 </label>
+<label for="option-2"> 26-50 </label>
 <input type='radio' name='age' value='51+' id="option1"
 <label for="option-2"> 51+ </label>
 
 <br><br>
-
+<div class= "box">
 <label for="Security question"> <b> Select Security Question </b> </label> <br>
 <select name="questions" id="questions">
   <option value="q1">"What is your name?"</option>
@@ -53,10 +57,60 @@
 
 <label for="answer"> <b> Security Question Answer: </b> </label> <br>
 <input type="text" id="answer">
-
+</div>
 <br><br>
 
-<label for="bio"> Your Bio </label> <br>
+<head>
+  <title>Jeffrey Brown</title>
+  <style>
+
+    body {
+      text-align: center;
+      background: white;
+  
+      background-position: center;
+      color: white;
+      font-family: helvetica;
+    }
+    p {
+      font-size: 22px;
+    }
+    input {
+      border: 0;
+      padding: 10px;
+      font-size: 18px;
+    }
+    input[type="submit"] {
+      background: red;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <p>Hi! I'm Jeff, a CT-based developer. It is not letting me embed a photo!</p>
+  
+  <br>
+  Pick a menu option for snack
+  <br>
+  <form action="/action_page.php" method="get">
+  <input type="radio" id="hot dogs" value="hot dogs">
+  <label for="Hot Dogs">Hot Dogs</label><br>
+  <input type="radio" id="hamburgers" value="hamburgers" checked="checked">
+  <label for="hamburgers">Hamburgers</label><br>
+  <input type="radio" id="other"  value="other">
+  <label for="other">The Vegetarian Option</label><br><br>
+
+Mode of Transportation <br>
+<form action="/action_page.php" method="get">
+  <input type="checkbox" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" name="vehicle3" value="Boat" checked>
+  <label for="vehicle3"> I have a boat</label><br><br>
+<br>
+
+<label for="bio"> <b>Your Bio</b> </label> <br>
 <textarea name="bio" id="bio" cols="30" rows="10" placeholder="about you..."> </textarea>
 <br>
 <input id="submit" type="submit" value="Submit Form"><i class="far fa-address-book">

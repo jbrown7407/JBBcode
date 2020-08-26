@@ -37,8 +37,19 @@ margin: auto
   flex-wrap: wrap;
   background-image: url('background4.jpg');
   outline: 1px dotted black;
-  position: relative;
   z-index: 10;
+  border: 0;
+
+  font-size: 18px;
+          background-color: black;
+          color: white;
+          border-radius: 25px;
+            opacity: 60%;
+            padding: 20px;
+            position: sticky;
+            top: 106px;
+            z-index: 1;
+          }
 }
 
 .grid div {
@@ -78,7 +89,7 @@ margin: auto
   position: absolute;
   font-size: 36px;
 
-  
+
 }
 
 .UI3 {
@@ -185,8 +196,8 @@ margin: auto
   .dreams{
     background-color: lightcyan;
     }
-    
-    
+
+
     body, ul, li, h1, h2, a{
       margin: 0;
       padding: 0;
@@ -214,15 +225,15 @@ margin: auto
     }
     .banner{
       position: relative;
-     
+
     }
     .banner img{
       max-width: 100%;
-      
+
     }
     .banner .welcome{
       background: blue;
-     
+
       color: white;
       padding: 30px;
       font-size: 60px;
@@ -230,7 +241,7 @@ margin: auto
       left: 0;
       top: 30%;
       opacity: 45%;
-    } 
+    }
     .banner .welcome span{
       font-size: 1.4em;
     }
@@ -328,30 +339,30 @@ margin: auto
       padding: 10px;
       text-align: center;
     }
-    
+
     /* responsive styles */
-    
+
     @media screen and (max-width: 1400px){
-    
+
       .banner .welcome{
         font-size: 40px;
       }
-    
+
     }
-    
+
     @media screen and (max-width: 960px){
-    
+
       .banner .welcome{
         font-size: 28px;
       }
       nav li{
         font-size: 18px;
       }
-    
+
     }
-    
+
     @media screen and (max-width: 700px){
-    
+
       .banner .welcome{
         font-size: 20px;
         position: relative;
@@ -371,11 +382,11 @@ margin: auto
         display: block;
         margin: 20px auto;
       }
-    
+
     }
-    
+
     @media screen and (max-width: 560px){
-    
+
       .banner .welcome{
         font-size: 20px;
         position: relative;
@@ -394,16 +405,16 @@ margin: auto
       }
       article h2{
         font-size: 14px;
-        
+
       }
       header, nav{
         position: relative;
         top: 0;
       }
-    
-    
+
+
     }
-    
+
 
 
 
