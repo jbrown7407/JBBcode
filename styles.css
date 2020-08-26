@@ -42,7 +42,7 @@ header h1{
   text-align: center;
   left: 0;
   top: 20%;
-  
+
 }
 .banner .welcome span{
   font-size: 1.4em;
@@ -322,7 +322,19 @@ button {
    border-radius: 36px;
  }
 
-
+ .images li{
+   display: inline-block;
+   list-style-type: none;
+   width: 40%;
+   margin: 20px 5%;
+   position: relative;
+ }
+ .images li:hover{
+   top: -4px;
+ }
+ .images li img{
+   max-width: 100%;
+ }
  }
 
 }
