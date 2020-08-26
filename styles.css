@@ -35,7 +35,7 @@ header h1{
 .banner .welcome{
   letter-spacing: 3px;;
   background: blue;
-  opacity: 66%;
+  opacity: 100%;
   color: white;
   padding: 10px;
   font-size: 60px;
@@ -226,6 +226,34 @@ footer{
     position: relative;
     top: 0;
   }
+button {
+  background-color: blue; /* Green */
+ border: none;
+ color: white;
+ padding: 20px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+ margin: 4px 2px;
+ cursor: pointer;
+ border-radius: 20%;
+ border: 8px solid white;
+ display: inline-block;
+ padding: 6px 12px;
+ border-radius: 36px;
+}
 
+ button a:hover{
+   text-decoration: underline;
+   border: 5px solid white;
+   padding: 6px 12px;
+   border-radius: 36px;
+ }
+
+
+ }
+
+}
 
 }
