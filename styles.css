@@ -42,6 +42,7 @@ header h1{
   text-align: center;
   left: 0;
   top: 20%;
+  
 }
 .banner .welcome span{
   font-size: 1.4em;
@@ -110,9 +111,9 @@ article p::first-line{
   margin: 0px 5%;
   position: relative;
 }
-/*.images li:hover{
-  top: -5px;
-  border: 5px solid black;*/
+.images li:hover{
+  top: 0px;
+  border: 5px solid black;
 }
 .images li img{
   max-width: 100%;
@@ -188,6 +189,7 @@ button {
    border: 5px solid white;
    padding: 6px 12px;
    border-radius: 36px;
+
  }
 @media screen and (max-width: 960px){
 
