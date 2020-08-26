@@ -165,7 +165,30 @@ footer{
   }
 
 }
+button {
+  background-color: blue; /* Green */
+ border: none;
+ color: white;
+ padding: 20px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+ margin: 4px 2px;
+ cursor: pointer;
+ border-radius: 20%;
+ border: 8px solid white;
+ display: inline-block;
+ padding: 6px 12px;
+ border-radius: 36px;
+}
 
+ button a:hover{
+   text-decoration: underline;
+   border: 5px solid white;
+   padding: 6px 12px;
+   border-radius: 36px;
+ }
 @media screen and (max-width: 960px){
 
   .banner .welcome{
@@ -176,7 +199,30 @@ footer{
   }
 
 }
+button {
+  background-color: blue; /* Green */
+ border: none;
+ color: white;
+ padding: 20px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+ margin: 4px 2px;
+ cursor: pointer;
+ border-radius: 20%;
+ border: 8px solid white;
+ display: inline-block;
+ padding: 6px 12px;
+ border-radius: 36px;
+}
 
+ button a:hover{
+   text-decoration: underline;
+   border: 5px solid white;
+   padding: 6px 12px;
+   border-radius: 36px;
+ }
 @media screen and (max-width: 700px){
 
   .banner .welcome{
@@ -198,7 +244,30 @@ footer{
     display: block;
     margin: 20px auto;
   }
+  button {
+    background-color: blue; /* Green */
+   border: none;
+   color: white;
+   padding: 20px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+   border-radius: 20%;
+   border: 8px solid white;
+   display: inline-block;
+   padding: 6px 12px;
+   border-radius: 36px;
+  }
 
+   button a:hover{
+     text-decoration: underline;
+     border: 5px solid white;
+     padding: 6px 12px;
+     border-radius: 36px;
+   }
 }
 
 @media screen and (max-width: 560px){
