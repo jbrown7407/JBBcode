@@ -72,7 +72,7 @@ UI3 {
 }
 
 .instructions  {
-  margin-left: 20%;
+  margin-right: auto 0 px;
   margin-top: -400px;
   padding : 40 px;
   width: 200px;
@@ -86,8 +86,8 @@ UI3 {
 }
 
 .mini-grid {
-  margin-left: 60%;
-  margin-top: 00%;
+  margin-left: 51%;
+  margin-top: 170px;
   width: 80px;
   height: 80px;
   display: flex;
@@ -117,7 +117,7 @@ header{
   text-align: center;
   position: fixed;
   width: 100%;
-  top: 0;
+  margin-top: 15%;
   left: 0;
   z-index: 1;
 
