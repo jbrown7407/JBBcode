@@ -14,7 +14,13 @@ h3 {
     color: white;
   }
 
-
+  
+  .title {
+  background-color:black;
+  width: 100px;
+  color: white;
+  outline: 1px dotted black;
+  }
   
   UI3 {
     border: solid black;
