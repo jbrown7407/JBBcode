@@ -285,7 +285,15 @@ button {
 }
 
 @media screen and (max-width: 560px){
-
+  h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
   .banner .welcome{
     font-size: 20px;
     position: relative;
