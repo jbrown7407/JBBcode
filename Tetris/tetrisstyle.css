@@ -19,17 +19,19 @@ width: 450px;
 color: white;
 outline: 1px dotted black;
 }
-
+/*
 .reset-btn{
   color: white;
-}
+  background-color: white;
+}*/
 
 .score {
 background-color: black;
 color: white;
 width: 200px;
-outline: 1px dotted black;
-margin: auto
+border-radius: 25px;
+
+display: inline
 }
 
 .container {
@@ -63,6 +65,7 @@ display: flex;
 
 UI3 {
   border: solid black;
+
 }
 
 .tetromino {
@@ -72,8 +75,8 @@ UI3 {
 }
 
 .instructions  {
-  
-  margin-top: -1000px;
+
+  margin-top: -200px;
   padding : 1 px;
   width: 100%;
   line-height: 20px;
@@ -81,15 +84,15 @@ UI3 {
   color : white;
   outline: 9px solid black;
   background-color: blue;
-position: absolute;
+position: relative;
 border: 10px black;
 
   z-index: 9;
 }
 
 .mini-grid {
-margin-top: 10px;
-  margin-top: 400px;
+margin-top: -5%;
+margin-left: 60%;
   width: 80px;
   height: 80px;
   flex-wrap: wrap;
