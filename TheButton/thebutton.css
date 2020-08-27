@@ -3,21 +3,18 @@ background-color: red;
 color: white;
 font-style: bold;
 border-radius: 25px;
+margin: 0 auto;
+max-width: 500px;
+min-width: 250px;
 }
 
 h3 {
-    background-color: aqua;
     margin-top: 60%;
-      margin-left: 60%;
-  }
-  h3 {
+    margin-left: 60%;
     color: white;
   }
   
-  #start-button{
-    color: white;
-    margin: 0px;
-  }
+ 
   
   
   .title {
@@ -27,94 +24,17 @@ h3 {
   outline: 1px dotted black;
   }
   
-  .reset-btn{
-    color: white;
-  }
-  
-  .score {
-  background-color: black;
-  color: white;
-  width: 200px;
-  outline: 1px dotted black;
-  margin: auto
-  }
-  
-  .container {
-  display: flex;
-  }
-  
-  .grid {
-    margin: 0 auto;
-    margin-top: 0 auto;
-    width: 200px;
-    height: 400px;
-    display: flex;
-    flex-wrap: wrap;
-    background-image: url('background4.jpg');
-    outline: 1px dotted black;
-    z-index: 1000;
-    border: 0;
-    color: white;
-    font-size: 60px;
-  
-    left: 0;
-    margin-top: 00%;
-  
-  }
-  
-  .grid div {
-    height: 20px;
-    width: 20px;
-    z-index: 9;
-  }
-  
   UI3 {
     border: solid black;
   }
-  
-  .tetromino {
-    background-color: blue;
-    outline: 1px dotted white;
-  
-  }
-  
-  .instructions  {
-    margin-left: 20%;
-    margin-top: -400px;
-    padding : 40 px;
-    width: 200px;
-    height: 400px;
-    color : white;
-    outline: 1px dotted black;
-    background-color: blue;
-    position: absolute;
-  
-    z-index: 9;
-  }
-  
-  .mini-grid {
-    margin-left: 60%;
-    margin-top: 00%;
-    width: 80px;
-    height: 80px;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: yellow;
-  
-  }
-  
-  .mini-grid div {
-    height: 20px;
-    width: 20px;
-  }
+
   body, ul, li, h1, h2, a{
     margin: 0;
     padding: 0;
     font-family: tahoma;
     text-align: center
-  
-  
   }
+  
   p{
     font-size: 18px;
   }
@@ -460,9 +380,3 @@ h3 {
      max-width: 100%;
    }
   
-
-
-   .game {
-     color:red;
-     backgroundcolor: yellow;
-   }
