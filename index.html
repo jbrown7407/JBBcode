@@ -19,7 +19,7 @@
     <ul>
       </a>
       <li><a href= "Tetris/tetrisindex.html"><b>Play Tetris</b></a></li>
-      <li><a href= "Snake/snakeindex.html"><b>Play Snake</b></a></li>
+      <li><a href= "TheButton/thebutton.html"><b>The Button</b></a></li>
       <li><a href= "SpaceInvaders/spaceindex.html"> <b>Play Space Invaders</b></a></li>
       <li><a href= "FormExample/HTMLform.html" ><b>Sample Forms</b></a></li>
     </ul>
@@ -72,5 +72,18 @@
   <footer>
     <p class="copyright">2020 BrownCorp</p>
   </footer>
+
+
+<script type="text/javascript">
+var clicks = 0
+function onClick() {
+  clicks +=1;
+  document.getElementById("clicks").innerHTML = clicks;
+};
+</script>
+<button type="button" onClick="onClick()"> Click Me</button>
+<p> Clicks: <a id="clicks">0</a>
+</p>
+
 </body>
 </html>
