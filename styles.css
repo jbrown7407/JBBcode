@@ -235,7 +235,7 @@ button {
    border-radius: 36px;
  }
 
- 
+
 @media screen and (max-width: 700px){
 
   .banner .welcome{
@@ -254,8 +254,8 @@ button {
   }
   .images li{
     width: 100%;
-    display: inline;
-    
+    display: block;
+
     margin: 20px auto;
   }
   button {
@@ -345,7 +345,7 @@ button {
  }
 
  .images li{
-   display: inline-block;
+   display: block;
    list-style-type: none;
    max-width: 500px;
    min-width: 140px;
@@ -360,5 +360,5 @@ button {
  .images li img{
    max-width: 100%;
    max-height: 400px;
-  
+
  }
