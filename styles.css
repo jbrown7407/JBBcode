@@ -3,6 +3,8 @@ body, ul, li, h1, h2, a{
   padding: 0;
   font-family: tahoma;
   text-align: center
+  background-image: "banner.png"}
+
 }
 p{
   font-size: 18px;
