@@ -1,5 +1,5 @@
 .gamecanvas {
-background-color: red;
+background: url("https://wallpapercave.com/wp/l0U2b1X.jpg");
 color: white;
 font-style: bold;
 border-radius: 25px;
@@ -7,6 +7,8 @@ margin: 0 auto;
 max-width: 500px;
 min-width: 250px;
 }
+
+
 
 h3 {
     margin-top: 60%;
@@ -17,7 +19,7 @@ h3 {
   
   .title {
   background-color:black;
-  width: 100px;
+  width: 450px;
   color: white;
   outline: 1px dotted black;
   }
@@ -303,6 +305,7 @@ h3 {
        border: 5px solid white;
        padding: 6px 12px;
        border-radius: 36px;
+
      }
   }
   
@@ -373,3 +376,11 @@ h3 {
    .images li img{
      max-width: 100%;
    }
+
+   .emailme {
+    background: blue;
+    border-radius: 25px;
+    width: 200px;
+    height: 100px;
+    margin: auto 0px;
+  }
