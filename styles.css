@@ -206,7 +206,9 @@ button {
   nav li{
     font-size: 18px;
   }
-
+  images{
+    display: inline;
+  }
 }
 button {
   background-color: blue; /* Green */
@@ -232,6 +234,8 @@ button {
    padding: 6px 12px;
    border-radius: 36px;
  }
+
+ 
 @media screen and (max-width: 700px){
 
   .banner .welcome{
@@ -250,7 +254,8 @@ button {
   }
   .images li{
     width: 100%;
-    display: block;
+    display: inline;
+    
     margin: 20px auto;
   }
   button {
@@ -288,6 +293,9 @@ button {
   }
   .banner .welcome br{
     display: none;
+  }
+  .images{
+    display: inline-block;
   }
   .banner .welcome span{
     font-size: 1em;
@@ -341,12 +349,16 @@ button {
    list-style-type: none;
    max-width: 500px;
    min-width: 140px;
+   max-height: 400px;
    margin: 20px 5%;
    position: relative;
  }
  .images li:hover{
    top: -4px;
+   max-height: 400px;
  }
  .images li img{
    max-width: 100%;
+   max-height: 400px;
+  
  }

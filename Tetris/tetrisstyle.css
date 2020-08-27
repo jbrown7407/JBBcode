@@ -38,7 +38,7 @@ display: flex;
 
 .grid {
   margin: 0 auto;
-  margin-top: 0 auto;
+
   width: 200px;
   height: 400px;
   display: flex;
@@ -73,7 +73,7 @@ UI3 {
 
 .instructions  {
   
-  margin-top: -800px;
+  margin-top: -1000px;
   padding : 1 px;
   width: 100%;
   line-height: 20px;
@@ -88,11 +88,10 @@ border: 10px black;
 }
 
 .mini-grid {
-  margin-left: 51%;
-  margin-top: 170px;
+margin-top: 10px;
+  margin-top: 400px;
   width: 80px;
   height: 80px;
-  display: flex;
   flex-wrap: wrap;
   background-color: black;
 
@@ -387,6 +386,7 @@ button {
 
   .banner .welcome{
     font-size: 20px;
+    width: 560px;
     position: relative;
     text-align: center;
   }
@@ -414,6 +414,7 @@ button {
   header, nav{
     position: relative;
     top: 0;
+    width: 560px;
   }
 button {
   background-color: blue; /* Green */
