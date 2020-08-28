@@ -26,13 +26,11 @@ header h1{
   display: inline-block;
   padding: 6px 12px;
   border-radius: 36px;
-  max-height: 500px;
 }
 
 .banner{
   position: relative;
-
-
+background-size: cover;
 }
 .banner img{
   max-width: 100%;
@@ -40,7 +38,7 @@ header h1{
 
   background-position: center;
 }
-.welcome{
+.banner .welcome{
   letter-spacing: 3px;;
   background: blue;
   opacity: 100%;
@@ -244,7 +242,6 @@ button {
     font-size: 20px;
     margin: 0 auto;
     text-align: center;
-
   }
   .banner .welcome br{
     display: none;
@@ -295,22 +292,18 @@ button {
       li {
         padding: 5px;
         display: block;
-        
       }
     }
   .banner .welcome{
     font-size: 20px;
     position: relative;
     text-align: center;
-    margin: 20px 0 30px 0;
   }
   .banner .welcome br{
     display: none;
-    margin: 20px 0 30px 0;
   }
   .images{
     display: inline-block;
-    margin: 20px 0 30px 0;
   }
   .banner .welcome span{
     font-size: 1em;
@@ -323,7 +316,6 @@ button {
   article h2{
     font-size: 36px;
     max-width: 500px;
-    margin: 20px 0 30px 0;
 
   width: 500px;
   padding: 20px;

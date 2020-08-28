@@ -4,8 +4,8 @@ color: white;
 font-style: bold;
 border-radius: 25px;
 margin: 0 auto;
-max-width: 500px;
-min-width: 250px;
+width: 100%;
+
 }
 
 h3 {
