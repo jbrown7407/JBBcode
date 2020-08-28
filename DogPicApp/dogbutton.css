@@ -8,21 +8,22 @@ max-width: 500px;
 min-width: 250px;
 }
 
+
+
 h3 {
     margin-top: 60%;
     margin-left: 60%;
     color: white;
-    margin: 20px 0 30px 0;
   }
 
-
+  
   .title {
   background-color:black;
   width: 450px;
   color: white;
   outline: 1px dotted black;
   }
-
+  
   UI3 {
     border: solid black;
   }
@@ -33,7 +34,7 @@ h3 {
     font-family: tahoma;
     text-align: center
   }
-
+  
   p{
     font-size: 18px;
   }
@@ -46,7 +47,7 @@ h3 {
     top: 0;
     left: 0;
     z-index: 1;
-
+  
   }
   header h1{
     color: white;
@@ -55,7 +56,7 @@ h3 {
     padding: 6px 12px;
     border-radius: 36px;
   }
-
+  
   .banner{
     position: relative;
   background-size: cover;
@@ -63,11 +64,11 @@ h3 {
   .banner img{
     max-width: 100%;
         background-size: cover;
-
+  
     background-position: center;
   }
   .banner .welcome{
-    letter-spacing: 3px;
+    letter-spacing: 3px;;
     background: blue;
     opacity: 100%;
     color: white;
@@ -75,14 +76,13 @@ h3 {
     font-size: 60px;
     text-align: center;
     left: 0;
-    top: 10%;
-    margin-top: 5%
-
+    top: 20%;
+  
   }
   .banner .welcome span{
     font-size: 1.4em;
   }
-
+  
   nav{
     background: #F4F4F4;
     padding: 20px;
@@ -113,7 +113,7 @@ h3 {
   }
   nav li a.join{
     color: #F63232;
-
+  
   }
   main{
     max-width: 100%;
@@ -159,12 +159,12 @@ h3 {
     text-align: center;
     padding: 60px 20px;
     color: #4B4B4B;
-
+  
   }
   section.join h2{
     font-size: 36px;
-
-
+  
+  
   }
   .join li:hover{
     background: #F4F4F4;
@@ -192,20 +192,15 @@ h3 {
     padding: 10px;
     text-align: center;
   }
-
+  
   /* responsive styles */
-
+  
   @media screen and (max-width: 1400px){
-    .quest{
-      color: White;
-      position: relative;
-
-      z-index: 2000
-    }
+  
     .banner .welcome{
       font-size: 40px;
     }
-
+  
   }
   button {
     background-color: blue; /* Green */
@@ -224,28 +219,23 @@ h3 {
    padding: 6px 12px;
    border-radius: 36px;
   }
-
+  
    button a:hover{
      text-decoration: underline;
      border: 5px solid white;
      padding: 6px 12px;
      border-radius: 36px;
-
+  
    }
   @media screen and (max-width: 960px){
-    .quest{
-      color: White;
-
-      margin-top: 40%;
-      z-index: 2000
-    }
+  
     .banner .welcome{
       font-size: 28px;
     }
     nav li{
       font-size: 18px;
     }
-
+  
   }
   button {
     background-color: blue; /* Green */
@@ -264,7 +254,7 @@ h3 {
    padding: 6px 12px;
    border-radius: 36px;
   }
-
+  
    button a:hover{
      text-decoration: underline;
      border: 5px solid white;
@@ -272,12 +262,7 @@ h3 {
      border-radius: 36px;
    }
   @media screen and (max-width: 700px){
-    .quest{
-      color: White;
-      position: relative;
-      margin-top: 15%;
-      z-index: 2000
-    }
+  
     .banner .welcome{
       font-size: 20px;
       margin: 0 auto;
@@ -314,7 +299,7 @@ h3 {
      padding: 6px 12px;
      border-radius: 36px;
     }
-
+  
      button a:hover{
        text-decoration: underline;
        border: 5px solid white;
@@ -323,11 +308,9 @@ h3 {
 
      }
   }
-
+  
   @media screen and (max-width: 560px){
-  .quest{
-    color: White;
-  }
+  
     .banner .welcome{
       font-size: 20px;
       position: relative;
@@ -347,12 +330,12 @@ h3 {
     article h2{
       font-size: 36px;
       max-width: 500px;
-
+  
     width: 500px;
     padding: 20px;
     margin-left: 20px;
     margin: 0 auto;
-
+  
     }
     header, nav{
       position: relative;
@@ -372,13 +355,13 @@ h3 {
      text-align:center;
      transition: all 0.2s;
   }
-
+  
    button a:hover{
     color:#000000;
  background-color:#FFFFFF;
 
    }
-
+  
    .images li{
      display: inline-block;
      list-style-type: none;
@@ -401,8 +384,3 @@ h3 {
     height: 100px;
     margin: auto 0px;
   }
-}
-h2 {
-  margin: 0 50 -10 00;
-  padding: 0 0 0 0;
-}

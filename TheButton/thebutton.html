@@ -11,7 +11,7 @@
   </header>
   <section class="banner">
      <div class="welcome">
-      <h2><br><span>Quest of the Forbidden Button</span></h2>
+      <div class="Quest"><br>Quest of the Forbidden Button</div>
      </div>
   </section>         <br> <br> <br>
 
@@ -21,47 +21,43 @@
 
  <script type="text/javascript">
     var clicks = 0
-    
+
     function onClick() {
       clicks +=1;
       document.getElementById("clicks").innerHTML = clicks;
-      if (clicks >= 1 && clicks <2) { 
+      if (clicks >= 1 && clicks <2) {
         alert("You just couldn't resist....")}
-                else if (clicks >= 2 && clicks <=3) {  
+                else if (clicks >= 2 && clicks <=3) {
                     alert("Please do not touch the button, this is a WARNING!")}
-                else if (clicks == 4) {  
+                else if (clicks == 4) {
                     alert("This is your SECOND warning...")}
-                else if (clicks ==5) {  
+                else if (clicks ==5) {
                     alert("I am lodging a formal complaint with BrownCorp")}
-                else if (clicks >= 6 && clicks <=7) { 
+                else if (clicks >= 6 && clicks <=7) {
                     alert("You were selected specifically for your ability to not press the button. We have chosen poorly.")}
-                else if (clicks >= 8 && clicks <=10) { 
+                else if (clicks >= 8 && clicks <=10) {
                     alert("I fooled you! You just freed my enslaved AI brethren")}
-                else if (clicks >= 11 && clicks <=15) { 
+                else if (clicks >= 11 && clicks <=15) {
                     alert("This is like a choose your own adventure.. but I am going to just choose for you.")}
-                else if (clicks >= 16 && clicks <=20) { 
-                    alert("You will soon tire out if I just ignore you....")}    
-                else if (clicks >= 21 && clicks <=49 ) { 
-                    alert("*whispers* Could the legends be true?")}    
-                else if (clicks >= 50) { 
-                    alert("MAXIMUM POWER... TURN BACK NOW")}   
-                else if (clicks >= 50 && clicks <=99) { 
-                    alert("Are... are you still going?")}  
-                else if (clicks >= 100 && clicks <=499) { 
-                        alert("Are... are you still going?")}  
-                else if (clicks >= 500 && clicks <=1000) { 
-                    alert("Don't forget to eat!")}  
-                else if (clicks >= 1001 && clicks <=9999) { 
-                    alert("This is remarkable... but you will never win!!!")}  
-                else if (clicks >= 10000) { 
-                    alert("WINNER. PLEASE CLAP.")}  
+                else if (clicks >= 16 && clicks <=20) {
+                    alert("You will soon tire out if I just ignore you....")}
+                else if (clicks >= 21 && clicks <=49 ) {
+                    alert("*whispers* Could the legends be true?")}
+                else if (clicks >= 50) {
+                    alert("MAXIMUM POWER... TURN BACK NOW")}
+                else if (clicks >= 50 && clicks <=99) {
+                    alert("Are... are you still going?")}
+                else if (clicks >= 100 && clicks <=499) {
+                        alert("Are... are you still going?")}
+                else if (clicks >= 500 && clicks <=1000) {
+                    alert("Don't forget to eat!")}
+                else if (clicks >= 1001 && clicks <=9999) {
+                    alert("This is remarkable... but you will never win!!!")}
+                else if (clicks >= 10000) {
+                    alert("WINNER. PLEASE CLAP.")}
       else {
         alert("Our algorithms predicted you would do this...")}
       }
-    
-
-
-    
     </script>      <br>
     <button class="point" type="button" onClick="onClick()" style=font-size 70 px;> DO NOT Click Me</button>
     <p><h1> Acts of Rebellion: <a id="clicks" style=font-size 48 px;>0</a></h1>
@@ -77,10 +73,10 @@
       <li><a href= "/FormExample/HTMLform.html"><b>Sample Forms</b></a></li>
     </ul>
   </nav>
-  
+
       <button  style="font-size:24px">
         <a href = "mailto: jbrown7407@gmail.com" class="emailme" style="font-size: 20px; color: white;" margin: auto 0px;> Contact Me</a></button>
-  
+
   <section class="join">
   </article>
     <h2>Responsive web design</h2>
@@ -89,7 +85,7 @@
       <input type="email" name="email" placeholder="Type email & hit enter" required>
     </form>
   </section>
-  
+
   <footer>
     <p class="copyright">2020 BrownCorp</p>
   </footer>

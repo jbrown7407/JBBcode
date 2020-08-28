@@ -1,43 +1,49 @@
-#myDIV {
-  width: 300px;
-  height: 5px;
-  background: black;
-  animation: mymove 5s infinite;
-  opacity: 100%;
+.body {
+ background-color:  background-color: #232323;;
+ color: green;
+ opacity: 100%;
 }
 
-@keyframes mymove {
-  from {background-color: black;}
-  to {background-color: white;}
-
+.header{
+  border: 0;
+  padding: 10px;
+  font-size: 18px;
+  background-color: white;
+  color: white;
+  border-radius: 25px;
+}
+input {
+  background-color: black;
+  color: white;
 }
 
 input[type="submit"] {
     border: 0;
     padding: 10px;
     font-size: 18px;
-    background-color: blue;
     color: white;
     border-radius: 25px;
-      opacity: 100%;
+
 
     }
 h3{
   padding: 20px;
   position: sticky;
 
-  z-index: 1;
+
 
 }
 form {
-        border: 0;
+        border: 3px solid black;
         padding: 10px;
         font-size: 18px;
-        background-color: darkslateblue;
-        color: white;
+        background: linear-gradient(bottom,rgba(0,0,0,1), rgba(0,0,0,.4));
+        color:black;
         border-radius: 25px;
-          opacity: 80%;
+          opacity: 100%;
           padding: 20px;
+          text-align: right;
+          background-color: white;
 
         }
 h1 {
@@ -45,7 +51,7 @@ h1 {
       border: 0;
       padding: 10px;
       font-size: 18px;
-      background-color: darkslateblue;
+      background-color: black;
       color: white;
       border-radius: 25px;
       }
@@ -55,6 +61,11 @@ box {
   border: 20 px black;
   background: black;
 }
-form {
-  text-align: right;
+
+a {
+color: white;
+background-color: blue;
+border-radius: 25px;
+border: 3px black;
+padding: 5px;
 }
