@@ -1,0 +1,72 @@
+* {
+    background-color:black;
+    color: white;
+}
+
+h1 {
+    margin-left: 30%;
+ }
+ #start-button {
+     margin-left: 50%;
+
+ }
+.grid {
+    margin: 0 auto;
+    width: 520px;
+    height: 460px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #8a2dc0;
+    border: 1px solid lightskyblue;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    left: 0px;
+    margin-top: 0%;
+
+  }
+  
+  .grid div {
+    height: 50px;
+    width: 70px;
+margin-left: 8px;
+padding-top: 3px;
+margin-right: 8px;
+margin-top: 10px;
+outline: 1px solid lightskyblue;
+color: white;
+background-color: blue;
+z-index: 3000;
+  }
+
+
+  .score {
+    margin-left: 45%;
+    display: inline;
+    
+    background-color: grey;
+
+}
+
+.muncher {
+    
+
+}
+
+.lives {
+    margin-left: 10%;
+    text-align: center;
+    background-color: yellow;
+    background: yellow;
+    display: inline;
+    color: yellow;
+
+}
+
+.troggles {
+
+}
+
+.explosion {
+
+}
