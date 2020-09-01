@@ -92,6 +92,9 @@ main{
   margin: 30px auto;
   padding: 0 40px;
   box-sizing: border-box;
+
+  main nav{}
+  display: inline-block;
 }
 article h2{
   color: #00000;
@@ -205,6 +208,7 @@ button {
   }
   nav li{
     font-size: 18px;
+    display: inline-block;
   }
   images{
     display: inline;
@@ -251,6 +255,7 @@ button {
   }
   nav li{
     font-size: 18px;
+    display: inline-block;
   }
   .images li{
     width: 100%;
