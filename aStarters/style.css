@@ -1,15 +1,17 @@
-.class {
-    background-color: blanchedalmond;
-}
-#id {
-  color: red;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
 header {
   background-color: grey
 }
 h1 {
-    color: red;
+  text-align: center;
+  color: white;
+  border: 1px solid black;
+  border-radius: 25px;
+  font-size: 36px;
+  font-family: 'Poiret One', cursive;
   }
+
 p1 {
     color: grey;
   }
@@ -23,10 +25,16 @@ ul{
     list-style-type: squares;
     text-shadow: 2px 2px lightgrey;
  }
- a[href] {
-   background : red;
-   border: 2px solid blue;
- }
+ 
+ a {
+  color: #9932cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 560px){
   }
 @media screen and (max-width: 700px){

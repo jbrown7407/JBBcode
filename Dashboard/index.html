@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href="/normalize.css" rel="stylesheet"> <!-- Normalize CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <script src="script.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="style.css"></link>
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Icons -->
+
+<title>Title</title>
+  </head>
+  
+  <body>
+     <!-- Body -->
+
+
+
+<br>  <!-- Idented black bar one line -->
+<div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#about" target="_blank">About</a> 
+    <a href="#contact" target="_blank">Contact</a>
+    <input type="text" placeholder="Search..">
+    
+  </div>
+
+
+
+  <h1> Weather Forecast<div id="weather"></div> </h1> <br> <br> <br> <!-- Greeting -->
+
+    <title>Greeting Message using JavaScript</title> 
+</head>
+<body>
+    <label id="lblGreetings"></label>
+
+<script>
+    var myDate = new Date();
+    var hrs = myDate.getHours();
+
+    var greet;
+
+    if (hrs < 12)
+        greet = 'Good Morning';
+    else if (hrs >= 12 && hrs <= 17)
+        greet = 'Good Afternoon';
+    else if (hrs >= 17 && hrs <= 24)
+        greet = 'Good Evening';
+
+    document.getElementById('lblGreetings').innerHTML =
+        '<b>' + greet + '</b>, Jeffrey';
+</script> 
+
+  <!-- Centered Search Bar -->
+<div class="search">
+    <input type="text" name="" placeholder="Search" class="text">
+    <a href="#" class="btn"><i class="fa fa-search "></i></a>
+  </div>
+
+
+<div class="writing">
+Project Links?
+<ul>
+    <li>  <a href="https://www.youtube.com/watch?v=vm32-ted2rI" target="_blank">Link opens new tab.</a></li>
+    <li>  <a href="https://www.youtube.com/watch?v=vm32-ted2rI" target="_blank">Link opens new tab.</a></li>
+    <li>  <a href="https://www.youtube.com/watch?v=vm32-ted2rI" target="_blank">Link opens new tab.</a></li>
+    <li>  <a href="https://www.youtube.com/watch?v=vm32-ted2rI" target="_blank">Link opens new tab.</a></li>
+  </ul>
+  <ul>
+    <li>Icon 1</li>
+    <li>Icon 2</li>
+    <li>Icon 3</li>
+    <li>Icon 4</li>
+  </ul>
+
+<br>
+  <p> <a href="linkedin.com">LinkedIn</a>  <a href="twitter.com">Twitter</a> </p>
+</div>
+</div>
+</body>
+</html>
+
+
+
