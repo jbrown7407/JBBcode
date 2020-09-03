@@ -1,0 +1,15 @@
+div {
+    background: red;
+    width: 25%;
+    height: 10em;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  span {
+     background: white;
+     padding: 1em;
+     bottom: 0;
+     position: absolute;
+     right: 0;
+  }
