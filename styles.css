@@ -150,7 +150,7 @@ form input{
   margin: 20px 0;
   padding: 10px 20px;
   font-size: 24px;
-  border-radius: 28px;
+  border-radius: 28px; ;
   border: 4px solid white;
 }
 form input:focus{
@@ -259,7 +259,7 @@ button {
   }
   .images li{
     width: 100%;
-    display: block;
+    display: inline-block;
 
     margin: 20px auto;
   }
@@ -296,7 +296,7 @@ button {
       }
       li {
         padding: 5px;
-        display: block;
+        display: inline-block;
       }
     }
   .banner .welcome{
@@ -358,7 +358,7 @@ button {
  }
 
  .images li{
-   display: block;
+   display: inline-block;
    list-style-type: none;
    max-width: 500px;
    min-width: 140px;
