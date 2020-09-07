@@ -41,7 +41,7 @@
         var weekday = ['Sunday', 'Monday', 'Tuesday', 
             'Wednesday', 'Thursday', 'Friday', 'Saturday' 
         ]; 
-        document.write("Today is : " + weekday[myDay]); 
+        document.write("Today is " + weekday[myDay]); 
         document.write("<br/>"); 
         
         // get hour value. 
@@ -51,8 +51,7 @@
         hours = hours ? hours : 12; 
         var minutes = myDate.getMinutes(); 
         minutes = minutes < 10 ? '0' + minutes : minutes; 
-        var myTime = hours + " " + ampm + " : " + minutes +  
-            " : " + myDate.getMilliseconds(); 
+        var myTime = hours + " " + " : " + minutes + ampm; 
         document.write("\tCurrent time is : " + myTime); 
  
 
@@ -67,7 +66,7 @@
       <li><a href= "ToDo/TODOindex.html" target="_blank"><b>Create a To Do List</b></a></li>
 
       <li><a href= "Tetris/tetrisindex.html" target="_blank"><b>Tetris</b></a></li>
-      <li><a href= "ToDo/index.html" target="_blank"><b>To DO List</b></a></li>
+      <li><a href= "ToDo/TODOindex.html" target="_blank"><b>To DO List</b></a></li>
       <li><a href= "FormExample/HTMLform.html" target="_blank" ><b>Sample Forms</b></a></li>
       <li><a href= "FormExample/HTMLform.html" target="_blank" ><b>Resources</b></a></li>
     </ul>
@@ -110,7 +109,7 @@
          <a href = "mailto: jbrown7407@gmail.com" class="emailme" style="font-size: 20px; color: white;" text-align: center> Contact Me</a>
 
        <br>
-    
+        <i class="fa fa-envelope"></i>
      </div>
    </article>
   </main>
