@@ -93,7 +93,7 @@ main{
   padding: 0 40px;
   box-sizing: border-box;
 
-  main nav{}
+  main nav{
   display: inline-block;
 }
 article h2{
