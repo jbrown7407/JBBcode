@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>J. Brown's Portfolio</title>
+  <img src="logo.png">
+</head>
+
+<body>
+  <header> <h1>Brown7407</h1>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Icons --> </header>
+  <section class="banner">
+    <img src="\HomeImages\banner.png">  </div>
+    <div class="welcome">
+      <h2><br><span><body>
+    <label id="lblGreetings"></label>
+
+<script>
+    var myDate = new Date();
+    var hrs = myDate.getHours();
+
+    var greet;
+
+    if (hrs < 12)
+        greet = 'Good Morning';
+    else if (hrs >= 12 && hrs <= 17)
+        greet = 'Good Afternoon';
+    else if (hrs >= 17 && hrs <= 24)
+        greet = 'Good Evening';
+
+    document.getElementById('lblGreetings').innerHTML =
+        '<b>' + greet + '</b>, Jeffrey';
+
+
+       
+        var myDate = new Date(); 
+        var myDay = myDate.getDay(); 
+        
+        // Array of days. 
+        var weekday = ['Sunday', 'Monday', 'Tuesday', 
+            'Wednesday', 'Thursday', 'Friday', 'Saturday' 
+        ]; 
+        document.write("Today is : " + weekday[myDay]); 
+        document.write("<br/>"); 
+        
+        // get hour value. 
+        var hours = myDate.getHours(); 
+        var ampm = hours >= 12 ? 'PM' : 'AM'; 
+        hours = hours % 12; 
+        hours = hours ? hours : 12; 
+        var minutes = myDate.getMinutes(); 
+        minutes = minutes < 10 ? '0' + minutes : minutes; 
+        var myTime = hours + " " + ampm + " : " + minutes +  
+            " : " + myDate.getMilliseconds(); 
+        document.write("\tCurrent time is : " + myTime); 
+ 
+
+        
+</script> </span></h2>
+    </div>
+  </section>
+<h3>What would you like to do today?</h3>
+  <nav class="main-nav">
+    <ul>
+      <li><a href= "SiteAlpha/index.html" target="_blank" ><b>Sample Websites</b></a></li>
+      <li><a href= "ToDo/TODOindex.html" target="_blank"><b>Create a To Do List</b></a></li>
+
+      <li><a href= "Tetris/tetrisindex.html" target="_blank"><b>Tetris</b></a></li>
+      <li><a href= "ToDo/index.html" target="_blank"><b>To DO List</b></a></li>
+      <li><a href= "FormExample/HTMLform.html" target="_blank" ><b>Sample Forms</b></a></li>
+      <li><a href= "FormExample/HTMLform.html" target="_blank" ><b>Resources</b></a></li>
+    </ul>
+<hr>
+    <nav class="second-nav">
+      <ul>
+        <li><a href= "SiteAlpha/index.html" target="_blank" ><b>Github</b></a></li>
+        <li><a href= "ToDo/TODOindex.html" target="_blank"><b>LinkedIN</b></a></li>
+  
+        <li><a href= "Tetris/tetrisindex.html" target="_blank"><b>Twitter</b></a></li>
+        <li><a href= "ToDo/TODOindex.html" target="_blank"><b>Visual Studio</b></a></li>
+        <li><a href= "FormExample/HTMLform.html" target="_blank" ><b>Documentation</b></a></li>
+        <li><a href= "FormExample/HTMLform.html" target="_blank" ><b>Resources</b></a></li>
+      </ul>
+
+
+      
+
+  </nav>
+
+  <main>
+      <h2>Javascript, HTML & CSS Web Development</h2>
+      <hr>         <br>
+      <h2><i class="fab fa-playstation"></i> Dreams PS4 Game Development 
+<br>
+
+    <ul class="images">
+      <iframe width="380" height="280" float= left src="https://www.youtube.com/embed/OSqws3mZbkg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <br>
+      <iframe width="380" height="280"   text-align: center; src="https://www.youtube.com/embed/5lDQutgfCjg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <iframe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</ul>
+  <article>
+    <br>
+      <i class="fa fa-envelope"></i>
+       <div class = "emailme">
+        <button  style="font-size:24px">
+         <a href = "mailto: jbrown7407@gmail.com" class="emailme" style="font-size: 20px; color: white;" text-align: center> Contact Me</a>
+
+       <br>
+    
+     </div>
+   </article>
+  </main>
+
+  <section class="join">
+    <h2>Responsive web design</h2>
+    <p>Forward Thinking Solutions for Businesses</p>
+    <form>
+      <input type="email" name="email" placeholder="Type email & hit enter" required>
+    </form>
+  </section>
+  <footer>
+    <p class="copyright">2020 BrownCorp</p> </i>
+  </footer>
+
+</body>
+</html>
