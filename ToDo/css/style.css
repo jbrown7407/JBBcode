@@ -1,3 +1,5 @@
+/* ADD MOBILE SETTINGS */
+
 body{
     padding: 0;
     margin: 0;
@@ -6,21 +8,81 @@ body{
 }
 
 /* ------------ container ------------ */
+.ubercontainer{
+    margin:0 auto;
+    display: inline-block;
+  
+
+}
 .container{
     padding:10px;
     width:380px;
     margin:0 auto;
+    display: inline-block;
+    padding: 3px, 3px, 3px, 3px;
+    background-color:black;
+    border-radius: 5px;
+}
+.container2{
+    padding:10px;
+    width:380px;
+    margin:0 auto;
+    display: inline-block;
+}
+.container3{
+    padding:10px;
+    width:380px;
+    margin:0 auto;
+    display: inline-block;
 }
 
 /* ------------ header ------------ */
+
+
+.exc{
+    background-color: black;
+    color: red;
+}
+
+.fa-exclamation{
+    color: lightgrey;
+    width : 30px;
+    height: 30px;
+    position: absolute;
+    right:35px;
+    top: 15px;
+}
+.fa-exclamation2{
+    color: red;
+    width : 30px;
+    height: 30px;
+    position: absolute;
+    right:35px;
+    top: 15px;
+}
+.fa-exclamation:hover{
+    color: green;
+    width : 30px;
+    height: 30px;
+    position: absolute;
+    right:35px;
+    top: 15px;
+    font-size: 20px;
+}
+
+
+
+
+
 .header{
-    width: 380px;
+    width: 100%;
     height:200px;
     background-image: url('../img/bg4.jpg');
     background-size: 100% 200%;
     background-repeat: no-repeat;
     border-radius: 15px 15px 0 0;
     position: relative;
+    border: 1px solid black;
 }
 .clear{
     width : 30px;
@@ -47,13 +109,24 @@ body{
     font-family: 'Titillium Web', sans-serif;
 }
 
+.header span{
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+    color: #FFF;
+    font-size: 25px;
+    font-family: 'Titillium Web', sans-serif;
+    
+}
+
 /* ------------ content ------------ */
 .content{
     width:380px;
     height: 350px;
     max-height:350px;
-    background-color: #FFF;
+    background-color: white;
     overflow: auto;
+    border: 1px solid black;
 }
 .content::-webkit-scrollbar { 
     display: none; 
@@ -70,7 +143,8 @@ body{
     border-bottom: 1px solid rgba(0,0,0,0.1);
     list-style: none;
     padding: 0;
-    margin: 0;
+    height: 20px;
+    
 }
 .item i.co{
     position: absolute;
@@ -78,9 +152,12 @@ body{
     padding-left:5px;
     left:15px;
     top:10px;
+    
 }
 .item i.co:hover{
     cursor: pointer;
+    color: green;
+
 }
 .fa-check-circle{
     color:#6eb200;
@@ -91,10 +168,24 @@ body{
     margin:0;
     font-size: 20px;
     left:50px;
-    top:5px;
-    background-color: #FFF;
+    top:10px;
+    background-color: white;
     max-width:285px;
 }
+
+.item p.text:hover{
+    position: absolute;
+    padding:0;
+    margin:0;
+    font-size: 21px;
+    left:50px;
+    top:10px;
+    background-color: white;
+    max-width:285px;
+}
+
+
+
 .lineThrough{
     text-decoration: line-through;
     color : #ccc;
@@ -109,19 +200,41 @@ body{
     color:#af0000;
     cursor: pointer;
 }
+
+li:hover{
+    background-color: white;
+    border-radius: 25px;
+    border: 1px solid black;
+}
+
 /* ------------ add item ------------ */
 .add-to-do{
     position: relative;
     width: 360px;
     height:40px;
-    background-color: #FFF;
+    background-color:white;
     padding: 10px;
     border-top: 1px solid rgba(0,0,0,0.1);
+    border: 1px solid black;
+    border-radius bottom: 25px;
 }
 .add-to-do i{
     position: absolute;
     font-size: 40px;
     color: #4162f6;
+}
+
+.add-to-do input:hover{
+    position: absolute;
+    left: 50px;
+    height: 35px;
+    width: 310px;
+    background-color: lightgreen;
+    border: none;
+    font-size: 20px;
+    padding-left:10px;
+    border: 2px solid black;
+    cursor: pointer;
 }
 
 .add-to-do input{
@@ -133,6 +246,8 @@ body{
     border: none;
     font-size: 20px;
     padding-left:10px;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 .add-to-do input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: #4162f6;

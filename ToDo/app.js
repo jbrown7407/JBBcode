@@ -4,14 +4,19 @@ const clear = document.querySelector(".clear");
 const dateElement = document.getElementById("date");
 const list = document.getElementById("list");
 const input = document.getElementById("input");
+const priority = document.getElementById("fa-exclamation");
 
 // Classes names
 const CHECK = "fa-check-circle";
 const UNCHECK = "fa-circle-thin";
 const LINE_THROUGH = "lineThrough";
+const PRIORITY ="fa-exclamation-circle";
+const NOPRIORITY ="fa-exclamation";
+
 
 // Variables
 let LIST, id;
+
 
 // get item from localstorage
 let data = localStorage.getItem("TODO");
@@ -20,7 +25,7 @@ let data = localStorage.getItem("TODO");
 if(data){
     LIST = JSON.parse(data);
     id = LIST.length; // set the id to the last one in the list
-    loadList(LIST); // LOAD the list to the user interface
+    loadList(LIST); // load the list to the user interface
 }else{
     // if data isn't empty
     LIST = [];
@@ -48,7 +53,7 @@ dateElement.innerHTML = today.toLocaleDateString("en-US", options);
 
 // add to do function
 
-function addToDo(toDo, id, done, trash){
+function addToDo(toDo, id, done, trash, priority){
     
     if(trash){ return; }
     
@@ -58,6 +63,7 @@ function addToDo(toDo, id, done, trash){
     const item = `<li class="item">
                     <i class="fa ${DONE} co" job="complete" id="${id}"></i>
                     <p class="text ${LINE}">${toDo}</p>
+                    <i class="fa fa-exclamation before" job="nopriority" class="exc"></i>
                     <i class="fa fa-trash-o de" job="delete" id="${id}"></i>
                   </li>
                 `;
@@ -74,13 +80,14 @@ document.addEventListener("keyup",function(even){
         
         // if the input isn't empty
         if(toDo){
-            addToDo(toDo, id, false, false);
+            addToDo(toDo, id, false, false, false);
             
             LIST.push({
                 name : toDo,
                 id : id,
                 done : false,
-                trash : false
+                trash : false,
+                priority : false
             });
             
             // add item to localstorage ( this code must be added where the LIST array is updated)
@@ -92,6 +99,25 @@ document.addEventListener("keyup",function(even){
     }
 });
 
+//give element priority/////////******** 
+/*priority.addEventListener("click", function(){
+
+   
+    
+});*/
+
+/*
+function givePriority(element){
+    element.classList.toggle(unexc);
+    element.classList.toggle(exc);   
+}
+
+if(elementclass == "unexc"){
+    completeToDo(element);
+}else if(elementclass == "exc"){
+    removeToDo(element);
+}
+*/
 
 // complete to do
 function completeToDo(element){
@@ -120,6 +146,7 @@ list.addEventListener("click", function(event){
     }else if(elementJob == "delete"){
         removeToDo(element);
     }
+
     
     // add item to localstorage ( this code must be added where the LIST array is updated)
     localStorage.setItem("TODO", JSON.stringify(LIST));
