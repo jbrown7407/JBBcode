@@ -1,6 +1,8 @@
 //DONE  HIGH SCORE after refresh, fix refresh function 
 //faster speed with lines? DONE
 
+//ADD icon arrows
+//connect arrow icons to actions
 //fix game end
 //800 for Tetris, 1600 for B2B
 //Styling. brick walls
