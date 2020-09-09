@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let nextRandom = 0
   let timerId
   let score = 0
-  let highScore 
+  let highScore = localStorage.getItem("highscore", score)
 
   let rotatesound = document.getElementById('audio')
   let completerowsound = document.getElementById('audio1')
@@ -28,11 +28,12 @@ document.addEventListener('DOMContentLoaded', () => {
   let level = 1
   
 
-if (score !== null) {
-  highScore = score
-  localStorage.setItem("highscore", score);      
+
+if (score == 0) {
+  localStorage.getItem("highscore", highScore);      
   highScoreDisplay.innerHTML = highScore
-  localStorage.setItem(highScore, highScore)
+  
+ 
 }
   function preload () {
     rotatesound = loadSound ('JBBcode/Tetris/sounds/rotatesound.wav')
@@ -111,10 +112,8 @@ if (score !== null) {
       moveRight()
     } else if (e.keyCode === 40 || e.keyCode === 83) {
       moveDown()
-    /*  } else if (e.keyCode === 82) { // Restart with R
-      restart()
-    }*/
-    } // remove when function installed
+    
+    } 
   }
 
   document.addEventListener('keyup', control)
