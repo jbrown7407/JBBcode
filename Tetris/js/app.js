@@ -1,6 +1,6 @@
 //STORE HIGH SCORE after refresh, or fix refresh function
 //faster speed with lines?
-//Styling
+//Styling. brick walls
 //Music
 
 document.addEventListener('DOMContentLoaded', () => {
