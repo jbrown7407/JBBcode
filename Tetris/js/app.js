@@ -2,6 +2,7 @@
 //faster speed with lines?
 //Styling. brick walls
 //Music
+//change background each leveld
 
 document.addEventListener('DOMContentLoaded', () => {
   const grid = document.querySelector('.grid')
@@ -16,7 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
   let nextRandom = 0
   let timerId
   let score = 0
-  let highScore = 0
+  let highScore 
+
   let rotatesound = document.getElementById('audio')
   let completerowsound = document.getElementById('audio1')
   let endsound = document.getElementById('audio2')
@@ -26,6 +28,12 @@ document.addEventListener('DOMContentLoaded', () => {
   let level = 1
   
 
+if (score !== null) {
+  highScore = score
+  localStorage.setItem("highscore", score);      
+  highScoreDisplay.innerHTML = highScore
+  localStorage.setItem(highScore, highScore)
+}
   function preload () {
     rotatesound = loadSound ('JBBcode/Tetris/sounds/rotatesound.wav')
     completerowsound = loadSound ('JBBcode/Tetris/sounds/completerowsound.wav')
@@ -235,7 +243,6 @@ window.onkeydown = function(e) {
 //RESET
   resetBtn.addEventListener('click', () => {
          location.reload()
-         
      })
 
   //  add score
@@ -248,6 +255,11 @@ window.onkeydown = function(e) {
         score += 10
         line = score/10
 
+        highScore = score
+        localStorage.setItem("highscore", score);      
+        highScoreDisplay.innerHTML = highScore
+        localStorage.setItem(highScore, highScore)
+
           if (line % 10 == 0) { //level up every 10 lines
             level++;
           }
@@ -256,6 +268,7 @@ window.onkeydown = function(e) {
         scoreDisplay.innerHTML = score
         lineDisplay.innerHTML = line
         levelDisplay.innerHTML = level
+        
         row.forEach(index => {
           squares[index].classList.remove('taken')
           squares[index].classList.remove('tetromino')
@@ -264,6 +277,9 @@ window.onkeydown = function(e) {
         const squaresRemoved = squares.splice(i, width)
         squares = squaresRemoved.concat(squares)
         squares.forEach(cell => grid.appendChild(cell)) //  new squares onto grid
+
+
+        
       }
     }
   }
@@ -276,8 +292,17 @@ window.onkeydown = function(e) {
       scoreDisplay.innerHTML = 'Score: ' + score + '. Game Over!'
       if (score >= highScore) {
         highScore = score
+        localStorage.setItem("highscore", score);      
         highScoreDisplay.innerHTML = highScore
+        localStorage.setItem(highScore, highScore) }   //STORAGE
+        /*else {
+          localStorage.setItem("highscore", score);
+              }
+*/
+
+        
       }
+      
     }
-  }
-})
+  })
+//})
