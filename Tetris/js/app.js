@@ -1,8 +1,11 @@
-//STORE HIGH SCORE after refresh, or fix refresh function
-//faster speed with lines?
+//DONE  HIGH SCORE after refresh, fix refresh function 
+//faster speed with lines? DONE
+
+//fix game end
+//800 for Tetris, 1600 for B2B
 //Styling. brick walls
 //Music
-//change background each leveld
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const grid = document.querySelector('.grid')
@@ -26,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let landsound = document.getElementById('audio4')
   let line = score/10
   let level = 1
+  let gridColor = document.getElementsByClassName("grid").backgroundColor
   
 
 
@@ -250,8 +254,50 @@ window.onkeydown = function(e) {
       const row = [i, i + 1, i + 2, i + 3, i + 4, i + 5, i + 6, i + 7, i + 8, i + 9]
 
       if (row.every(index => squares[index].classList.contains('taken'))) {
-        let level = 1
+        
         score += 10
+        line = score/10
+        
+        backgroundColor = document.body.style.backgroundColor
+        switch(backgroundColor) {
+          case score >= 10:
+            backgroundColor = rgb(223, 223, 223);
+            break;
+          case score >= 20:
+            backgroundColor = rgb(200, 200, 200);
+            break;
+          case score >= 30:
+            backgroundColor = rgb(170, 170, 200);
+            break;
+          case score >= 40:
+            backgroundColor = "darkgrey";
+            break;
+          case score >= 50:
+            backgroundColor = "darkgrey";
+            break;
+          case score >= 60:
+            backgroundColor = "darkgrey";
+            break;
+          case score >= 70:
+            backgroundColor = "darkgrey";
+            break;
+          case score >= 80:
+            backgroundColor = "darkgrey";
+            break;
+          case score >= 90:
+            backgroundColor = "darkgrey";
+            break;
+          case score >= 100:
+            backgroundColor = "darkgrey";
+            break;
+
+          default:
+            backgroundColor = "pink";
+        }
+        
+        
+        
+        
         line = score/10
 
         highScore = score
@@ -259,8 +305,12 @@ window.onkeydown = function(e) {
         highScoreDisplay.innerHTML = highScore
         localStorage.setItem(highScore, highScore)
 
+        //LEVEL UP AND CHANGE BACKGROUND + SPEED
           if (line % 10 == 0) { //level up every 10 lines
             level++;
+            timerId = setInterval(moveDown, (1000-(level * 20)));
+            console.log(timerId);
+            
           }
         
         completerowsound.play() // sound effect for row completion
