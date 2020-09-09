@@ -75,16 +75,15 @@ body {
 }
 
 .mini-grid {
-  
   width: 80px;
   height: 80px;
   display: flex;
   flex-wrap: wrap;
-  background-color: lightgrey;
+  background-color: grey;
+  border: 1px solid black;
+  border: 2px solid white;
+  margin-left: 10%;
 
- 
-  margin-left: 55%;
-  border: 5px solid white;
   z-index: 10000;
 }
 
@@ -227,7 +226,7 @@ a {
     background-color: grey;
     border: 1px solid black;
     border: 2px solid white;
-    margin-left: 40%;
+    margin-left: 10%;
 
     z-index: 10000;
   }
