@@ -1,10 +1,46 @@
 
+#start-button{
+  float: center;
+  text-align: center;
+  margin-left: 55px;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 18px;
+  border: 5px solid rgb(8, 77, 42);
+}
+#start-button:hover{
+  float: center;
+  text-align: center;
+  margin-left: 55px;
+  background-color: rgb(145, 211, 149);
+  font-size: 18px;
+  border: 5px solid white;
+}
+
+#resetBtn{
+  float: center;
+  text-align: center;
+  margin-left: 75px;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 18px;
+  border: 5px solid rgb(8, 77, 42);
+}
+#reset-button:hover{
+  float: center;
+  text-align: center;
+  margin-left: 75px;
+  background-color:  rgb(145, 211, 149);
+  border: 5px solid white;
+}
+
+
 
 .container {
   display: flex;
 }
 body {
-  background: rgb(221, 198, 198);
+  background:black;
   
 }
 
@@ -13,12 +49,17 @@ body {
   height: 400px;
   display: flex;
   flex-wrap: wrap;
-  background: rgb(185, 202, 250);
+  background: rgb(145, 211, 149);
+  border: 1px solid black;
+  margin-top: -320px;
+  border: 5px solid white;
 }
 
 .grid div {
   height: 20px;
   width: 20px;
+
+  
 }
 
 .tetromino {
@@ -32,7 +73,11 @@ body {
   height: 80px;
   display: flex;
   flex-wrap: wrap;
-  background-color: grey;
+  background-color: rgb(145, 211, 149);
+  border: 1px solid black;
+  margin-top: -80px;
+  margin-left: 220px;
+  border: 5px solid white;
 }
 
 .mini-grid div {
@@ -44,11 +89,33 @@ h1 {
   text-align: center;
 }
 
+.scoreboard{
+  background-color: rgb(8, 77, 42);
+  color: white;
+  width: 100px;
+  margin-left: 220px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 200px;
+
+}
+
 .score {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid gold;
+  padding: 3px;
+}
+
+.highScore {
   background-color: black;
   border: 1 px solid black;
   color: white;
-  width: 200px;
+
+  border: 1px solid gold;
+  padding: 3px;
+  border-radius: 5px;
 }
 
 .right {
@@ -56,14 +123,16 @@ h1 {
     top:0;
     right:0;
     bottom:0;
-    left:60%;
-    width: 150px;
+    left:350px;
+    width: 250px;
     font-size: 10px;
-    margin-right: 15px;
-    padding: 10px;
-    background-color: black;
+    margin-right: 40px;
+    padding: 5px;
+    background-color: rgb(8, 77, 42);
     color: white;
-  }
+  }tbr
 
-
+a {
+  color: white;
+}
 

@@ -226,14 +226,14 @@ window.onkeydown = function(e) {
     return !(e.keyCode == 32);
 };
 
+
+//RESET
   resetBtn.addEventListener('click', () => {
          location.reload()
-         return false
-         squares.forEach(index => squares[index].classList.remove('taken'))
-         squares[appleIndex].classList.remove('apple')
+         
      })
-
-  /*restartBtn.addEventListener('click', () => {
+/*
+  reset-buttonn.addEventListener('click', () => {
     startsound.play()
     displayShape()
     score = 0
@@ -285,7 +285,7 @@ window.onkeydown = function(e) {
     if (current.some(index => squares[currentPosition + index].classList.contains('taken'))) {
       endsound.play()
       clearInterval(timerId)
-      scoreDisplay.innerHTML = 'You scored ' + score + '. Game Over!'
+      scoreDisplay.innerHTML = 'Score: ' + score + '. Game Over!'
       if (score >= highScore) {
         highScore = score
         highScoreDisplay.innerHTML = highScore
