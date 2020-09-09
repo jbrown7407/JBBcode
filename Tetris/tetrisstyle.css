@@ -118,7 +118,7 @@ h1 {
   border-radius: 5px;
 }
 
-.left {
+.right2 {
     position: absolute;
     top:0;
    
@@ -135,7 +135,7 @@ h1 {
     opacity: 90%;
   }
 
-  .right2 {
+  .left {
     position: absolute;
     top:0;
    
@@ -154,8 +154,86 @@ h1 {
 
 
 a {
-  color: white;
+  color: black;
   margin-left: 170px;
   font-size: 18px;
 }
 
+@media screen and (max-width: 560px){
+  .right2 {
+    position: absolute;
+    top:0;
+   
+    bottom:0;
+
+    width: 130px;
+    font-size: 10px;
+    margin-left: 0%;
+    padding: 5px;
+    background-color: rgb(8, 77, 42);
+    color: white;
+    z-index: -51000
+    border: 5px solid black;
+    opacity: 90%;
+  }
+
+  .left {
+    position: absolute;
+    top:0;
+   
+    bottom:0;
+
+    width: 130px;
+    font-size: 10px;
+    margin-left: 70%;
+    padding: 5px;
+    background-color: rgb(8, 77, 42);
+    color: white;
+    z-index: -51000
+    border: 5px solid black;
+    opacity: 90%;
+  }
+  .grid {
+    width: 200px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(145, 211, 149);
+    border: 1px solid black;
+    margin-top: 10px;
+    border: 5px solid black;
+    margin-left: 29%;
+  
+  }
+  
+  .grid div {
+    height: 20px;
+    width: 20px;
+  
+    
+  }
+  
+  .tetromino {
+    background-color: blue;
+    border-color: solid white;
+  }
+  
+  .mini-grid {
+    
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: red;
+    border: 1px solid black;
+   
+    margin-left: 40%;
+    border: 5px solid black;
+    z-index: 10000;
+  }
+  
+  .mini-grid div {
+    height: 20px;
+    width: 20px;
+  }
+}
