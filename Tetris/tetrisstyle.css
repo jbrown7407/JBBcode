@@ -1,3 +1,40 @@
+.center{
+  margin-left: kolj;0%;
+}
+
+.controlCircle{
+  border: 2px solid white;
+  border-radius: 200px;
+  margin-left: 30%;
+  width: 200px;
+  background-color: darkgreen;
+}
+
+i {
+  margin: 0 auto;
+  color: white;
+  font-size: 75px;
+  margin-left: 30%;
+  
+}
+.fa-arrow-left{
+  margin-left: 5px;
+
+
+}
+
+.fa-arrow-right{
+  margin-left: 45px;
+
+
+}
+
+.fa-fa-refresh{
+  color: white;
+  font-size: 200px;
+  z-index: 50000;
+}
+
 
 #start-button{
   float: center;
@@ -56,9 +93,9 @@ body {
   flex-wrap: wrap;
   background: rgb(145, 211, 149);
   
-  margin-top: 10px;
+
   border: 5px solid white;
-  margin-left: 35%;
+
 
 }
 
