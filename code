@@ -1,0 +1,54 @@
+  <nav class="main-nav">
+    <ul>
+      <li><a href= "SiteAlpha/index.html" target="_blank" ><b>Sample Websites</b></a></li>
+      <li><a href= "ToDo/TODOindex.html" target="_blank"><b>Create a To Do List</b></a></li>
+
+      <li><a href= "Tetris/tetrisindex.html" target="_blank"><b>Tetris</b></a></li>
+      <li><a href= "ToDo/TODOindex.html" target="_blank"><b>To DO List</b></a></li>
+      <li><a href= "FormExample/HTMLform.html" target="_blank" ><b>Sample Forms</b></a></li>
+      <li><a href= "FormExample/HTMLform.html" target="_blank" ><b>Resources</b></a></li>
+    </ul>
+
+
+
+    <script>
+    var myDate = new Date();
+    var hrs = myDate.getHours();
+
+    var greet;
+
+    if (hrs < 12)
+        greet = 'Good Morning';
+    else if (hrs >= 12 && hrs <= 17)
+        greet = 'Good Afternoon';
+    else if (hrs >= 17 && hrs <= 24)
+        greet = 'Good Evening';
+
+    document.getElementById('lblGreetings').innerHTML =
+        '<b>' + greet + '</b>, Jeffrey.';
+
+
+       
+        var myDate = new Date(); 
+        var myDay = myDate.getDay(); 
+        
+        // Array of days. 
+        var weekday = ['Sunday', 'Monday', 'Tuesday', 
+            'Wednesday', 'Thursday', 'Friday', 'Saturday' 
+        ]; 
+        document.write("<br> Today is " + weekday[myDay]); 
+        document.write("<br/>"); 
+        
+        // get hour value. 
+        var hours = myDate.getHours(); 
+        var ampm = hours >= 12 ? 'PM' : 'AM'; 
+        hours = hours % 12; 
+        hours = hours ? hours : 12; 
+        var minutes = myDate.getMinutes(); 
+        minutes = minutes < 10 ? '0' + minutes : minutes; 
+        var myTime = hours + "" + ":" + minutes + " " +ampm; 
+        document.write(myTime); 
+ 
+
+        
+</script> 
