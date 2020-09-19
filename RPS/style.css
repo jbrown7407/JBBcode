@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  background-color: gray;
+}
+#main h1#main {
+  color: white;
+  font-size: 50px;
+  font-family: monospace;
+  margin: 0 auto;
+  text-align: center;
+}
+div#main {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.option {
+  position: absolute;
+  background: none;
+  border: none;
+  outline: none;
+  background: $loaded;
+  border: 2px solid $loaded;
+  border-radius: 5px solid white;
+  font-size: 14px;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  border-radius: 25px;
+  padding: 20px;
+}
+#roption {
+  left: 35%;
+  color: white;
+  background-color: black;
+  border-radius: 25px;
+  padding: 20px;
+}
+#soption {
+  left: 65%;
+  color: white;
+  background-color: black;
+  border-radius: 25px;
+  padding: 20px;
+}
+#playerchoose {
+  transform: rotateY(180deg);
+  position: absolute;
+  right: 40%;
+  top: 40%;
+}
+#computerchoose {
+  position: absolute;
+  left: 40%;
+  top: 40%;
+}
+.console {
+  color: $green;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+}
