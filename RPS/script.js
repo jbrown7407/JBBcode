@@ -18,6 +18,10 @@ var computerscore = 0;
 var compoption = 0;
 var ploption = 0;
 var match;
+let outcomeDisplay;
+outcomeDisplay = document.getElementById("outcomeDisplay");
+let console;
+console = document.getElementById("cons");
 
 function scoreUpdate() {
   var compscore = document.querySelector(".computer-score");
@@ -43,15 +47,16 @@ const getComputerChoice = () => {
 const determineWinner = (userChoice, computerChoice) => {
   if (userChoice === computerChoice) {
     return "The game is a tie";
-    roundend(2);
   }
   //check if tie
   if (userChoice === "rock") {
     if (computerChoice === "paper") {
       return "Sorry, Computer Wins";
+
       roundend(0);
     } else {
-      return "UserWins";
+      return "Congratulations, UserWins";
+
       roundend(1);
     }
   }
@@ -88,15 +93,15 @@ const determineWinner = (userChoice, computerChoice) => {
 const playGame = (userChoice) => {
   //const userChoice
   const computerChoice = getComputerChoice();
-  console.log("You threw: " + userChoice);
-  console.log("Computer threw: " + computerChoice);
-
-  console.log(determineWinner(userChoice, computerChoice));
+  //console.log("You threw: " + userChoice);
+  //console.log("Computer threw: " + computerChoice);
+  outcomeDisplay.innerText = determineWinner(userChoice, computerChoice);
 };
 
+/*
 function scoreUpdate() {
   var compscore = document.querySelector(".computer-score");
   var plscore = document.querySelector(".player-score");
   compscore.innerHTML = computerscore;
   plscore.innerHTML = playerscore;
-}
+}*/
