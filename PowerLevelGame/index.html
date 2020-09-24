@@ -23,6 +23,7 @@
     <div id= "gamecanvas">
         <button class="point" type="button" onClick="onClick()" style=font-size 70 px;> PRESS TO CHECK POWER</button>
         <p><h1> YOUR POWER LEVEL: <a id="clicks" style=font-size 48 px;>0</a></h1>
+          <img id="img" src="download.jpeg" alt="">
       <p id="readOut"><h1>Are you the chosen one?</h1>  </p>  <br>
 
      </p>
@@ -40,10 +41,10 @@
          if (clicks >= 9000) {
             alert("COULD IT BE?....")
             document.getElementById('clicks').style.backgroundColor = "green";
-       //     document.getElementById('button').style.backgroundColor = "lightgreen";}
+       //     document.getElementById('button').style.backgroundColor = "lightgreen";
               document.body.style.backgroundColor = "lightgreen";
-              let readOut = document.createTextNode("Hello World");     // Create a text node
-h.appendChild(t);    
+            
+              document.getElementById('img').src='333.png'
             document.getElementById('readOut').style.backgroundColor = "lightgreen";}    
           else {
             alert("You are not the one...")}
