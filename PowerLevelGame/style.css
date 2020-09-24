@@ -1,0 +1,322 @@
+.gamecanvas {
+    background: lightgray;
+    color: black;
+    font-style: bold;
+    border-radius: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    
+    min-width: 250px;
+    padding: 0;
+    font-family: tahoma;
+    }
+    
+    h3 {
+        margin-top: 60%;
+        margin-left: 60%;
+        color: black;
+        margin: 5 0 0 0;
+    }
+    
+      .title {
+      background-color:black;
+      width: 450px;
+      color: white;
+      outline: 1px dotted black;
+    }
+    
+      body, ul, li, h1, h2, a{
+        margin: 0;
+        padding: 0;
+        font-family: tahoma;
+        text-align: center
+      }
+    
+      p{
+        font-size: 18px;
+        margin: 30px 30px 30px 30px;
+        text-align: center;
+      }
+      header{
+        background-color: blue;
+        padding: 20px 0;
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    
+      }
+      header h1{
+        color: white;
+        border: 8px solid white;
+        display: inline-block;
+        padding: 6px 12px;
+        border-radius: 36px;
+        
+      }
+    
+      .banner{
+        position: relative;
+      background-size: cover;
+      }
+    
+      .banner .welcome{
+        letter-spacing: 3px;
+        background: blue;
+        opacity: 100%;
+        color: white;
+        padding: 10px;
+        font-size: 50px;
+        text-align: center;
+        left: 0;
+        top: 10%;
+        margin-top: 5%
+      }
+      .banner .welcome span{
+        font-size: 1.4em;
+      }
+    
+      nav{
+        background: #F4F4F4;
+        padding: 20px;
+        position: sticky;
+        top: 106px;
+        z-index: 1;
+      }
+      nav ul{
+        white-space: nowrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      nav li{
+        width: 25%;
+        display: inline-block;
+        font-size: 24px;
+      }
+      nav li a{
+        text-decoration: none;
+        color: #4B4B4B;
+      }
+     
+      main{
+        max-width: 100%;
+        width: 1200px;
+        margin: 30px auto;
+        padding: 0 40px;
+        box-sizing: border-box;
+      }
+      article h2{
+        color: #00000;
+        font-size: 48px;
+      }
+      article p{
+        line-height: 2em;
+        color: #4B4B4B;
+      }
+      
+      .images{
+        text-align: center;
+        margin: 50px 0;
+        white-space: nowrap;
+          max-width: 100%;
+          background-size: cover;
+      }
+      
+    
+      footer{
+        background: #000000;
+        color: white;
+        padding: 10px;
+        text-align: center;
+      }
+    
+      /* responsive styles */
+    
+      @media screen and (max-width: 1400px){
+        .quest{
+          color: White;
+          position: relative;
+    
+          z-index: 2000
+        }
+        .banner .welcome{
+          font-size: 30px;
+        }
+    
+      }
+      button {
+        background-color: blue; /* Green */
+       border: 2px solid red;
+       color: white;
+       padding: 20px;
+       text-align: center;
+       display: inline-block;
+       font-size: 16px;
+       margin: 4px 2px;
+       cursor: pointer;
+       border-radius: 20%;
+    
+    
+      }
+    
+      
+      @media screen and (max-width: 960px){
+        .quest{
+          color: White;
+    
+          margin-top: 40%;
+          z-index: 2000
+        }
+        .banner .welcome{
+          font-size: 28px;
+        }
+        nav li{
+          font-size: 18px;
+        }
+    
+      }
+      button {
+        background-color: blue; /* Green */
+     
+       color: white;
+       padding: 10px;
+       text-align: center;
+       display: inline-block;
+       font-size: 16px;
+     
+       cursor: pointer;
+       border-radius: 20%;
+       border: 8px solid red;
+       display: inline-block;
+       padding: 6px 12px;
+       border-radius: 36px;
+      }
+    
+         .emailme {
+          background: blue;
+          border-radius: 25px;
+          width: 200px;
+          height: 100px;
+          margin: auto 0px;
+        }
+       }
+      @media screen and (max-width: 700px){
+        .quest{
+          color: White;
+          position: relative;
+          margin-top: 15%;
+          z-index: 2000
+        }
+        .banner .welcome{
+          font-size: 18px;
+    
+          text-align: center;
+        }
+    
+        .banner .welcome span{
+          font-size: 1em;
+        }
+        nav li{
+          font-size: 18px;
+        }
+        .images li{
+          width: 100%;
+          display: block;
+          margin: 20px auto;
+        }
+        button {
+          background-color: blue; /* Green */
+         border: none;
+         color: white;
+         padding: 20px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+         margin: 4px 2px;
+         cursor: pointer;
+         border-radius: 20%;
+         border: 8px solid white;
+         display: inline-block;
+         padding: 6px 12px;
+         border-radius: 36px;
+        }
+      }
+    
+      @media screen and (max-width: 560px){
+      .quest{
+        color: White;
+      }
+        .banner .welcome{
+          font-size: 18px;
+          position: relative;
+          text-align: center;
+          padding: 0 0 0 0;
+          float: center;
+        }
+        .banner .welcome br{
+          display: none;
+        }
+        .banner .welcome span{
+          font-size: 1em;
+        }
+        nav li{
+          display: block;
+          width: 100%;
+          margin: 12px 0;
+        }
+        article h2{
+          font-size: 36px;
+          max-width: 500px;
+        width: 500px;
+        padding: 20px;
+        margin-left: 20px;
+        margin: 0 auto;
+    
+        }
+        header, nav{
+          position: relative;
+          top: 0;
+        }
+      button {
+         display:inline-block;
+         padding:0.35em 1.2em;
+         border:0.1em solid #FFFFFF;
+         margin:0 0.3em 0.3em 0;
+         border-radius:0.12em;
+         box-sizing: border-box;
+         text-decoration:none;
+         font-family:'Roboto',sans-serif;
+         font-weight:300;
+         color:#FFFFFF;
+         text-align:center;
+         transition: all 0.2s;
+      }
+     
+       .images li img{
+         max-width: 100%;
+       }
+    
+
+    
+    h2 {
+      margin: 0 50 -10 00;
+      padding: 0 0 0 0;
+    }
+    p{
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+    }
+    #readOut {
+        font-size = 24px;
+        color: blue;
+        
+    }
+
+    .point {
+
+    }

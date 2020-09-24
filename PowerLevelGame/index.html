@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <header>
+        <h1>Jeffrey Brown</h1>
+      </header>
+      <section class="banner">
+         <div class="welcome">
+          POWER > 9000???
+         </div>
+      </section>         <br> <br> <br>
+     
+    <div id= "gamecanvas">
+        <button class="point" type="button" onClick="onClick()" style=font-size 70 px;> PRESS TO CHECK POWER</button>
+        <p><h1> YOUR POWER LEVEL: <a id="clicks" style=font-size 48 px;>0</a></h1>
+      <p id="readOut"><h1>Power Check....</h1>  </p>  <br>
+
+     </p>
+  
+    </div>
+    
+     <script type="text/javascript">
+      let clicks = 0
+      let sass
+      const readOut = document.createElement("readOut")
+     
+    function onClick() {
+      clicks = Math.ceil(Math.random()*10000)
+      document.getElementById("clicks").innerHTML = clicks;
+         if (clicks >= 9000) {
+            alert("COULD IT BE?....")
+            document.getElementById('clicks').style.backgroundColor = "green";
+       //     document.getElementById('button').style.backgroundColor = "lightgreen";}
+              document.body.style.backgroundColor = "lightgreen";
+              let readOut = document.createTextNode("Hello World");     // Create a text node
+h.appendChild(t);    
+            document.getElementById('readOut').style.backgroundColor = "lightgreen";}    
+          else {
+            alert("You are not the one...")}
+            
+          }
+        </script>      <br>
+       
+                       </p><br>
+    </div>
+       
+        <script src="" async defer></script>
+    </body>
+</html>
