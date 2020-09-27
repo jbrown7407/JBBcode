@@ -1,0 +1,197 @@
+
+.clicks{
+  color:blue;
+}
+.cash{
+  color:blue;
+}
+.rank{
+  color:blue;
+}
+.level{
+  color:blue;
+}
+.rank{
+  color:blue;
+  background-color: blue;
+}
+score{
+  color:blue;
+}
+equipped{
+  color:blue;
+}
+
+button {
+   background-color:green; /* Green */
+   border: 5px solid white;
+   transition-duration: 0.4s;
+   border-radius: 25px;
+   color: white;
+  padding: 10px;
+font-style: bold;}
+
+
+button:hover {
+  color: white;
+  border: 5px solid white;
+  background-color: #4CAF50;
+}
+
+.money {
+color: black;
+}
+.inventory {
+    color: black;
+}
+.weapon {
+    color: black;
+}
+.stats {
+    color: black;
+}
+.shop {
+    color: black;
+}
+.banner {
+    color: black;
+}
+.container {
+    margin: 0 auto;
+    border: 1px solid black; 
+    padding: 10px;
+  
+    background-color: lightgrey;
+}
+
+
+.stats {
+    margin: 0 auto;
+    border: 1px solid black; 
+    padding: 10px;
+    border-radius: 25 px;
+    background-color:white;
+    border-radius: 25px;
+    margin: 10px, 10px, 10px, 10px;
+}
+
+.gamecanvas {
+    background: lightgray;
+    color: black;
+    font-style: bold;
+
+    margin-left: 25px;
+    margin-right: 25px;
+    border: 1px solid black; 
+
+    
+    min-width: 250px;
+
+    font-family: tahoma;
+    }
+    
+    h3 {
+        margin-top: 60%;
+        margin-left: 60%;
+        color: black;
+        margin: 5 0 0 0;
+    }
+    
+      .title {
+      background-color:black;
+      width: 450px;
+      color: white;
+      outline: 1px dotted black;
+    }
+    
+      body, ul, li, h1, h2, a{
+        margin: 0;
+        padding: 0;
+        font-family: tahoma;
+        text-align: center
+      }
+    
+      p{
+        font-size: 18px;
+        margin: 30px 30px 30px 30px;
+        text-align: center;
+      }
+      header{
+        background-color: green;
+        padding: 15px 0;
+        text-align: center;
+border-radius: 25px solid black;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        margin: 0 auto;
+        border: 1px solid black; 
+        margin-left: 25px;
+        margin-right: 25px;
+    
+      }
+      header h1{
+        color: white;
+        border: 8px solid white;
+        display: inline-block;
+        padding: 6px 12px;
+        border-radius: 36px;
+        
+      }
+
+  
+      nav ul{
+        white-space: nowrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      nav li{
+        width: 25%;
+        display: inline-block;
+        font-size: 24px;
+      }
+      nav li a{
+        text-decoration: none;
+     
+      }
+     
+      main{
+        max-width: 100%;
+        width: 1200px;
+        margin: 30px auto;
+        padding: 0 40px;
+        box-sizing: border-box;
+      }
+      article h2{
+       
+        font-size: 48px;
+      }
+      article p{
+        line-height: 2em;
+       
+      }
+      
+      .images{
+        text-align: center;
+        margin: 50px 0;
+        white-space: nowrap;
+          max-width: 100%;
+          background-size: cover;
+      }
+      
+ 
+    
+      /* responsive styles */
+
+      .column {
+        float: left;
+        width: 50%;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }

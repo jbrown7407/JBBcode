@@ -1,0 +1,15 @@
+.container {
+    margin: 0 auto;
+    border: 1px solid black; 
+    padding: 20px;
+    border-radius: 25 px;
+    background-color: lightgrey;
+}
+Nav {
+    margin: 0 auto;
+    border: 1px solid black; 
+    padding: 20px;
+    border-radius: 25 px;
+    background-color:white;
+    border-radius: 25px;
+}
