@@ -1,0 +1,48 @@
+
+body {
+ background-color: lightgrey;
+}
+.banner {
+    background-color:white;
+    border: 1px solid black;
+    color: red;
+    padding: 1px;
+}
+.editor {
+    background-color: lightgrey;
+    border: 5px solid black;
+    color: red;
+  
+}
+
+ .editor #css-code{
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+}
+ .editor #js-code{
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+}
+#outputzone{
+    background-color: white;
+    border: 5px solid black;
+    color: red;
+
+    padding: 2%;
+}
+
+.iframe {
+ border: 2px solid black;
+ height: 500px;
+}
+.textarea {
+
+    height: 500px;
+}
+.editor #html-code {
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+}
