@@ -1,30 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Brown's IDE</title>
     <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-	<div class="editor">
-		<textarea id="html-code"></textarea>
-		<textarea id="css-code"></textarea>
-		<textarea id="js-code"></textarea>
-		<iframe id="output"></iframe>
-	</div>
+ 
+   
+    </head>
+    <body>
+        <div class="banner">Brown's IDE
+<nav> HOME</nav>
 
-	<script type="text/javascript">
-		function run() {
-			let htmlCode = document.querySelector(".editor #html-code").value;
-			let cssCode = "<style>"+document.querySelector(".editor #css-code").value+"</style>";
-			let jsCode = document.querySelector(".editor #js-code").value;
-			let output = document.querySelector(".editor #output");
-			//console.log(htmlCode,cssCode,jsCode,output);
-			output.contentDocument.body.innerHTML = htmlCode+cssCode;
-			output.contentWindow.eval(jsCode);
-		}
-		document.querySelector(".editor #html-code").addEventListener("keyup",run);
-		document.querySelector(".editor #css-code").addEventListener("keyup",run);
-		document.querySelector(".editor #js-code").addEventListener("keyup",run);
-	</script>
-</body>
-</html>
+
+        </div>
+        <div class="editor">
+            <textarea id="html-code">HTML Here...</textarea>
+            <textarea id="css-code">CSS Here...</textarea>
+            <textarea id="js-code">JS Here...</textarea>
+            
+        </div>
+        <iframe id="output"></iframe>
+        <script src="app.js">
+          
+        </script>
+    </body>
+    </html>

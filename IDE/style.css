@@ -1,35 +1,59 @@
-
 body {
- background-color: lightgrey;
+ background-color: white;
 }
 .banner {
     background-color:white;
-    border: 1px solid black;
+    border: 3px solid black;
     color: red;
-    padding: 1px;
+    padding: 3px;
 }
 .editor {
     background-color: lightgrey;
-    border: 5px solid black;
+    border: 1px solid black;
     color: red;
+display: inline-block
+   height: 95%;
+    
   
 }
+nav {
+    display: inline-block;
+    border: 1px solid black;
+    background-color: yellow;
+}
+
 
  .editor #css-code{
     background-color: black;
     border: 1px solid black;
     color: white;
+    height: 100%;
+    width: 20%;
+    padding: 2%;
 }
  .editor #js-code{
     background-color: black;
     border: 1px solid black;
     color: white;
+    height: 100%;
+    width: 20%;
+    padding: 2%;
 }
-#outputzone{
+.editor #html-code {
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    height: 100%;
+    width: 20%;
+    padding: 2%;
+ 
+}
+#output{
     background-color: white;
     border: 5px solid black;
-    color: red;
-
+ 
+    height: 100%;
+    width: 100%;
     padding: 2%;
 }
 
@@ -41,8 +65,4 @@ body {
 
     height: 500px;
 }
-.editor #html-code {
-    background-color: black;
-    border: 1px solid black;
-    color: white;
-}
+
