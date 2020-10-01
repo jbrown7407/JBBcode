@@ -77,8 +77,8 @@ nav li a{
 }
 nav li a:hover{
   text-decoration: underline;
-  border: 5px solid white;
-  padding: 6px 12px;
+
+
   border-radius: 36px;
 }
 nav li a.join{
@@ -140,12 +140,7 @@ section.join h2{
 
 
 }
-.join li:hover{
-  background: #F4F4F4;
-  text-align: center;
-  padding: 60px 20px;
-  color: white;
-}
+
 form input{
   margin: 20px 0;
   padding: 10px 20px;
@@ -368,9 +363,7 @@ button {
         text-decoration: none;
         color: #4B4B4B;
       }
-      nav li a.join{
-        color: #f63232;
-      }
+   
       main{
         /* both of the 2 below work in tandem - if a screen size is below 1200px then show 100% of screen size if its above 1200px then only show a max-width of 1200px; */
         max-width: 100%;
@@ -403,15 +396,7 @@ button {
         /* max-width off its parent container. so 40% */
         max-width: 100%
       }
-      section.join{
-        background: #F4F4F4;
-        text-align: center;
-        padding: 60px 20px;
-        color:#4B4B4B;
-      }
-      .join h2{
-        font-size: 36px;
-      }
+      
       form input{
         margin: 20px 20px;
         padding: 10px 20px;

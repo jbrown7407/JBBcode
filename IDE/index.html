@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Brown's IDE</title>
+   
+    <title>CodeNoodle</title>
     <link rel="stylesheet" href="style.css" />
  
    
     </head>
     <body>
-        <div class="banner">Brown's IDE
-<nav> HOME</nav>
+        <div class="banner"><b> <img src="noodle.png" alt="x">  
+             <span id="filename">File Name: MyWorkbook</span>       </div>  
+<nav>   
+    <div class="dropdown"> Menu
+    <div class="dropdown-content">
+      <p class="rename">Save Workbook</p>
+      <p class="rename" onClick="newFile()">New Workbook</p>
+      <p class="rename" onClick="renameFile()">Rename File</p>
+    </div>      
+    </div>  
+     
+    
+    <button class="point2" id="myJS" type="button" onClick="copyThisJS()" style=font-size:15px;> Copy JS </button> 
+    <button class="point2" id="myCSS" type="button" onClick="copyThisCSS()" style=font-size:15px;> Copy CSS </button> 
+    <button class="point2" id="myHTML" type="button" onClick="copyThisHTML()" style=font-size:15px ;> Copy HTML </button>      
+</nav>  
 
-
-        </div>
         <div class="editor">
-            <textarea id="html-code">HTML Here...</textarea>
-            <textarea id="css-code">CSS Here...</textarea>
-            <textarea id="js-code">JS Here...</textarea>
-            
+            <textarea id="html" placeholder="HTML here..."></textarea>
+            <textarea id="css" placeholder="CSS here..."></textarea>
+            <textarea id="js" placeholder="JS here..."></textarea> 
         </div>
-        <iframe id="output"></iframe>
-        <script src="app.js">
-          
-        </script>
+        
+  <div class="notify"><b>Live Preview:</b>    <span class="tut"> <button class="point" type="button" onClick="onClick()" > Run Javascript </button>  </em></span>         </div> 
+        <iframe id="output">Live Preview will appear here.</iframe> 
+        <script src="app.js">   </script>
     </body>
     </html>
