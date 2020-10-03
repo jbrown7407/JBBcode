@@ -5,11 +5,11 @@
     <title>CodeNoodle</title>
     <link rel="stylesheet" href="style.css" />
  
-   
+    <script src="https://code.jquery.com/jquery-1.12.3.js" integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="banner"><b> <img src="noodle.png" alt="x">  
-             <span id="filename">File Name: MyWorkbook</span>       </div>  
+             <span id="filename">Created by Jeffrey Brown</span>       </div>  
 <nav>   
     <div class="dropdown"> Menu
     <div class="dropdown-content">
@@ -22,17 +22,23 @@
     
     <button class="point2" id="myJS" type="button" onClick="copyThisJS()" style=font-size:15px;> Copy JS </button> 
     <button class="point2" id="myCSS" type="button" onClick="copyThisCSS()" style=font-size:15px;> Copy CSS </button> 
-    <button class="point2" id="myHTML" type="button" onClick="copyThisHTML()" style=font-size:15px ;> Copy HTML </button>      
+    <button class="point2" id="myHTML" type="button" onClick="copyThisHTML()" style=font-size:15px ;> Copy HTML </button>     
+    <button class="point2" id="btn1" type="button" style=font-size:15px ;> Full Screen Preview </button>    
+    <button class="point2" id="btn2" type="button" style=font-size:15px ;> Edit Code </button>     
 </nav>  
-
+<div class="phase1">
         <div class="editor">
             <textarea id="html" placeholder="HTML here..."></textarea>
             <textarea id="css" placeholder="CSS here..."></textarea>
             <textarea id="js" placeholder="JS here..."></textarea> 
         </div>
-        
+    </div>     
   <div class="notify"><b>Live Preview:</b>    <span class="tut"> <button class="point" type="button" onClick="onClick()" > Run Javascript </button>  </em></span>         </div> 
-        <iframe id="output">Live Preview will appear here.</iframe> 
+
+
+
+<div class="phase2">
+        <iframe id="output">Live Preview will appear here.</iframe> </div>
         <script src="app.js">   </script>
     </body>
     </html>

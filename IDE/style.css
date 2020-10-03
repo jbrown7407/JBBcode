@@ -3,6 +3,10 @@
     float: right;
 }
 
+#btn2{
+    color: blue;
+}
+
 body {
  background-color: white;
  border: 5px solid black;

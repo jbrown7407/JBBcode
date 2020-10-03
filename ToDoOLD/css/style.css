@@ -159,6 +159,12 @@ body{
     color: green;
 
 }
+
+.fa-plus-circle:hover{
+    color: green;
+    background-color: green;
+}
+
 .fa-check-circle{
     color:#6eb200;
 }
