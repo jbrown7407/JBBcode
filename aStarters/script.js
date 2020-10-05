@@ -9,6 +9,14 @@ $(document).ready(function(){
    // $($div).style.color("blue")
 //JQUERY HERE
 
+$(".btn1").click(function btn1(){ //TITLE SCREEN
+    $(".scene").hide()
+    $(".gameOverScene").fadeIn(700).show();
+    $(".gameScene2").hide()
+    $(".phase2").hide()
+    $(".phase5").hide()
+    cl("Title Screen")
+       });
 
    
 })

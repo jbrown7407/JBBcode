@@ -8,6 +8,7 @@ body{
   border: 1px solid black;
   border-radius: 25px;
   background-color: lightgray;
+  width: 50%;
 }
 
 .listcontainer{
@@ -61,15 +62,16 @@ img {
 
 #newItemButton{
   color: grey;
-  margin-left: 30%;
+  display:flex
+  margin: 0 auto;
 }
 #newItemForm{
   color: grey;
-  margin-left: 30%;
+  display:flex
 }
 #itemDescription{
   color: blue;
-  margin-left: 30%;
+  display:flex
 }
 
 #addButton{

@@ -1,26 +1,6 @@
 //CREATE NEW FILE CODE
-/*
-let newFile() {
-  console.log("newFile")
-}
-document.getElementById('#newFile').addEventListener('click', newFile() => {
-
-  
-}
-*/
 
 
-
-
-/*
-let function renameFile() {
-     let rename = document.querySelector(".nav #fileName").innerHTML;
-  
-//document.getElementById('button')
-//class="new"
-console.log("renameFile called")
-}
-*/
 
 
 
@@ -76,29 +56,66 @@ function copyThisHTML() {  //COPIES HTML TO CLIPBOARD
   //document.querySelector(".editor #js").addEventListener("keyup",run);   //update js only onClick(), this updates every keystroke (replaced with button)
   
   
+  var saveData = (function () {                          // SAVE FILE from Stack Overflow
+    var a = document.createElement("a");
+    document.body.appendChild(a);
+    a.style = "display: none";
+    return function (data, fileName) {
+        var json = JSON.stringify(data),
+            blob = new Blob([json], {type: "octet/stream"}),
+            url = window.URL.createObjectURL(blob);
+        a.href = url;
+        a.download = fileName;
+       a.click();
+        window.URL.revokeObjectURL(url);
+        console.log('saving!')
+    };
+    }());
+    let htmlCode = document.querySelector(".editor #html").value;
+         var data = { value : 33, htmlCode}, // THIS OBJECT IS PASSED
+         fileName = "passed.txt";
+     
+    function saveFile() {
   
+    //  data = "Hello World"
+     // var data = document.getElementById('html')
+      // NAME OF SAVED FILE works shere. erase above parameters
+      saveData(data, fileName);
+    }
+
+  function newFile() {
+      location.reload();
+    }
+      
+
+
   
   $(function() {  //JQUERY
 
+let cl = (value) => {console.log(value)}
 
-  const $phase2 = document.getElementsByClassName("phase2")
+    
+    const $fileName = document.getElementsByClassName("fileName")
+    const $phase2 = document.getElementsByClassName("phase2")
 
   const $phase1 = document.getElementsByClassName("phase1")
   $("#btn2").hide()
+
+
  
-   $("#btn2").click(function restore(){ //TITLE SCREEN
+   $("#btn2").click(function restore(){ //RETURN TO EDITOR
  
-    $(".phase1").fadeIn(700).show();
+    $(".phase1").fadeIn(500).show();
     $("#btn1").show()
     $("#btn2").hide()
-    $(".phase2").show()
+    $(".phase2").fadeIn(500).show()
 
     cl("Title Screen")
        });
 let counterx = 1
   $("#btn1").click(function fullScreen(){ //Full Screen
         $(".phase3").hide()
-        $(".phase1").hide();
+        $(".phase1").slideUp(400).hide();
         $(".phase4").hide()
         $(".phase2").show();
         $(".phase5").hide()
@@ -111,14 +128,5 @@ let counterx = 1
 
 
 
-          // function fullScreen() {
-          //   $(".phase3").hide()
-          //   $(".phase1").hide();
-          //   $(".phase4").hide()
-          //   $(".phase2").fadeIn(700).show();
-          //   $(".phase5").hide()
-          //  }
-
-  
 
           })})

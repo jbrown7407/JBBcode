@@ -6,16 +6,20 @@
     <link rel="stylesheet" href="style.css" />
  
     <script src="https://code.jquery.com/jquery-1.12.3.js" integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=" crossorigin="anonymous"></script>
-    </head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>   
+</head>
     <body>
         <div class="banner"><b> <img src="noodle.png" alt="x">  
              <span id="filename">Created by Jeffrey Brown</span>       </div>  
 <nav>   
-    <div class="dropdown"> Menu
+    <div class="dropdown"> <span class="menubar"><i class="fas fa-bars"></i> Menu </span>
+
     <div class="dropdown-content">
-      <p class="rename">Save Workbook</p>
-      <p class="rename" onClick="newFile()">New Workbook</p>
-      <p class="rename" onClick="renameFile()">Rename File</p>
+      <!-- <button class="dropper" onClick="saveFile()">Save Workbook</p> -->
+      <button class="dropper" onClick="newFile()">New Workbook</p>
+        <button class="dropper" type="button" onClick="onClick()" > Run Javascript </button> 
+       
+      
     </div>      
     </div>  
      

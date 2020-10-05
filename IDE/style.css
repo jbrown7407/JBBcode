@@ -1,3 +1,5 @@
+
+
 #jeffname {
     color: black;
     float: right;
@@ -6,6 +8,18 @@
 #btn2{
     color: blue;
 }
+
+.dropper{
+    width: 100%;
+    color: black;
+    background-color: white;
+}
+.dropper:hover{
+    width: 100%;
+    color:white;
+    background-color:rgb(92, 92, 92);
+}
+
 
 body {
  background-color: white;
@@ -19,8 +33,8 @@ head {
     position: relative;
     display: inline-block;
     background-color: lightgray;
-    border: 1px solid black;
-    padding: 3px;
+   
+    
   }
   .dropdown-content {
     display: none;
@@ -54,12 +68,12 @@ head {
 }
 .editor {
     background-color: rgb(158, 157, 157);
-    border: 1px solid black;
+
     color: red;
     font-size: 15px;
     width: 96%;
     padding: 2%;
-    margin-top: -5px;
+    
 
 }
 
@@ -78,7 +92,27 @@ margin: 10px;
 body{
     min-width: 320px;
 }
+.menubar{
+    color: black;
+   
+    border-radius: 2.5px;
+    padding: 8.5px
+    background-color: lightgrey;
+    font-size: 18px;
+    margin: 5px;
+    height: 100%;
+   
+    
 
+}
+
+.menubar:hover{
+    color: black;
+   
+    padding: 1.5px;
+    background-color: grey
+
+}
 .fileIcon:hover{
     color: black;
     padding: 10px, 0px, 10px, 0px; 
@@ -109,12 +143,13 @@ body{
    border: 2px solid black;
    float: right;
    background-color:rgb(196, 196, 196);
-   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
 
 }
 .point2:hover{
     color: white;
     background-color:grey;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 
