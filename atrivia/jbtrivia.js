@@ -172,5 +172,16 @@ $openBtn.on('click', openModal);
 
 $closeBtn.on('click', closeModal);
 
+
+
+
+   // TARGET A SPECIFIC ITEM OF CLASS  (GRAB JUST ONE ANSWER/TRIANGLE)
+  //  $( ".triangle" ).click(function() {
+  //   alert( "Handler for .click() called." );
+  //   $(event.currentTarget).css('border-radius', '50%')
+  //   $(event.currentTarget).css('color', '100%')
+  //   $(event.currentTarget).addClass('circle')
+  // });
+
 });
 //END JQUE

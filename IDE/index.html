@@ -8,23 +8,23 @@
     <script src="https://code.jquery.com/jquery-1.12.3.js" integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>   
 </head>
-    <body>
+    <bodyOver>
         <div class="banner"><b> <img src="noodle.png" alt="x">  
              <span id="filename">Created by Jeffrey Brown</span>       </div>  
 <nav>   
     <div class="dropdown"> <span class="menubar"><i class="fas fa-bars"></i> Menu </span>
 
     <div class="dropdown-content">
-      <!-- <button class="dropper" onClick="saveFile()">Save Workbook</p> -->
-      <button class="dropper" onClick="newFile()">New Workbook</p>
-        <button class="dropper" type="button" onClick="onClick()" > Run Javascript </button> 
+      <button class="dropper" onClick="saveFile()">Save Workbook</p>
+      <button  onClick="newFile()">New Workbook</p>
+        <button  type="button" onClick="onClick()" > Run Javascript </button> 
        
       
     </div>      
     </div>  
      
     
-    <button class="point2" id="myJS" type="button" onClick="copyThisJS()" style=font-size:15px;> Copy JS </button> 
+    <button class="point2" id="myJS" type="button" onClick='copyThisJS()' style=font-size:15px;> Copy JS </button> 
     <button class="point2" id="myCSS" type="button" onClick="copyThisCSS()" style=font-size:15px;> Copy CSS </button> 
     <button class="point2" id="myHTML" type="button" onClick="copyThisHTML()" style=font-size:15px ;> Copy HTML </button>     
     <button class="point2" id="btn1" type="button" style=font-size:15px ;> Full Screen Preview </button>    
@@ -45,9 +45,20 @@
     <div class="dropdown"> <span class="menubar"><i class="fas fa-bars"></i> Device:  </span>
 
         <div class="dropdown-content">
-          <!-- <button class="dropper" onClick="saveFile()">Save Workbook</p> -->
-          <button class="dropper" onClick="resizePreview()">Resize Preview to..</p>
-            <button class="dropper" type="button" onClick="resizePreview()" > Resize Preview to.. </button> 
+           
+         
+            <button class="dropper" type="button" onClick="resizePreview()" > Galaxy S5 </button> 
+            <button class="dropper" type="button" onClick="resizePreview1()" > Pixel 2 </button>
+            <button class="dropper" type="button" onClick="resizePreview2()" > Pixel 2 XL </button>
+            <button class="dropper" type="button" onClick="resizePreview3()" > iPhone 6/7/8 </button>
+            <button class="dropper" type="button" onClick="resizePreview4()" > iPhone6/7/8 Plus </button>
+            <button class="dropper" type="button" onClick="resizePreview5()" > iPhone X </button>
+            <button class="dropper" type="button" onClick="resizePreview6()" > iPad </button>
+            <button class="dropper" type="button" onClick="resizePreview7()" > iPad Pro </button>
+            <button class="dropper" type="button" onClick="resizePreview8()" > Surface Duo </button>
+            <button class="dropper" type="button" onClick="resizePreview9()" > Galaxy Pro </button>
+
+
            
           
         </div>      
@@ -56,10 +67,19 @@
     
     <span class="monitorSize"> monitorSize here size# x size# </span> <button class="point" type="button" onClick="onClick()" > Run Javascript </button>  </em></span>         </div> 
 
-
+</bodyOver>
+<body>
 
 <div class="phase2">
-        <iframe id="output">Live Preview will appear here.</iframe> </div>
+        <iframe id="output" iframe width="97%" height="200">Live Preview will appear here.</iframe> </div>
         <script src="app.js">   </script>
+
+
+
+        <!-- <button id="generate">Random Color Theme</button>
+        <div id="container">
+          <div id="color-palette"></div>
+          <div id="my-palette"></div>
+        </div> -->
     </body>
     </html>

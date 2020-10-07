@@ -1,24 +1,39 @@
 //CREATE NEW FILE CODE
 
 
+const red = Math.floor(Math.random() * 256);
+const green = Math.floor(Math.random() * 256);
+const blue = Math.floor(Math.random() * 256);
+const color = 'rgb('+red+','+green+','+blue+')';
 
 
+
+//ORIGINAL
+// function run() {
+//   let htmlCode = document.querySelector(".editor #html").value; //store editor content as variables
+//   let cssCode = "<style>"+document.querySelector(".editor #css").value+"</style>";
+// //  let jsCode = document.querySelector(".editor #js").value;
+//   let output = document.querySelector("#output"); // Store output div as variable
+//   output.contentDocument.body.innerHTML = htmlCode+cssCode; //Link to CSS + HTML
+// //  output.contentWindow.eval(jsCode);    //Link to in-editor script
+// }
 
 function run() {
-  let htmlCode = document.querySelector(".editor #html").value; //store editor content as variables
-  let cssCode = "<style>"+document.querySelector(".editor #css").value+"</style>";
-//  let jsCode = document.querySelector(".editor #js").value;
-  let output = document.querySelector("#output"); // Store output div as variable
-  output.contentDocument.body.innerHTML = htmlCode+cssCode; //Link to CSS + HTML
-//  output.contentWindow.eval(jsCode);    //Link to in-editor script
-}
+    let htmlCode = document.querySelector(".editor #html").value; //store editor content as variables
+    let cssCode = "<style>"+document.querySelector(".editor #css").value+"</style>";
+  //  let jsCode = document.querySelector(".editor #js").value;
+    let output = document.querySelector("#output"); // Store output div as variable
+    output.contentDocument.body.innerHTML = htmlCode+cssCode; //Link to CSS + HTML
+  //  output.contentWindow.eval(jsCode);    //Link to in-editor script
+  }
+
+
 function onClick() {
   let jsCode = document.querySelector(".editor #js").value;
   output.contentWindow.eval(jsCode);  //Run JS in editor
 }
-function resizePreview() {
- console.log("resoze button active")
-}
+
+
 
 
 
@@ -74,6 +89,7 @@ function copyThisHTML() {  //COPIES HTML TO CLIPBOARD
         console.log('saving!')
     };
     }());
+
     let htmlCode = document.querySelector(".editor #html").value;
          var data = { value : 33, htmlCode}, // THIS OBJECT IS PASSED
          fileName = "passed.txt";
@@ -93,7 +109,10 @@ function copyThisHTML() {  //COPIES HTML TO CLIPBOARD
 
 
   
-  $(function() {  //JQUERY
+  //JQUERY
+
+
+
 
 let cl = (value) => {console.log(value)}
 
@@ -105,7 +124,7 @@ let cl = (value) => {console.log(value)}
   $("#btn2").hide()
 
 
- 
+ //PREVIEW MODE
    $("#btn2").click(function restore(){ //RETURN TO EDITOR
  
     $(".phase1").fadeIn(500).show();
@@ -127,52 +146,116 @@ let counterx = 1
         counterx++
         $("#btn1").hide()
         $("#btn2").show()
-        
+  })
 
 
-const list = [];
-
-const render = () => {
-    console.log('list: ', list);
-
-    // We can't replace the whole unordered list, because we may have
-    // changed some CSS in its items
-
-    //  $('ul').empty();
-    //  for (const item of list) {
-    //      $('ul').append('<li>' + item + '</li>');
-    //  }
-
-    // So instead we just add the last list item
-    const $listItem = $('<li>');
-    $listItem.text(list[list.length - 1]);
-    $('ul').append($listItem);
-
-// ADD TRASH CAN AND APPEND TO $listItem **********
-     const $trashCan = $('<span>');
-    $trashCan.text("TRASH");
-    $($listItem).append($trashCan);
-
-    // Add a click listener to each list item that adds a strike-through
-    $('li').on('click', (event) => {
-        $(event.currentTarget).css('text-decoration', 'line-through');
-        $(event.currentTarget).effect('shake');
-    });
-};
-
-// $('#submit-btn').on('click', () => {  // without using a form
-$('form').on('submit', (event) => {
-    const value = $('#input-box').val();
-
-    list.push(value);
-    event.preventDefault;//prevent reload
-
-    // $('#input-box').val('');  // without using a form
-    $(event.currentTarget).trigger('reset');
-    event.preventDefault();
-
-    render();
-});
 
 
-          })})
+const $colorPalette = $('#color-palette');
+const $myPalette = $('#my-palette');
+const $generate = $('#generate');
+
+
+
+const makePalette = () => {
+  $colorPalette.empty()
+  for(let i = 0; i < 10; i++){
+    const red = Math.floor(Math.random() * 256);
+    const green = Math.floor(Math.random() * 256);
+    const blue = Math.floor(Math.random() * 256);
+    const color = 'rgb('+red+','+green+','+blue+')';
+
+    const $square = $('<div>');
+    $square.addClass('square')
+    $square.css('background-color', color);
+    $colorPalette.append($square);
+    console.log("making palette")
+  }
+}
+makePalette()
+
+$($generate).click(function generate(){ //TITLE SCREEN
+  $colorPalette.empty()
+  const red = Math.floor(Math.random() * 256);
+  const green = Math.floor(Math.random() * 256);
+  const blue = Math.floor(Math.random() * 256);
+  const color = 'rgb('+red+','+green+','+blue+')';
+
+  const $square = $('<div>');
+  $square.addClass('square')
+  $square.css('background-color', color);
+  $colorPalette.append($square);
+
+    $myPalette.show()
+    // $colorPalette.hide()
+    $myPalette.text("Color Red:" + red + " ,Color Blue:" + blue +" ,Color Green:" + green)
+
+    console.log("replace");
+    
+      })
+ 
+
+    
+      function resizePreview() {
+        // $(event.currentTarget).css('color', '100%')
+        $('#output').css('height', '200px')
+        $('#output').css('width', '200px')
+        $('iframe').css('height', '200px')
+        $('iframe').css('width', '200px')
+        $('iframe').css('wordwrap', 'normal')
+        $('iframe').css('scroll', 'no')
+        $('iframe').css('overflow', 'auto')
+        // $('iframe').css('scrolling","no") 
+        // $('iframe').css("overflow', 'hidden')
+        //  $('body').css('height', '200px')
+        //  $('body').css('width', '200px')
+       
+         console.log("resoze button active")
+      }
+      function resizePreview1() {
+        console.log("resoze button active")
+        $($phase2).css('height', '200px')
+        $($phase2).css('width', '200px')
+       }
+       function resizePreview2() {
+        $($phase2).css('height', '400px')
+        $($phase2).css('width', '400px')
+        console.log("resize button active")
+       }
+       function resizePreview3() {
+        console.log("resize button active")
+       }
+       function resizePreview4() {
+        console.log("resoze button active")
+       }
+       function resizePreview5() {
+        console.log("resoze button active")
+       }
+       function resizePreview6() {
+        console.log("resoze button active")
+       }
+       function resizePreview7() {
+        console.log("resize button active")
+       }
+       function resizePreview8() {
+        console.log("resize button active")
+       }
+       function resizePreview9() {
+        console.log("resize button active")
+       }
+      
+      {/* <button class="dropper" type="button" onClick="resizePreview()" > Galaxy S5 </button> 
+      <button class="dropper" type="button" onClick="resizePreview1()" > Pixel 2 </button>
+      <button class="dropper" type="button" onClick="resizePreview2()" > Pixel 2 XL </button>
+      <button class="dropper" type="button" onClick="resizePreview3()" > iPhone 6/7/8 </button>
+      <button class="dropper" type="button" onClick="resizePreview4()" > iPhone6/7/8 Plus </button>
+      <button class="dropper" type="button" onClick="resizePreview5()" > iPhone X </button>
+      <button class="dropper" type="button" onClick="resizePreview6()" > iPad </button>
+      <button class="dropper" type="button" onClick="resizePreview7()" > iPad Pro </button>
+      <button class="dropper" type="button" onClick="resizePreview8()" > Surface Duo </button>
+      <button class="dropper" type="button" onClick="resizePreview9()" > Galaxy Pro </button> */}
+
+
+  
+
+          
