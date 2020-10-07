@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Title</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="triviastyle.css">
+    <script src="https://code.jquery.com/jquery-3.2.0.min.js"   
+    integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I="
+    crossorigin="anonymous"></script>
+  </head>
+  <body>
+   <div class="topArea"> topArea</div>
+<button class="btn1">GENERATE QUESTION</button> <br>
+<div class="canvas"></div>
+
+
+<button id="openModal">Modal Open</button>    <!-- trigger with answering a question -->
+<div class="container">           <!-- transfer to inside cnavas -->
+
+  <div id="modal">
+    <div id="modal-textbox">
+
+      <h1>Correct/Incorrect and Points</h1> <!-- currentMessage -->
+        <p>Correct!</p>
+        <p>Incorrect </p>
+        <p>Explanation</p>
+        
+        <div id="modal-footer">
+          <button class="modal-buttons" id="close" href="#">Close</button>
+        </div>
+    </div>
+  </div>
+
+</div>
+<button id="btn">Debug List</button>
+
+    <script src="jbtrivia.js" async defer></script>
+  </body>
+</html>

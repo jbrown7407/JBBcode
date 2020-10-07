@@ -1,0 +1,54 @@
+.canvas {
+    background-color: rgb(101, 218, 101);
+}
+
+.topArea{
+    background-color: rgb(231, 255, 209);
+    color: black;
+}
+
+ul {
+    margin: 0 auto
+    padding: 10px;
+}
+ li:{
+     margin-top: 10px;
+ 
+ }
+li:hover{
+    color: blue;
+}
+
+lhead {
+    font: 24px;
+    font-style: bold;
+    padding: 3px;
+    background-color:black;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.canvas {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid gray;
+    padding: 3px;
+  }
+  
+  .square {
+    height: 50px;
+    flex-basis: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border: 1px solid gray;
+  }

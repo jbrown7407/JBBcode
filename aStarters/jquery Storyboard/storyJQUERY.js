@@ -19,7 +19,12 @@ const $gameOverScene = document.getElementsByClassName("gameOverScene")
  $($gameScene1).hide()   //HIDE ENTIRE DIV
  $($gameScene2).hide() 
  $($gameOverScene).hide()
-
+  
+ 
+ //event.currentTarget TARGET SPECIFIC ELEMENT!!!
+    // $( "p" ).click(function( event ) {
+    //   alert( event.currentTarget === this ); // true
+    // });
 
 
 $(".btn1").click(function btn1(){ //TITLE SCREEN
