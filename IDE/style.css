@@ -1,3 +1,8 @@
+#dropdown2{
+    float:right;
+  
+}
+
 #output{
     white-space: -moz-pre-wrap;
     white-space: -pre-wrap;
@@ -58,6 +63,7 @@
     display: flex;
     word-wrap: break-word;
     display: break-word;
+    border: 1px solid black;
   }
 
   iframe text{
@@ -231,7 +237,7 @@ margin: 10px;
    margin-left: 5px; 
    border: 2px solid black;
    float: right;
-   background-color:rgb(196, 196, 196);
+   background-color:rgb(212, 212, 212);
 
 
 }
@@ -324,3 +330,4 @@ nav {
     display: flex;
     flex-wrap: wrap;
   }
+

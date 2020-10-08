@@ -200,70 +200,146 @@ $($generate).click(function generate(){ //TITLE SCREEN
     console.log("replace");
     
       })
- 
+   
+   
+   
+      let $deviceName = document.getElementById('deviceName')
 
-    
+
+
+    //RESIZE PREVIEW
+  let monitorsize =document.getElementsByClassName("monitorSize")
+  $monitorsize= monitorsize
       function resizePreview() {
+
         // $(event.currentTarget).css('color', '100%')
         $('#output').css('height', '200px')
      $('iframe').css('overflow', 'break-word')
      $('iframe').css('wordwrap', 'break-word')
-        $('iframe').css('height', '200px')
-        $('iframe').css('width', '200px')
+        $('iframe').css('height', '640px')
+        $('iframe').css('width', '360px')
         $('iframe').css('wordwrap', 'break-word')
        
-        $('iframe').css('overflow', 'break-word')
-        //  $('iframe').css('scrolling","no") 
-        // $('iframe').css("overflow', 'hidden')
-        //  $('body').css('height', '200px')
-        //  $('body').css('width', '200px')
+        $('#deviceName').text(" Galaxy S5")
        
-         console.log("resoze button active")
+         console.log("resize Galaxy S5")
       }
-      function resizePreview1() {
-        console.log("resoze button active")
-        $($phase2).css('height', '200px')
-        $($phase2).css('width', '200px')
-       }
-       function resizePreview2() {
-        $($phase2).css('height', '400px')
-        $($phase2).css('width', '400px')
-        console.log("resize button active")
+      function resizePreview2() {
+        $('#output').css('height', '200px')
+        $('iframe').css('overflow', 'break-word')
+        $('iframe').css('wordwrap', 'break-word')
+           $('iframe').css('height', '411px')
+           $('iframe').css('width', '731px')
+           $('iframe').css('wordwrap', 'break-word')
+           $('#deviceName').text(" Pixel 2")
+          
+            console.log("resize Pixel2")
        }
        function resizePreview3() {
-        console.log("resize button active")
+        $('#output').css('height', '200px')
+        $('iframe').css('overflow', 'break-word')
+        $('iframe').css('wordwrap', 'break-word')
+           $('iframe').css('height', '411px')
+           $('iframe').css('width', '823px')
+           $('iframe').css('wordwrap', 'break-word')
+           $('#deviceName').text(" Pixel 2 XL")
+          
+            console.log("resize Pixel 2 XL")
+       }
+       function resizePreview1() {
+        $('#output').css('height', '200px')
+        $('iframe').css('overflow', 'break-word')
+        $('iframe').css('wordwrap', 'break-word')
+           $('iframe').css('height', '667px')
+           $('iframe').css('width', '375px')
+           $('iframe').css('wordwrap', 'break-word')
+           $('#deviceName').text(" iPhone 6/7/8")
+          
+            console.log("resize iPhone 6/7/8")
        }
        function resizePreview4() {
-        console.log("resoze button active")
+        $('#output').css('height', '200px')
+        $('iframe').css('overflow', 'break-word')
+        $('iframe').css('wordwrap', 'break-word')
+           $('iframe').css('height', '736px')
+           $('iframe').css('width', '414px')
+           $('iframe').css('wordwrap', 'break-word')
+           $('#deviceName').text(" iPhone 6/7/8+")
+          
+        console.log("resize iPhone 6/7/8+")
        }
        function resizePreview5() {
-        console.log("resoze button active")
+        $('#output').css('height', '200px')
+        $('iframe').css('overflow', 'break-word')
+        $('iframe').css('wordwrap', 'break-word')
+           $('iframe').css('height', '812px')
+           $('iframe').css('width', '375px')
+           $('iframe').css('wordwrap', 'break-word')
+           $('#deviceName').text(" iPhone X")
+        console.log("Iphone X")
        }
        function resizePreview6() {
-        console.log("resoze button active")
+        console.log("Ipad")
+        $('#output').css('height', '200px')
+        $('iframe').css('overflow', 'break-word')
+        $('iframe').css('wordwrap', 'break-word')
+           $('iframe').css('height', '1024px')
+           $('iframe').css('width', '768px')
+           $('iframe').css('wordwrap', 'break-word')
+           $('#deviceName').text(" iPad")
        }
        function resizePreview7() {
-        console.log("resize button active")
+        $('#output').css('height', '200px')
+        $('iframe').css('overflow', 'break-word')
+        $('iframe').css('wordwrap', 'break-word')
+           $('iframe').css('height', '1366px')
+           $('iframe').css('width', '1024px')
+           $('iframe').css('wordwrap', 'break-word')
+        console.log("resize Ipad Pro")
+        $('#deviceName').text(" iPad Pro")
        }
        function resizePreview8() {
-        console.log("resize button active")
+        $('#output').css('height', '200px')
+        $('iframe').css('overflow', 'break-word')
+        $('iframe').css('wordwrap', 'break-word')
+           $('iframe').css('height', '720px')
+           $('iframe').css('width', '540px')
+           $('iframe').css('wordwrap', 'break-word')
+           $('#deviceName').text(" Surface Duo")
+        console.log("resize Surface Duo")
        }
        function resizePreview9() {
-        console.log("resize button active")
+        $('#output').css('height', '280px')
+        $('iframe').css('overflow', 'break-word')
+        $('iframe').css('wordwrap', 'break-word')
+           $('iframe').css('height', '653px')
+           $('iframe').css('width', '280px')
+           $('iframe').css('wordwrap', 'break-word')
+           $('#deviceName').text(" Galaxy Fold")
+        console.log("resize Galaxy Fold")
        }
-      
-      {/* <button class="dropper" type="button" onClick="resizePreview()" > Galaxy S5 </button> 
-      <button class="dropper" type="button" onClick="resizePreview1()" > Pixel 2 </button>
-      <button class="dropper" type="button" onClick="resizePreview2()" > Pixel 2 XL </button>
-      <button class="dropper" type="button" onClick="resizePreview3()" > iPhone 6/7/8 </button>
-      <button class="dropper" type="button" onClick="resizePreview4()" > iPhone6/7/8 Plus </button>
-      <button class="dropper" type="button" onClick="resizePreview5()" > iPhone X </button>
-      <button class="dropper" type="button" onClick="resizePreview6()" > iPad </button>
-      <button class="dropper" type="button" onClick="resizePreview7()" > iPad Pro </button>
-      <button class="dropper" type="button" onClick="resizePreview8()" > Surface Duo </button>
-      <button class="dropper" type="button" onClick="resizePreview9()" > Galaxy Pro </button> */}
+       function resizePreview10() {
+        $('#output').css('height', '1080px')
+        $('iframe').css('overflow', 'break-word')
+        $('iframe').css('wordwrap', 'break-word')
+           $('iframe').css('height', '1080px')
+           $('iframe').css('width', '1920px')
+           $('iframe').css('wordwrap', 'break-word')
+           $('#deviceName').text(" 1920x1080")
+        console.log(" 1920x1080")
+       }
+       function resizePreview11() {
+        $('#output').css('height', '1080px')
+        $('iframe').css('overflow', 'break-word')
+        $('iframe').css('wordwrap', 'break-word')
+           $('iframe').css('height', '800px')
+           $('iframe').css('width', '1280px')
+           $('iframe').css('wordwrap', 'break-word')
+           $('#deviceName').text(" 1200x800 (13-inch)")
+        console.log(" 13 inch")
+       }
 
 
-  
+       resizePreview11()
 
           

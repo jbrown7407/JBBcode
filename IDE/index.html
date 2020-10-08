@@ -16,9 +16,9 @@
     <div class="dropdown"> <span class="menubar"><i class="fas fa-bars"></i> Menu </span>
 
     <div class="dropdown-content">
-      <button class="dropper" onClick="saveFile()">Save Workbook</button>
-      <button  onClick="newFile()">New Workbook</button>
-        <button  type="button" onClick="onClick()" > Run Javascript </button> 
+      <!-- <button class="dropper" onClick="saveFile()">Save Workbook</button> -->
+      <button class="dropper"  onClick="newFile()">New Workbook</button>
+        <button class="dropper"  type="button" onClick="onClick()" > Run Javascript </button> 
        
       
     </div>      
@@ -28,8 +28,8 @@
     <button class="point2" id="myJS" type="button" onClick='copyThisJS()' style=font-size:15px;> Copy JS </button> 
     <button class="point2" id="myCSS" type="button" onClick="copyThisCSS()" style=font-size:15px;> Copy CSS </button> 
     <button class="point2" id="myHTML" type="button" onClick="copyThisHTML()" style=font-size:15px ;> Copy HTML </button>     
-    <button class="point2" id="btn1" type="button" style=font-size:15px ;> Full Screen Preview </button>    
-    <button class="point2" id="btn2" type="button" style=font-size:15px ;> Edit Code </button>     
+      
+    <button class="point2" id="btn2" type="button" style=font-size:15px;> Re-open Editor </button>     
 </nav>  
 <div class="phase1">
         <div class="editor">
@@ -37,36 +37,37 @@
             <textarea id="css" placeholder="CSS here..."></textarea>
             <textarea id="js" placeholder="JS here..."></textarea> 
         </div>
+       
+        
     </div>     
-  <div class="notify"><b>Live Preview:</b>
+  <div class="notify"><b>Live Preview:  <button class="point5" type="button" onClick="onClick()" > Run Javascript </button> 
+    <button class="point5" id="btn1"  type="button" style=font-size:14px;> Full Screen Preview </button> 
     
     
     
     
-    <div class="dropdown"> <span class="menubar"><i class="fas fa-bars"></i> Device:  </span>
+    <div class="dropdown" id="dropdown2"> <span class="menubar" style="font-size:14px"><i class="fas fa-mobile-alt"></i></i>    Select Device:<span id="deviceName">_</span>  </span>
 
-        <div class="dropdown-content">
+        <div class="dropdown-content" style="float:right">
            
-         
+                      <button class="dropper" type="button" onClick="resizePreview10()" > Computer 1920x1080  </button> 
+                      <button class="dropper" type="button" onClick="resizePreview11()" > 13-inch Laptop 1280x800 </button>
             <button class="dropper" type="button" onClick="resizePreview()" > Galaxy S5 </button> 
-            <button class="dropper" type="button" onClick="resizePreview1()" > Pixel 2 </button>
-            <button class="dropper" type="button" onClick="resizePreview2()" > Pixel 2 XL </button>
-            <button class="dropper" type="button" onClick="resizePreview3()" > iPhone 6/7/8 </button>
+            <button class="dropper" type="button" onClick="resizePreview2()" > Pixel 2 </button>
+            <button class="dropper" type="button" onClick="resizePreview3()" > Pixel 2 XL </button>
+            <button class="dropper" type="button" onClick="resizePreview1()" > iPhone 6/7/8 </button>
             <button class="dropper" type="button" onClick="resizePreview4()" > iPhone6/7/8 Plus </button>
             <button class="dropper" type="button" onClick="resizePreview5()" > iPhone X </button>
             <button class="dropper" type="button" onClick="resizePreview6()" > iPad </button>
             <button class="dropper" type="button" onClick="resizePreview7()" > iPad Pro </button>
             <button class="dropper" type="button" onClick="resizePreview8()" > Surface Duo </button>
-            <button class="dropper" type="button" onClick="resizePreview9()" > Galaxy Pro </button>
-
-
-           
+            <button class="dropper" type="button" onClick="resizePreview9()" > Galaxy Fold </button>
           
-       h456t </div>      
+     </div>      
         </div>  
     
     
-    <span class="monitorSize"> monitorSize here size# x size# </span> <button class="point" type="button" onClick="onClick()" > Run Javascript </button>  </em></span>         </div> 
+          </div> 
 
 
 </bodyOver>
