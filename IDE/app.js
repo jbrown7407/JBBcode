@@ -20,12 +20,19 @@ const color = 'rgb('+red+','+green+','+blue+')';
 
 function run() {
     let htmlCode = document.querySelector(".editor #html").value; //store editor content as variables
+
+    document.body.style.wordWrap = 'break-word';// IFRAME LINES
+
     let cssCode = "<style>"+document.querySelector(".editor #css").value+"</style>";
   //  let jsCode = document.querySelector(".editor #js").value;
     let output = document.querySelector("#output"); // Store output div as variable
+    $(output).addClass("hotText")
     output.contentDocument.body.innerHTML = htmlCode+cssCode; //Link to CSS + HTML
+   // iframe.contentWindow.document.body.style.wordWrap = 'break-word';
+  //   iframe.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+}
   //  output.contentWindow.eval(jsCode);    //Link to in-editor script
-  }
+  output.contentDocument.body.style.wordWrap = 'break-word';
 
 
 function onClick() {
@@ -135,7 +142,7 @@ let cl = (value) => {console.log(value)}
     cl("Title Screen")
        });
 let counterx = 1
-  $("#btn1").click(function fullScreen(){ //Full Screen
+  $("#btn1").click(function fullScreen(){ //Full ScreenMode
         $(".phase3").hide()
         $(".phase1").slideUp(400).hide();
         $(".phase4").hide()
@@ -199,13 +206,14 @@ $($generate).click(function generate(){ //TITLE SCREEN
       function resizePreview() {
         // $(event.currentTarget).css('color', '100%')
         $('#output').css('height', '200px')
-        $('#output').css('width', '200px')
+     $('iframe').css('overflow', 'break-word')
+     $('iframe').css('wordwrap', 'break-word')
         $('iframe').css('height', '200px')
         $('iframe').css('width', '200px')
-        $('iframe').css('wordwrap', 'normal')
-        $('iframe').css('scroll', 'no')
-        $('iframe').css('overflow', 'auto')
-        // $('iframe').css('scrolling","no") 
+        $('iframe').css('wordwrap', 'break-word')
+       
+        $('iframe').css('overflow', 'break-word')
+        //  $('iframe').css('scrolling","no") 
         // $('iframe').css("overflow', 'hidden')
         //  $('body').css('height', '200px')
         //  $('body').css('width', '200px')
