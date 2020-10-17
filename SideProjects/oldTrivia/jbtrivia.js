@@ -42,14 +42,17 @@ let questionBank = ["Question Alpha","Question Bravo","Question Charlie","Questi
 //JQUERY HERE
 
 $(".btn1").click(function btn1(){ //TITLE SCREEN
-    questionNumber++
+ console.log("new")
+  questionNumber++
+  console.log(questionNumber)
     points= points+1 // FIX UPDATE EACH QUESTIONS
     $points.text(points)
     // points = $points
+    const $bigCanvas = $('<bigCanvas>');
     const $questionCanvas = $('<canvas>');
-    const $lhead = $('<lhead>');
-    const $ul = $('<ul>').attr('storage','trunk');
-
+    const $lhead = $('<lhead>').attr('id',questionNumber);
+    const $ul = $('<ul>').attr('id',questionNumber);
+    $($lhead.eq(questionNumber-1)).empty() 
 
     $('<li>').text(questions[0].address).appendTo($ul);   //link to list id#
     $('<li>').text('Answer Option 2').addClass('answer').appendTo($ul);
@@ -161,6 +164,8 @@ const $closeBtn = $('#close');
 //Event Handlers
 const openModal = () => {
   $modal.css('display', 'block');
+
+
 }
 
 const closeModal = () => {

@@ -1,6 +1,13 @@
-I made a code editor for CS/BootCamp students! CodeNoodle is a coding sandbox with live preview upodated every keystroke.
+I am working on a code editor for CS/BootCamp students! CodeNoodle is a coding sandbox with live preview upodated every keystroke.
 This will let you see your work as you experiment with design and run your code with the 
 press of a button. I am currently using this for coding drills in my program at General Assembly.
 
-*logo*
-*screenshot*
+
+1.0 Real time live preview code editor.
+
+1.1 Added quick copy for HTML, CSS, JS.
+
+1.2 
+Device selection added- adjust your live preview to the screen size of a variety of popular devices
+New Blank Workbook
+Fixed Bug that was causing iframe not to wrap text
