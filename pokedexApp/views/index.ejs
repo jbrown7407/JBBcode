@@ -4,50 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- <link rel="stylesheet" href="/css/style.css"> -->
-<link rel="stylesheet" href="/normalize.css">
+<link rel="stylesheet" href="/'Libraries/">
 <link rel="stylesheet" href="/skeleton.css">
-  <title>POKEDEX</title>
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" url="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
 </head>
 <body>
+
 <!-- NEEDS LOCAL STORAGE -->
   <div class="container">
-
+    <div class="banner">   <h1>Pokedex <span style="color: green;">live</span> </live></h1></div>
   <h1>Welcome to your Pokedex!</h1>
   <nav>
-   <button> <a href="/pokedex/new">Create a Pokemon</a> </button><br> <br>
+   <button> <a href="/pokedex/new">Add New Pokemon</a> </button><br> <br>
+   <!-- <button> <a href="/pokedex/:index">Update</a> </button><br> <br> -->
+  
 </nav>
   <table>
     <tr>
       <th class="fl" style="text-align: left;" style="background-color: lightgrey;"   >Name</th>
       <th class="fl" style="text-align: left;"  >ID</th>
-      <th class="fl" style="text-align: left;"  >img</th> 
-      <th class="fl" style="text-align: left;"  >Type</th>
-   
-      <th class="fl" style="text-align: left;"  >Stats</th>
-      <th class="fl" style="text-align: left;"  > Action </th>
+      <th class="fl" style="text-align: left;"  >Type</th> 
+      <th class="fl" style="text-align: left;"  >Speed</th>
+      <th class="fl" style="text-align: left;"  >HP</th>
+      <th class="fl" style="text-align: left;"  >Captured</th>
+      <th class="fl" style="text-align: left;"  >Action</th>
+    
     </tr>
     
 
-    <% for (let i = 0; i < pokedex.length; i++) { %> 
+    <% for (let i = 0; i < allPokedex.length; i++) { %> 
       <tr> 
-      <!-- <a href="/budget/<%= i %>"> Examine </a> -->
+      
           <td> <a href="/pokedex/<%= i %>"> 
-                     <%= pokedex[i].name %> </a>  </td>
-             
-          <td>       <%= pokedex[i].id %>  </td> 
-              <td>    <!-- <%= pokedex[i].img %>  </td>   -->
-          <td>        <%= pokedex[i].type %>  </td> 
-          <td>        <%= pokedex[i].stats.hp %>  </td> 
-          <!--  -->
-        
-          <td>       <form action="/pokedex/<%= i %> ?_method=DELETE" method="POST"> <input type="submit" style="float: right;" value="DELETE" /> </form> </td> 
+                     <%= allPokedex[i].name %> </a>  </td>             
+          <td>       <%= allPokedex[i].id %>  </td> 
+         
+          <td>        <%= allPokedex[i].type %>  </td> 
+          <td>        <%= allPokedex[i].stats.speed %>  </td> 
+          <td>        <%= allPokedex[i].stats.hp %>  </td>  
+           <td>      <a href="/pokedex/<%= i %>/edit">Update</a> </td>  
+          <td>       <form action="/pokedex/<%= i %> ?_method=DELETE" method="POST"> <input type="submit" style="float: right;" value="DELETE" /> <i class="fas fa-trash-alt"></i></form> </td> 
   
       
            
         </tr>
     <% } %>
   </table>  
-  
+
 </div>
 </body>
 </html>

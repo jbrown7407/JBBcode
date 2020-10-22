@@ -3,29 +3,47 @@
     <head>
         <meta charset="utf-8">
         <title></title>
-        <link rel="stylesheet" href="/css/style.css">
+       
         <link rel="stylesheet" href="/normalize.css">
         <link rel="stylesheet" href="/skeleton.css">
+        <link rel="stylesheet" href="/style.css">
     </head>
     <body>
+ 
 <div class="container">
-
-    <h1>Edit Fruit Page</h1>
-      <form action="/fruits/<%=index%>?_method=PUT" method="POST">
+  <div class="banner">    <h1>Edit Pokemon</h1></div>
+    <h1>Edit Pokedex Page</h1>
+      <form action="/pokedex/<%=index%>?_method=PUT" method="POST">
         <label for="name">Name</label>
-        <input type="text" name="name" id="name" value="<%=fruit.name%>"/>
-        <label for="color">Color</label>
-        <input type="text" name="color" id="color" value="<%=fruit.color%>"/>
-        <label for="isReadyToEat">Is Ready to Eat</label>
-        <input type="checkbox" name="readyToEat" id="isReadyToEat"
-        <% if(fruit.readyToEat === true){ %>
-  				checked
-  			<% } %>
-        />
-        <input type="submit" value="Edit Fruit">
-      </form>
+        <input type="text" name="name" id="name" placeholder="Pokemon species..." value="<%= pokedex.name %>"/>
+        <label for="from">ID</label>
+        <input type="text" name="id" id="id" placeholder="id#" value="<%= pokedex.id %>" />
+        <label for="type">Type</label>
+        <input type="text" name="type" id="type" placeholder= "pokemon type" value="<%= pokedex.type %>" />
+        <label for="speed">Speed</label>
+        <input type="number" name="speed" id="speed" placeholder= "speed" value="<%= pokedex.stats.speed %>" />
+        <label for="hp">HP</label>
+        <input type="number" name="hp" id="hp" placeholder= "hp" value="<%= pokedex.stats.hp %>"  />
+        <label for="attack">Attack</label>
+        <input type="number" name="attack" id="attack" placeholder= "attack" value="<%= pokedex.stats.attack %>" />
+        <label for="defense">Defense</label>
+        <input type="number" name="defense" id="defense" placeholder= "defense" value="<%= pokedex.stats.defense %>" />
+        <label for="spattack">Special Attack</label>
+        <input type="number" name="spattack" id="spattack" placeholder= "spattack" value="<%= pokedex.stats.spattack %>" />
+        <label for="spdefense">Special Defense</label>
+        <input type="number" name="spdefense" id="spdefense" placeholder= "spdefense" value="<%= pokedex.stats.spdefense %>" />
+          <!-- <label for="trainer">Pokemon Trainer</label>
+          <input type="text" name="trainer" id="trainer" placeholder="trainer name (Your name here)"/> -->
+          <!-- <label for="tags">Stats</label>
+          <input type="text" name="tags" id="tags" placeholder="tags" /> -->
+    
+           <label for="captured">Captured</label>
+          <input type="checkbox" name="captured" id="captured" />
+   <br>     <br>  <input type="submit" value="update">
+        </form> <br>
+      <button><a href="/pokedex">Back to Index</a></button>
     </div> <br>
-    <button><a href="/pokedex">Back to Index</a></button>
+    
     </body>
 </html>
 

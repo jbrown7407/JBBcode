@@ -3,31 +3,48 @@
     <head>
         <meta charset="utf-8">
         <title></title>
-        <link rel="stylesheet" href="/css/style.css">
+     
         <link rel="stylesheet" href="/normalize.css">
         <link rel="stylesheet" href="/skeleton.css">
+        <link rel="stylesheet" href="/style.css">
     </head>
     <body>
-<div class="container">
 
-      <h1>New Pokemon</h1>
+<div class="container">
+    <div class="banner">    <h1>Who's That Pokemon?</h1></div>
+      <h1>New Pokemon</h1> 
+      <button><a href="/pokedex">Back to Index></a></button> <br>
       <form action="/pokedex" method="POST" style="float: left">
         <label for="name">Name</label>
-        <input type="text" name="name" id="name" placeholder="product or service..."/>
-        <label for="from">From</label>
-        <input type="text" name="from" id="from" placeholder="transaction with..." />
-        <label for="amount">Amount</label>
-        <input type="number" name="amount" id="amount" placeholder="total amount (+/-)" />
-        <label for="tags">Tags</label>
-        <input type="text" name="tags" id="tags" placeholder="tags" />
-        <label for="date">Date</label>
-        <input type="text" name="date" id="date" placeholder="Ex: April 11" />
-         <!-- <label for="readyToEat">Is Ready to Eat</label>
-        <input type="checkbox" name="readyToEat" id="readyToEat" /> -->
+        <input type="text" name="name" id="name" placeholder="Pokemon species..."/>
+        <label for="from">ID</label>
+        <input type="text" name="id" id="id" placeholder="id#" />
+        <label for="type">Type</label>
+        <input type="text" name="type" id="type" placeholder= "pokemon type" />
+        <label for="speed">Speed</label>
+        <input type="number" name="speed" id="speed" placeholder= "speed" />
+        <label for="hp">HP</label>
+        <input type="number" name="hp" id="hp" placeholder= "hp" />
+        <label for="attack">Attack</label>
+        <input type="number" name="attack" id="attack" placeholder= "attack" />
+        <label for="defense">Defense</label>
+        <input type="number" name="defense" id="defense" placeholder= "defense" />
+        <label for="spattack">Special Attack</label>
+        <input type="number" name="spattack" id="spattack" placeholder= "spattack" />
+        <label for="spdefense">Special Defense</label>
+        <input type="number" name="spdefense" id="spdefense" placeholder= "spdefense" />
+        <!-- <label for="trainer">Pokemon Trainer</label>
+        <input type="text" name="trainer" id="trainer" placeholder="trainer name (Your name here)"/> -->
+        <!-- <label for="tags">Stats</label>
+        <input type="text" name="tags" id="tags" placeholder="tags" /> -->
+  
+         <label for="captured">Captured</label>
+        <input type="checkbox" name="captured" id="captured" />
  <br>     <br>  <input type="submit" value="Create Pokedex Entry">
-      </form>
+      </form> <br>
+     
     </div> <br>
-    <button><a href="/pokedex">Back to Index</a></button>
+
     </body>
 </html>
 

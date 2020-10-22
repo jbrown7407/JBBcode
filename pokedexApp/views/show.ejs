@@ -4,24 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="stylesheet" href="/css/style.css"> -->
-  <link rel="stylesheet" href="/css/style.css">
+
   <link rel="stylesheet" href="/normalize.css">
   <link rel="stylesheet" href="/skeleton.css">
+  <link rel="stylesheet" href="/style.css">
   <title>Pokemon Profile</title>
+
 </head>
 <body>
-<div class="container">
 
-  <h1 style="font-weight: bold;">Pokemon </h1>
+<div class="container">
+  <div class="banner">    <h1>Pokemon </h1></div>
+  <button style="width: 100px;"><a href="/pokedex">Index</a></button>
+
+  <h1 style="font-weight: bold;"><%= pokedex.name %> </h1>
  <h3> <p>
  <span style="font-weight: bold;"> Name: </span> <%= pokedex.name %>   <br>
  <span style="font-weight: bold;">ID: </span>  <%= pokedex.id %>     <br>
  
- <span style="font-weight: bold;">Amount: </span>  <%= pokedex.type %>   <br>
- <span style="font-weight: bold;">Stats: </span> <%= pokedex.stats %> <br> <br>
-<img src="<%=pokedex.img%>" alt="">  
- 
- 
+ <span style="font-weight: bold;">Type: </span>  <%= pokedex.type %>   <br>
+ <img src="<%=pokedex.img%>" style="display: inline" alt="">  <hr> 
+ <h1><span style="font-weight: bold;">Stats - </span></h1> <br>
+ <h3>
+ <span style="font-weight: bold;">Speed: </span> <%= pokedex.stats.speed %> <br>
+ <span style="font-weight: bold;">HP: </span> <%= pokedex.stats.hp %> <br>
+ <span style="font-weight: bold;">Attack: </span> <%= pokedex.stats.attack %> <br>
+ <span style="font-weight: bold;">Defense: </span> <%= pokedex.stats.defense %> <br>
+ <span style="font-weight: bold;">Special Attack: </span> <%= pokedex.stats.spattack %> <br>
+ <span style="font-weight: bold;">Special Defense: </span> <%= pokedex.stats.spdefense %> <br> </h3>
+
+ <br>
+
 </h3>  
     
  <% if (pokedex.captured === true) { %>
@@ -31,7 +44,7 @@
     <% } %>
   </p> 
 
-  <span style="font-weight: bold;"> <button><a href="/pokedex">Back to Index</a></button> </span>
+
 </div>
 </body>
 </html>
