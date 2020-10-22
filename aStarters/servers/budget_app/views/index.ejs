@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/normalize.css">
+<link rel="stylesheet" href="/skeleton.css">
+  <title>Budget index</title>
+</head>
+<body>
+<!-- NEEDS LOCAL STORAGE -->
+  <div class="container">
+
+  <h1>Personal Budget Index Page</h1>
+  <nav>
+   <button> <a href="/budget/new">Create a New Budget Item</a> </button><br> <br>
+</nav>
+  <table>
+    <tr>
+      <th class="fl" style="text-align: left;" style="background-color: lightgrey;"   >Name</th>
+      <th class="fl" style="text-align: left;"  >Date</th>
+      <th class="fl" style="text-align: left;"  >Amount</th> 
+      <th class="fl" style="text-align: left;"  >From</th>
+      <th class="fl" style="text-align: left;"  >Tags</th>
+      <th class="fl" style="text-align: left;"  >Net Worth</th>
+      <th class="fl" style="text-align: left;"  > Action </th>
+    </tr>
+    <% let netWorth = 0 %>
+    <% for (let i = 0; i < budget.length; i++) { %> 
+      <tr> 
+      <!-- <a href="/budget/<%= i %>"> Examine </a> -->
+          <td> <a href="/budget/<%= i %>"> <%= budget[i].name %> </a>  </td>
+                     <!-- <%= budget[i].name %>  </td>   -->
+          <td>       <%= budget[i].date %>  </td> 
+          <td>       $<%= budget[i].amount %>  </td> 
+          <td>        <%= budget[i].from %>  </td> 
+          <td>        <%= budget[i].tags %>  </td> 
+          <%  netWorth = netWorth + budget[i].amount %>
+          <td>        $<%= netWorth %>  </td> 
+          <td>       <form action="/budget/<%= i %> ?_method=DELETE" method="POST"> <input type="submit" style="float: right;" value="DELETE" /> </form> </td> 
+      
+                 
+      
+               <%   console.log(netWorth) %>
+        </tr>
+    <% } %>
+  </table>  
+  
+</div>
+</body>
+</html>

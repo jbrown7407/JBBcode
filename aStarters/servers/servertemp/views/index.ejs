@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruits index</title>
+</head>
+<body>
+  <h1>Fruits Index Page</h1>
+  <nav>
+    <a href="/fruits/new">Create a New Fruit</a>
+</nav>
+  <ul>
+    <% for (let i = 0; i < allFruits.length; i++) { %>
+      <li>
+        <a href="/fruits/<%= i %>">
+          <%= allFruits[i].name %>
+        </a>
+      </li>
+    <% } %>
+  </ul>
+</body>
+</html>

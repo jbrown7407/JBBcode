@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="/css/style.css"> -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/normalize.css">
+  <link rel="stylesheet" href="/skeleton.css">
+  <title>Budget Items</title>
+</head>
+<body>
+<div class="container">
+
+  <h1 style="font-weight: bold;">Budget Items </h1>
+ <h3> <p>
+ <span style="font-weight: bold;"> Name: </span> <%= budget.name %>   <br>
+ <span style="font-weight: bold;">Date: </span>  <%= budget.date %>     <br>
+ <span style="font-weight: bold;">From: </span>  <%= budget.from %>     <br>
+ <span style="font-weight: bold;">Amount: </span>  <%= budget.amount %>   <br>
+ <span style="font-weight: bold;">Tags: </span> <%= budget.tags %> <br>
+ 
+</h3>  
+    
+    <!-- <% if (budget.readyToEat === true) { %>
+      <span> It is ready to eat </span>
+    <% } else { %>
+      <span> It is not ready to eat </span>
+    <% } %> -->
+  </p>
+
+  <span style="font-weight: bold;"> <button><a href="/budget">Back to Index</a></button> </span>
+</div>
+</body>
+</html>

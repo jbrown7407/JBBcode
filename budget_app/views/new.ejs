@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/normalize.css">
+        <link rel="stylesheet" href="/skeleton.css">
+    </head>
+    <body>
+<div class="container">
+
+      <h1>New Budget Item Page</h1>
+      <form action="/budget" method="POST" style="float: left">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="product or service..."/>
+        <label for="from">From</label>
+        <input type="text" name="from" id="from" placeholder="transaction with..." />
+        <label for="amount">Amount</label>
+        <input type="number" name="amount" id="amount" placeholder="total amount (+/-)" />
+        <label for="tags">Tags</label>
+        <input type="text" name="tags" id="tags" placeholder="tags" />
+        <label for="date">Date</label>
+        <input type="text" name="date" id="date" placeholder="Ex: April 11" />
+         <!-- <label for="readyToEat">Is Ready to Eat</label>
+        <input type="checkbox" name="readyToEat" id="readyToEat" /> -->
+ <br>     <br>  <input type="submit" value="Create Budget Item">
+      </form>
+    </div> <br>
+    <button><a href="/budget">Back to Index</a></button>
+    </body>
+</html>
+
+

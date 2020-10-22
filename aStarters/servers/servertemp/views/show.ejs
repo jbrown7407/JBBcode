@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruits show</title>
+</head>
+<body>
+  <h1>Fruits show page</h1>
+  <p>
+    The <%= fruit.name %> is <%= fruit.color %>.
+    <% if (fruit.readyToEat === true) { %>
+      <span> It is ready to eat </span>
+    <% } else { %>
+      <span> It is not ready to eat </span>
+    <% } %>
+  </p>
+
+  <a href="/fruits">Back to Index</a>
+</body>
+</html>

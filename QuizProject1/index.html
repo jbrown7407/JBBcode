@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trivia League</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="data:;base64,iVBORwOKGO=" />
+    <script src="https://code.jquery.com/jquery-3.2.0.min.js"   
+    integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I="
+    crossorigin="anonymous"></script>
+  </head>
+  <div class="banner"> <br> A Correct Answer Earns +3 Seconds <br>
+    <h2>  Time:   <span id='timer'></h2> <br></span>  </div>
+
+
+  
+<body>
+  <audio src="sounds/nextsound.wav" id="audio" type="audio/wav" preload="auto"></audio>
+  <audio src="sounds/completesound.wav" id="audio1" type="audio/wav" preload="auto"></audio>
+  <audio src="sounds/endsound.mp3" id="audio2" type="audio/mp3" preload="auto"></audio>
+  <audio src="sounds/landsound1.wav" id="audio4" type="audio/wav" preload="auto"></audio>
+  <audio src="sounds/startsound.mp3" id="audio3" type="audio/mp3" preload="auto"></audio>
+
+
+  <button class="startGame">START GAME</button>
+
+  <div class="promptPlayer"></div> <br>
+<div class="categories">
+ 
+  <button class=category id=b2>Video Games  </button>
+  <button class=category id=b3>Sports</button>
+  <button class=category id=b4>Board Games</button>
+  
+  <button class=category id=b6>Music</button>
+  <button class=category id=b7>Science and Nature</button>
+
+  <button class=category id=b9>Geography</button> 
+
+  <button class=category id=b8>TV</button>
+  <button class=category id=b0>Movies</button> 
+  <button class=category id=b5>General Knowledge</button>
+  <button class=category id=b1>Computer Science</button>
+
+</div> <div class=startMenu> </div> 
+<span class=categoryDisplay></span>
+
+
+
+  <div class="mega">   <!-- Mega Div holds trivia question scene -->
+
+    
+   
+     
+    <div class="bigCanvas">
+      <div class="canvas"></div>
+    </div>
+    <button class="nextQuestion">New Question</button> 
+
+  <!-- <button id="openModal">(DEBUG)</button>    trigger with answering a question -->
+  <div class="container">    </container>       <!-- transfer to inside cnavas -->
+
+  <div id="modal">
+    <div id="modal-textbox">
+        
+ <br>
+
+        
+        <div id="modal-footer">
+          <button class="restart" id="close" href="#">Close</button>   
+        </div>
+    </div>
+    
+  </div><!-- Modal End -->
+ 
+</div>
+<!-- <button class="statSheet">Player StatSheet</button>
+<div class=playerStats> -->
+
+
+</div>
+</div>
+
+
+<!-- <div class="playerScreen"> PLAYER STAT SHEET
+
+</div> -->
+
+    <script src="scripts/script.js" async defer></script>
+  </body>
+</html>
