@@ -20,7 +20,6 @@ app.use(express.urlencoded({extended: false})); //  recognize the incoming objec
 app.use(express.static(__dirname + '/public'));  // ???
 app.use(methodOverride('_method'))
 
-
 // bring in the pokdex
 const pokedex = require('./models/pokedex.js')  //gives us access to the pokedex data in the models directory
 
@@ -74,13 +73,11 @@ app.get('/pokedex/:indexOfPokedexArray', (req, res) => {
   })
 })
 
-//DELETE
+//DELETE//
 app.delete('/pokedex/:indexOfPokedexArray', (req, res) => {
   pokedex.splice(req.param.indexOfPokedex,1);
   res.redirect('/pokedex');
 })
-
-
 
 //EDIT//
 app.get('/pokedex/:index/edit', (req, res)=>{
@@ -94,7 +91,7 @@ app.get('/pokedex/:index/edit', (req, res)=>{
 })
 
 
-//UPDATE
+//UPDATE//
 app.put('/pokedex/:indexOfPokedexArray', (req, res) => { // :index is the index of our pokedex array that we want to change
 	 if(req.body.captured === 'on'){ //if checked, req.body.captured is set to 'on'
 	 	req.body.captured = true
@@ -116,7 +113,7 @@ app.put('/pokedex/:indexOfPokedexArray', (req, res) => { // :index is the index 
   //  req.body.stats.spattack = req.body.spattack
   //  req.body.stats.spdefense = req.body.spdefense
   ///
-  pokeman = {}
+  pokeman = {stats: {}}
   pokeman.name = req.body.name
   pokeman.id = req.body.id
   pokeman.stats.speed = req.body.speed
@@ -125,7 +122,9 @@ app.put('/pokedex/:indexOfPokedexArray', (req, res) => { // :index is the index 
   pokeman.stats.defense = req.body.defense
   pokeman.stats.spattack = req.body.spattack
   pokeman.stats.spdefense = req.body.spdefense
-  console.log(pokeman)
+  console.log(req.params.indexOfPokedexArray)
+  pokedex[req.params.indexOfPokedexArray] = pokeman
+  // pokedex.push()
   // pokedex.push(req.body)
   res.redirect('/pokedex'); //redirect to the index page
 })
