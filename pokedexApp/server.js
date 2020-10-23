@@ -75,7 +75,7 @@ app.get('/pokedex/:indexOfPokedexArray', (req, res) => {
 
 //DELETE//
 app.delete('/pokedex/:indexOfPokedexArray', (req, res) => {
-  pokedex.splice(req.param.indexOfPokedex,1);
+  pokedex.splice(req.params.indexOfPokedexArray,1);
   res.redirect('/pokedex');
 })
 
