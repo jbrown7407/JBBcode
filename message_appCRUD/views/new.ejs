@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>New MESSAGE PAGE</title>
+    </head>
+    <body>
+        <h1>New Message page</h1>
+        <form action="/messages" method="POST">
+            <%=users.name %> <br>
+            Message: <input type="text" name="message" /><br/>
+            SuperUser: <input type="checkbox" name="superUser" /><br/>
+            <input type="submit" name="" value="Create Message"/>
+        </form>
+    </body>
+</html>

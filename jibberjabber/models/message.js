@@ -20,7 +20,6 @@ const messageSchema = new Schema({
 }, {timestamps: true});
 
 
-
 const messageSeed = mongoose.model('messageSeed', messageSchema)
 
 module.exports = messageSeed //use module.exports to export this mongoose.model

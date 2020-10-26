@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <h1>Captain's Log</h1>
+
+        <ul>
+            <% for(let i = 0; i < allMessages.length; i++){ %>
+              <li>
+                User:
+                <a href="/messages/<%=allMessages[i].id %>">
+                    <%=allMessages[i].user; %> <br>
+                </a>
+                Message:  <%=allMessages[i].message; %>.
+            <br>    <%=allMessages[i].createdAt; %>
+                
+            
+                <form action="/messages/<%= allMessages[i].id %>?_method=DELETE" method="POST">
+                    <input type="submit" value="DELETE"/>
+                </form>
+                <a href="/messages/<%=allMessages[i].id %>/edit">Edit</a>
+                
+            </li>
+            <br>
+            <% } %>
+        </ul>
+
+        <nav id="navbar">
+            <h1>New Message</h1>
+            <form action="/messages" method="POST">
+                User: <input type="text" name="user" /><br/>
+                Message: <input type="text" name="message" /><br/>
+                <!-- SuperUser: <input type="checkbox" name="superUser" /><br/> -->
+                <input type="submit" name="" value="Send Message"/> <br>
+          <br>  <a href="/messages/boards">Change Boards</a>
+          </nav>
+    </body>
+</html>
