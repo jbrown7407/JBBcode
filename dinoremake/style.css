@@ -6,7 +6,7 @@
     width: 1000px;
     height: 400px;
     border: 1px solid black;
-    background-image: url("x.gif");
+    background-image: url("dark.jpg");
   /* background-repeat: repeat-y; */
 
 }
@@ -15,9 +15,10 @@
     height: 50px;
     /* background-color: red; */
     position: relative;
-    top: -00px;
+    top: 225px;
     z-index: 10;
     display: inline;
+    left: -350px;
 }
 .animate{   
 animation: jump 500ms;
