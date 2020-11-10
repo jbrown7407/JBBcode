@@ -4,8 +4,12 @@
         <meta charset="utf-8">
         <title>New MESSAGE PAGE</title>
     </head>
+    <div class="container">
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/skeleton.css">
+    <link rel="stylesheet" href="/style.css">
     <body>
-        <h1>New Message page</h1>
+        <div class="banner">     <h1>New Message Page</h1></div>
         <form action="/messages" method="POST">
             <%=users.name %> <br>
             Message: <input type="text" name="message" /><br/>
@@ -13,4 +17,5 @@
             <input type="submit" name="" value="Create Message"/>
         </form>
     </body>
+    </div>
 </html>

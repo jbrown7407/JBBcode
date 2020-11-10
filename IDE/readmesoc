@@ -1,6 +1,11 @@
-I am working on a code editor for CS/BootCamp students! CodeNoodle is a coding sandbox with live preview upodated every keystroke.
+I am working on a code editor for students! Chromebooks for students often to not allow or do not have room for educational software
+apps. My only requirement for this project is that it remains free and accessible to students. A browser delivery system allows even the weakest
+computers to run this. I have used vanilla Javascript and JQuery with a CDN to ensure that old computers will be able to run this software.
+
+
+CodeNoodle is a coding sandbox with live preview updated every keystroke.
 This will let you see your work as you experiment with design and run your code with the 
-press of a button. I am currently using this for coding drills in my program at General Assembly.
+press of a button. 
 
 
 1.0 Real time live preview code editor.
@@ -11,3 +16,9 @@ press of a button. I am currently using this for coding drills in my program at 
 Device selection added- adjust your live preview to the screen size of a variety of popular devices
 New Blank Workbook
 Fixed Bug that was causing iframe not to wrap text
+
+Reach out if you would like to join this project! Here are a few short term features I have planned. I would love to hear your ideas.
+A. Current Targets for Development
+B. Save File feature
+C. Add a collapsible console so users do not need to use the browser terminal
+D. Allow users to embed their own images

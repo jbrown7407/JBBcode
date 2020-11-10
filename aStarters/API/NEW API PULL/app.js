@@ -32,3 +32,15 @@ $(document).ready(function(){
   
   
               })
+
+        getMovie()
+              
+        $('form').on('submit', (event) => {
+           event.preventDefault()
+            console.log('clicky')
+             titleQuery = $('input[type="text"]').val()
+            getMovie()
+                })
+              
+                console.log(queryURL)
+             

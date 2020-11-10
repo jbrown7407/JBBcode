@@ -3,9 +3,13 @@
     <head>
         <meta charset="utf-8">
         <title>New MESSAGE PAGE</title>
+        <link rel="stylesheet" href="/normalize.css">
+        <link rel="stylesheet" href="/skeleton.css">
+        <link rel="stylesheet" href="/style.css">
     </head>
     <body>
-        <h1>Select a Board</h1>
+        <div class="container">
+            <div class="banner">     <h1>Select a Board</h1></div>
         <form action="/messages" method="POST">
             User: <input type="text" name="user" /><br/>
             Message: <input type="text" name="message" /><br/>
@@ -21,5 +25,6 @@
             SuperUser: <input type="checkbox" name="superUser" /><br/>
             <input type="submit" name="" value="boards"/>
         </form>
+    </div>
     </body>
 </html>

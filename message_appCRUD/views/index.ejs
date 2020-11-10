@@ -4,8 +4,12 @@
         <meta charset="utf-8">
         <title></title>
     </head>
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/skeleton.css">
+    <link rel="stylesheet" href="/style.css">
     <body>
-        <h1>Captain's Log</h1>
+        <div class="container">
+            <div class="banner">     <h1>Captain's Log</h1></div>
 
         <ul>
             <% for(let i = 0; i < allMessages.length; i++){ %>
@@ -37,5 +41,6 @@
                 <input type="submit" name="" value="Send Message"/> <br>
           <br>  <a href="/messages/boards">Change Boards</a>
           </nav>
+          </div>
     </body>
 </html>
