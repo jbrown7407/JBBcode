@@ -1,6 +1,8 @@
 $(document).ready(function(){
     let cl = (value) => console.log(value);
     cl("Jquery Active")
+    //build this out in React instead?
+    
     
     // const $div = $('<div>')
     // $($div).addClass('title')
